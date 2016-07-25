@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Bishop - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Bishop.res" /d "NDEBUG" "E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Bishop.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA8.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\Common" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\..\lib" /I "..\..\..\Headers" /I "..\..\Sword3PaySys\S3AccServer" /I "..\..\s3client\login" /I "..\..\RoleDBManager" /I "..\..\Core\src" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Bishop.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Application.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Bishop.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Common\Event.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\GamePlayer.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\GameServer.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Intercessor.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Network.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\PlayerCreator.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\SmartClient.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA8.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA9.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "..\Common" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\..\lib" /I "..\..\..\Headers" /I "..\..\Sword3PaySys\S3AccServer" /I "..\..\s3client\login" /I "..\..\RoleDBManager" /I "..\..\Core\src" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Bishop.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA9.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPAA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Bishop.pdb" /map:"Release/Bishop.map" /debug /machine:I386 /out:"Release/Bishop.exe" 
+.\Release\Application.obj
+.\Release\Bishop.obj
+.\Release\Event.obj
+.\Release\GamePlayer.obj
+.\Release\GameServer.obj
+.\Release\Intercessor.obj
+.\Release\Network.obj
+.\Release\PlayerCreator.obj
+.\Release\SmartClient.obj
+.\Release\StdAfx.obj
+.\Release\Bishop.res
+..\..\..\Lib\release\common.lib
+..\..\..\Lib\release\engine.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPAA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Application.cpp
+Bishop.cpp
+Event.cpp
+GamePlayer.cpp
+GameServer.cpp
+Intercessor.cpp
+Network.cpp
+PlayerCreator.cpp
+SmartClient.cpp
+Generating Code...
+Linking...
+common.lib(NodeList.obj) : warning LNK4099: PDB "vc60.pdb" was not found with "..\..\..\Lib\release\common.lib" or at "E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Release\vc60.pdb"; linking object as if no debug info
+common.lib(IniFile.obj) : warning LNK4099: PDB "vc60.pdb" was not found with "..\..\..\Lib\release\common.lib" or at "E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Release\vc60.pdb"; linking object as if no debug info
+common.lib(Library.obj) : warning LNK4099: PDB "vc60.pdb" was not found with "..\..\..\Lib\release\common.lib" or at "E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Release\vc60.pdb"; linking object as if no debug info
+common.lib(Utils.obj) : warning LNK4099: PDB "vc60.pdb" was not found with "..\..\..\Lib\release\common.lib" or at "E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Release\vc60.pdb"; linking object as if no debug info
+common.lib(Buffer.obj) : warning LNK4099: PDB "vc60.pdb" was not found with "..\..\..\Lib\release\common.lib" or at "E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Release\vc60.pdb"; linking object as if no debug info
+common.lib(Exception.obj) : warning LNK4099: PDB "vc60.pdb" was not found with "..\..\..\Lib\release\common.lib" or at "E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Release\vc60.pdb"; linking object as if no debug info
+common.lib(Win32Exception.obj) : warning LNK4099: PDB "vc60.pdb" was not found with "..\..\..\Lib\release\common.lib" or at "E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Release\vc60.pdb"; linking object as if no debug info
+common.lib(Mutex.obj) : warning LNK4099: PDB "vc60.pdb" was not found with "..\..\..\Lib\release\common.lib" or at "E:\jxall\swrod3\SwordOnline\Sources\MultiServer\Bishop\Release\vc60.pdb"; linking object as if no debug info
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPAC.bat" with contents
+[
+@echo off
+md ..\..\..\..\bin\client\release\
+copy release\Bishop.exe ..\..\..\..\bin\Client\Bishop.exe
+copy release\Bishop.exe ..\..\..\..\bin\Client\release\Bishop.exe
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPAC.bat"
+
+子目录或文件 ..\..\..\..\bin\client\release\ 已经存在。
+已复制         1 个文件。
+已复制         1 个文件。
+
+
+
+<h3>Results</h3>
+Bishop.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RegExp - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\SYSTEM~2\temp\RSP2A5.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/RegExp.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\dev\Program\vc\xshanju\RegExp\regexpr2.cpp"
+"D:\dev\Program\vc\xshanju\RegExp\resetstk.cpp"
+"D:\dev\Program\vc\xshanju\RegExp\syntax2.cpp"
+]
+Creating command line "cl.exe @E:\SYSTEM~2\temp\RSP2A5.tmp" 
+Creating command line "link.exe -lib /nologo /out:"lib\RegExp.lib"  .\Debug\regexpr2.obj .\Debug\resetstk.obj .\Debug\syntax2.obj "
+<h3>Output Window</h3>
+Compiling...
+regexpr2.cpp
+resetstk.cpp
+syntax2.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+RegExp.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

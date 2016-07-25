@@ -1,0 +1,14 @@
+struct Message
+{
+	 long MsgId;
+	 long PlayerId;
+	 any MsgData;
+};
+
+typedef sequence<Message> MessageSeq;
+
+interface AssistantServer
+{
+long ExecuteSeq(in MessageSeq MsgSeq, in string DataServerName);
+long Execute(in Message Msg, in string DataServerName);
+};

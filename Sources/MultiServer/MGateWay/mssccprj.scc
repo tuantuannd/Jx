@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[MGateWay.dsp]
+SCC_Aux_Path = "\\Swordonline\Sword3Home\sword3vss"
+SCC_Project_Name = "$/SwordOnline/Sources/MultiServer/MGateWay", VHMAAAAA

@@ -1,0 +1,234 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "kingsoft\0"
+            VALUE "FileDescription", "Intercessor\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Intercessor\0"
+            VALUE "LegalCopyright", "Copyright ? 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Intercessor.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "kingsoft Intercessor\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_LOGIN DIALOGEX 0, 0, 215, 95
+STYLE DS_SYSMODAL | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Login"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,103,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,158,74,50,14
+    LTEXT           "User name :",IDC_STATIC,7,7,41,12,SS_CENTERIMAGE
+    LTEXT           "Password :",IDC_STATIC,7,24,41,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_USERNAME,52,7,156,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_PASSWORD,52,24,156,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Log on to :",IDC_STATIC,7,41,41,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LOGONTO_IP,93,51,60,12,ES_CENTER | ES_LOWERCASE | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "Port :",IDC_STATIC,157,51,17,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_LOGONTO_PORT,177,51,24,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    RTEXT           "IP :",IDC_STATIC,76,51,12,12,SS_CENTERIMAGE
+    GROUPBOX        " Server ",IDC_STATIC,52,40,156,28
+    LTEXT           "A.S.",IDC_STATIC,57,51,17,12,SS_CENTERIMAGE
+    ICON            IDI_LOCK,IDC_STATIC,7,68,20,20,SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE
+END
+
+IDD_DLG_INTERCESSOR DIALOGEX 0, 0, 384, 173
+STYLE DS_SETFOREGROUND | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Intercessor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Startup",IDOK,135,119,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,327,152,50,14
+    EDITTEXT        IDC_EDIT_ACCSVRIP,71,25,60,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_ACCSVRPORT,159,25,24,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_ROLESVRIP,71,42,60,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_ROLESVRPORT,159,42,24,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_CLIENT_PORT,107,68,24,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_GAMESVR_PORT,107,85,24,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC,7,7,188,138,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE
+    LTEXT           "AccSvr IP :",IDC_STATIC,30,25,37,12,SS_CENTERIMAGE
+    RTEXT           "Port :",IDC_STATIC,136,25,18,12,SS_CENTERIMAGE
+    LTEXT           "RoleSvr IP :",IDC_STATIC,30,42,37,12,SS_CENTERIMAGE
+    RTEXT           "Port :",IDC_STATIC,136,42,18,12,SS_CENTERIMAGE
+    LTEXT           "Client Port :",IDC_STATIC,30,68,39,12,SS_CENTERIMAGE
+    LTEXT           "Game Server Port :",IDC_STATIC,30,85,63,12,
+                    SS_CENTERIMAGE
+    LTEXT           "for Open",IDC_STATIC,136,68,47,12,SS_CENTERIMAGE
+    LTEXT           "for Open",IDC_STATIC,136,85,47,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,26,109,161,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,198,142,185,1
+    CTEXT           "*",IDC_STATIC,15,25,10,12,SS_CENTERIMAGE
+    CTEXT           "*",IDC_STATIC,15,42,10,12,SS_CENTERIMAGE
+    CTEXT           "*",IDC_STATIC,15,68,10,12,SS_CENTERIMAGE
+    CTEXT           "*",IDC_STATIC,15,85,10,12,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DLG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DLG_INTERCESSOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 377
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LOCK                ICON    DISCARDABLE     "res\\lock.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NAMEPSWD_ERROR      "The user name or password is incorrect, Letters in passwords must be typed using the correct case. Make sure that Caps Lock is not accidentaly on."
+    IDS_NETWORK_ERROR       "The system cannot log on to server now because the network is not available."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

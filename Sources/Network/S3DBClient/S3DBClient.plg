@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: S3DBClient - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/S3DBClient.res" /d "_DEBUG" /d "_AFXDLL" "F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\S3DBClient.rc"" 
+Creating temporary file "D:\temp\RSPD6.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\s3accserver" /I "..\\" /I "d:\dx81sdk\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\AddUserDlg.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\ClientSocket.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\GameClient.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3AccServer\GlobalFun.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\LoginDlg.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\MainWnd.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\Page1.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\Page2.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\PerformanceDlg.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\S3DBClient.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3AccServer\S3PDBSocketParser.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSPD6.tmp" 
+Creating temporary file "D:\temp\RSPD7.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\s3accserver" /I "..\\" /I "d:\dx81sdk\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/S3DBClient.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSPD7.tmp" 
+Creating temporary file "D:\temp\RSPD8.tmp" with contents
+[
+Ws2_32.lib ole32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/S3DBClient_d.pdb" /debug /machine:I386 /out:"Export/S3DBClient_d.exe" /pdbtype:sept 
+.\Debug\AddUserDlg.obj
+.\Debug\ClientSocket.obj
+.\Debug\GameClient.obj
+.\Debug\GlobalFun.obj
+.\Debug\LoginDlg.obj
+.\Debug\MainWnd.obj
+.\Debug\Page1.obj
+.\Debug\Page2.obj
+.\Debug\PerformanceDlg.obj
+.\Debug\S3DBClient.obj
+.\Debug\S3PDBSocketParser.obj
+.\Debug\StdAfx.obj
+.\Debug\S3DBClient.res
+]
+Creating command line "link.exe @D:\temp\RSPD8.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+f:\downloads\swordonline\sources\sword3paysys\s3dbclient\stdafx.h(29) : fatal error C1083: Cannot open include file: '..\ESClient\Exception.h': No such file or directory
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+S3DBClient_d.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

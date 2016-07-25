@@ -1,0 +1,33 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Sword3PaySys"=.\Sword3PaySys.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/剑侠情缘3计费系统/源代码/Sword3PaySys", SAAAAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: iRepresent - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\chenpeng\LOCALS~1\Temp\RSP2C8.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "IREPRESENT_EXPORTS" /FD /GZ /c 
+"D:\swrod3\SwordOnline\Sources\Represent\iRepresent\Font\KCharSet.cpp"
+"D:\swrod3\SwordOnline\Sources\Represent\iRepresent\Font\KFont2.cpp"
+"D:\swrod3\SwordOnline\Sources\Represent\iRepresent\Font\KFont3.cpp"
+"D:\swrod3\SwordOnline\Sources\Represent\iRepresent\Font\KFontData.cpp"
+"D:\swrod3\SwordOnline\Sources\Represent\iRepresent\Font\KFontRes.cpp"
+"D:\swrod3\SwordOnline\Sources\Represent\iRepresent\Font\KMRU.cpp"
+"D:\swrod3\SwordOnline\Sources\Represent\iRepresent\Image\ImageOperation.cpp"
+"D:\swrod3\SwordOnline\Sources\Represent\iRepresent\Text\TextProcess.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\chenpeng\LOCALS~1\Temp\RSP2C8.tmp" 
+Creating temporary file "C:\DOCUME~1\chenpeng\LOCALS~1\Temp\RSP2C9.tmp" with contents
+[
+engine.lib /nologo /dll /incremental:yes /pdb:"iRepresent.pdb" /machine:I386 /out:"iRepresent.dll" /implib:"iRepresent.lib" /pdbtype:sept 
+.\KCharSet.obj
+.\KFont2.obj
+.\KFont3.obj
+.\KFontData.obj
+.\KFontRes.obj
+.\KMRU.obj
+.\ImageOperation.obj
+.\TextProcess.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\chenpeng\LOCALS~1\Temp\RSP2C9.tmp"
+<h3>Output Window</h3>
+Compiling...
+KCharSet.cpp
+KFont2.cpp
+KFont3.cpp
+KFontData.cpp
+KFontRes.cpp
+KMRU.cpp
+ImageOperation.cpp
+TextProcess.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+iRepresent.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

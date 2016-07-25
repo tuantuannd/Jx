@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Heaven - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\temp\RSP1FD.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "HEAVEN_EXPORTS" /Fp"Debug/Heaven.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\Heaven.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IServer.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\ServerStage.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\CriticalSection.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\Event.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\Exception.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\IOBuffer.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\IOCompletionPort.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\ManualResetEvent.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\NodeList.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\Socket.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\SocketServer.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\Thread.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\UsesWinsock.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\Utils.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Heaven\IOCPServer\Win32Exception.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSP1FD.tmp" 
+Creating temporary file "D:\temp\RSP1FE.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/Heaven.pdb" /debug /machine:I386 /def:".\Heaven.def" /out:"Debug/Heaven.dll" /implib:"Debug/Heaven.lib" /pdbtype:sept 
+.\Debug\Heaven.obj
+.\Debug\IServer.obj
+.\Debug\ServerStage.obj
+.\Debug\CriticalSection.obj
+.\Debug\Event.obj
+.\Debug\Exception.obj
+.\Debug\IOBuffer.obj
+.\Debug\IOCompletionPort.obj
+.\Debug\ManualResetEvent.obj
+.\Debug\NodeList.obj
+.\Debug\Socket.obj
+.\Debug\SocketServer.obj
+.\Debug\Thread.obj
+.\Debug\UsesWinsock.obj
+.\Debug\Utils.obj
+.\Debug\Win32Exception.obj
+]
+Creating command line "link.exe @D:\temp\RSP1FE.tmp"
+<h3>Output Window</h3>
+Compiling...
+Heaven.cpp
+* ATTENTION : PLEASE USE IT IN ANSI SETTING *
+IServer.cpp
+ServerStage.cpp
+CriticalSection.cpp
+Event.cpp
+Exception.cpp
+IOBuffer.cpp
+IOCompletionPort.cpp
+ManualResetEvent.cpp
+NodeList.cpp
+Socket.cpp
+SocketServer.cpp
+NOTE : --------------------OnlineGameLib [Server] : Announcement--------------------
+NOTE : Developing a truly scalable Winsock Server using IO Completion Ports(IOCP)
+NOTE : But this module depend on the microsoft platform
+NOTE : Requirements :
+NOTE :    * Windows NT/2000/XP: Included in Windows NT 4.0 and later.
+NOTE :    * Windows 95/98/Me: Unsupported.
+NOTE :
+NOTE : liupeng xishanju.zhuhai.china 2003.1
+NOTE : -----------------------------------------------------------------------------
+Thread.cpp
+UsesWinsock.cpp
+Utils.cpp
+Win32Exception.cpp
+Linking...
+   Creating library Debug/Heaven.lib and object Debug/Heaven.exp
+
+
+
+<h3>Results</h3>
+Heaven.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

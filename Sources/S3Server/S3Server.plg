@@ -1,0 +1,711 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: S3Server - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\temp\RSPBE.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "../Engine/src" /I "../Core/src" /I "../Engine/include" /I "../NetWork" /I "..\..\Headers" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_SERVER" /FR"Debug/" /Fp"Debug/S3Server.pch" /Yu"KEngine.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\S3Server\S3Server.cpp"
+"F:\DownLoads\SwordOnline\Sources\S3Server\BroadCastWnd.cpp"
+"F:\DownLoads\SwordOnline\Sources\S3Server\ClientConnectListWnd.cpp"
+"F:\DownLoads\SwordOnline\Sources\S3Server\ServerLocalControlWnd.cpp"
+"F:\DownLoads\SwordOnline\Sources\S3Server\SwordOnLineServer.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSPBE.tmp" 
+Creating temporary file "D:\temp\RSPBF.tmp" with contents
+[
+engine.lib coreserver.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/S3Server.pdb" /debug /machine:I386 /out:"Debug/S3Server.exe" /pdbtype:sept /libpath:"../../lib/" 
+.\Debug\S3Server.obj
+.\Debug\BroadCastWnd.obj
+.\Debug\ClientConnectListWnd.obj
+.\Debug\ServerLocalControlWnd.obj
+.\Debug\SwordOnLineServer.obj
+.\Debug\stdafx.obj
+.\Debug\S3Server.res
+..\..\Lib\S3DBInterface_d.lib
+]
+Creating command line "link.exe @D:\temp\RSPBF.tmp"
+<h3>Output Window</h3>
+Compiling...
+S3Server.cpp
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(109) : error C2011: 'fd_set' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(144) : warning C4005: 'FD_SET' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(88) : see previous definition of 'FD_SET'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(153) : error C2011: 'timeval' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(209) : error C2011: 'hostent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(222) : error C2011: 'netent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(229) : error C2011: 'servent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(241) : error C2011: 'protoent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(327) : error C2011: 'in_addr' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(385) : error C2011: 'sockaddr_in' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(395) : error C2011: 'WSAData' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(455) : warning C4005: 'SO_DONTLINGER' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(409) : see previous definition of 'SO_DONTLINGER'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(512) : warning C4005: 'AF_IPX' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(467) : see previous definition of 'AF_IPX'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(540) : warning C4005: 'AF_MAX' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(486) : see previous definition of 'AF_MAX'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(546) : error C2011: 'sockaddr' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(586) : error C2011: 'sockproto' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(625) : error C2011: 'linger' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(638) : warning C4005: 'SOMAXCONN' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(551) : see previous definition of 'SOMAXCONN'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(663) : warning C4005: 'FD_READ' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(569) : see previous definition of 'FD_READ'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(666) : warning C4005: 'FD_WRITE' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(570) : see previous definition of 'FD_WRITE'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(669) : warning C4005: 'FD_OOB' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(571) : see previous definition of 'FD_OOB'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(672) : warning C4005: 'FD_ACCEPT' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(572) : see previous definition of 'FD_ACCEPT'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(675) : warning C4005: 'FD_CONNECT' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(573) : see previous definition of 'FD_CONNECT'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(678) : warning C4005: 'FD_CLOSE' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(574) : see previous definition of 'FD_CLOSE'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1610) : error C2375: 'accept' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(742) : see declaration of 'accept'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1631) : error C2375: 'bind' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(747) : see declaration of 'bind'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1650) : error C2375: 'closesocket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(752) : see declaration of 'closesocket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1669) : error C2375: 'connect' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(754) : see declaration of 'connect'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1690) : error C2375: 'ioctlsocket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(759) : see declaration of 'ioctlsocket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1711) : error C2375: 'getpeername' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(764) : see declaration of 'getpeername'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1732) : error C2375: 'getsockname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(769) : see declaration of 'getsockname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1755) : error C2375: 'getsockopt' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(774) : see declaration of 'getsockopt'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1776) : error C2375: 'htonl' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(781) : see declaration of 'htonl'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1793) : error C2375: 'htons' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(783) : see declaration of 'htons'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1810) : error C2375: 'inet_addr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(785) : see declaration of 'inet_addr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1827) : error C2375: 'inet_ntoa' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(787) : see declaration of 'inet_ntoa'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1845) : error C2375: 'listen' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(789) : see declaration of 'listen'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1863) : error C2375: 'ntohl' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(793) : see declaration of 'ntohl'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1880) : error C2375: 'ntohs' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(795) : see declaration of 'ntohs'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1900) : error C2375: 'recv' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(797) : see declaration of 'recv'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1925) : error C2375: 'recvfrom' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(803) : see declaration of 'recvfrom'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1951) : error C2375: 'select' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(811) : see declaration of 'select'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1975) : error C2375: 'send' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(818) : see declaration of 'send'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2000) : error C2375: 'sendto' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(824) : see declaration of 'sendto'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2026) : error C2375: 'setsockopt' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(832) : see declaration of 'setsockopt'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2048) : error C2375: 'shutdown' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(839) : see declaration of 'shutdown'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2068) : error C2375: 'socket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(843) : see declaration of 'socket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2091) : error C2375: 'gethostbyaddr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(850) : see declaration of 'gethostbyaddr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2110) : error C2375: 'gethostbyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(855) : see declaration of 'gethostbyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2128) : error C2375: 'gethostname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(857) : see declaration of 'gethostname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2147) : error C2375: 'getservbyport' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(861) : see declaration of 'getservbyport'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2166) : error C2375: 'getservbyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(865) : see declaration of 'getservbyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2184) : error C2375: 'getprotobynumber' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(869) : see declaration of 'getprotobynumber'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2201) : error C2375: 'getprotobyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(871) : see declaration of 'getprotobyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2221) : error C2375: 'WSAStartup' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(875) : see declaration of 'WSAStartup'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2239) : error C2375: 'WSACleanup' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(879) : see declaration of 'WSACleanup'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2256) : error C2375: 'WSASetLastError' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(881) : see declaration of 'WSASetLastError'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2273) : error C2375: 'WSAGetLastError' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(883) : see declaration of 'WSAGetLastError'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2290) : error C2375: 'WSAIsBlocking' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(885) : see declaration of 'WSAIsBlocking'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2307) : error C2375: 'WSAUnhookBlockingHook' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(887) : see declaration of 'WSAUnhookBlockingHook'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2324) : error C2375: 'WSASetBlockingHook' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(889) : see declaration of 'WSASetBlockingHook'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2341) : error C2375: 'WSACancelBlockingCall' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(891) : see declaration of 'WSACancelBlockingCall'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2363) : error C2375: 'WSAAsyncGetServByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(893) : see declaration of 'WSAAsyncGetServByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2390) : error C2375: 'WSAAsyncGetServByPort' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(901) : see declaration of 'WSAAsyncGetServByPort'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2416) : error C2375: 'WSAAsyncGetProtoByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(909) : see declaration of 'WSAAsyncGetProtoByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2441) : error C2375: 'WSAAsyncGetProtoByNumber' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(916) : see declaration of 'WSAAsyncGetProtoByNumber'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2466) : error C2375: 'WSAAsyncGetHostByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(923) : see declaration of 'WSAAsyncGetHostByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2493) : error C2375: 'WSAAsyncGetHostByAddr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(930) : see declaration of 'WSAAsyncGetHostByAddr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2516) : error C2375: 'WSACancelAsyncRequest' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(939) : see declaration of 'WSACancelAsyncRequest'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2536) : error C2375: 'WSAAsyncSelect' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(941) : see declaration of 'WSAAsyncSelect'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2143: syntax error : missing ';' before '*'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2501: 'GameStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2501: 'm_pPlayerGameStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2143: syntax error : missing ';' before '*'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2501: 'ConnectStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2501: 'm_pNetConnectStatus' : missing storage-class or type specifiers
+BroadCastWnd.cpp
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(109) : error C2011: 'fd_set' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(144) : warning C4005: 'FD_SET' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(88) : see previous definition of 'FD_SET'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(153) : error C2011: 'timeval' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(209) : error C2011: 'hostent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(222) : error C2011: 'netent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(229) : error C2011: 'servent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(241) : error C2011: 'protoent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(327) : error C2011: 'in_addr' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(385) : error C2011: 'sockaddr_in' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(395) : error C2011: 'WSAData' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(455) : warning C4005: 'SO_DONTLINGER' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(409) : see previous definition of 'SO_DONTLINGER'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(512) : warning C4005: 'AF_IPX' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(467) : see previous definition of 'AF_IPX'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(540) : warning C4005: 'AF_MAX' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(486) : see previous definition of 'AF_MAX'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(546) : error C2011: 'sockaddr' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(586) : error C2011: 'sockproto' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(625) : error C2011: 'linger' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(638) : warning C4005: 'SOMAXCONN' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(551) : see previous definition of 'SOMAXCONN'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(663) : warning C4005: 'FD_READ' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(569) : see previous definition of 'FD_READ'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(666) : warning C4005: 'FD_WRITE' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(570) : see previous definition of 'FD_WRITE'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(669) : warning C4005: 'FD_OOB' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(571) : see previous definition of 'FD_OOB'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(672) : warning C4005: 'FD_ACCEPT' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(572) : see previous definition of 'FD_ACCEPT'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(675) : warning C4005: 'FD_CONNECT' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(573) : see previous definition of 'FD_CONNECT'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(678) : warning C4005: 'FD_CLOSE' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(574) : see previous definition of 'FD_CLOSE'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1610) : error C2375: 'accept' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(742) : see declaration of 'accept'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1631) : error C2375: 'bind' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(747) : see declaration of 'bind'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1650) : error C2375: 'closesocket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(752) : see declaration of 'closesocket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1669) : error C2375: 'connect' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(754) : see declaration of 'connect'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1690) : error C2375: 'ioctlsocket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(759) : see declaration of 'ioctlsocket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1711) : error C2375: 'getpeername' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(764) : see declaration of 'getpeername'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1732) : error C2375: 'getsockname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(769) : see declaration of 'getsockname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1755) : error C2375: 'getsockopt' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(774) : see declaration of 'getsockopt'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1776) : error C2375: 'htonl' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(781) : see declaration of 'htonl'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1793) : error C2375: 'htons' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(783) : see declaration of 'htons'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1810) : error C2375: 'inet_addr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(785) : see declaration of 'inet_addr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1827) : error C2375: 'inet_ntoa' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(787) : see declaration of 'inet_ntoa'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1845) : error C2375: 'listen' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(789) : see declaration of 'listen'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1863) : error C2375: 'ntohl' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(793) : see declaration of 'ntohl'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1880) : error C2375: 'ntohs' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(795) : see declaration of 'ntohs'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1900) : error C2375: 'recv' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(797) : see declaration of 'recv'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1925) : error C2375: 'recvfrom' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(803) : see declaration of 'recvfrom'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1951) : error C2375: 'select' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(811) : see declaration of 'select'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1975) : error C2375: 'send' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(818) : see declaration of 'send'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2000) : error C2375: 'sendto' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(824) : see declaration of 'sendto'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2026) : error C2375: 'setsockopt' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(832) : see declaration of 'setsockopt'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2048) : error C2375: 'shutdown' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(839) : see declaration of 'shutdown'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2068) : error C2375: 'socket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(843) : see declaration of 'socket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2091) : error C2375: 'gethostbyaddr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(850) : see declaration of 'gethostbyaddr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2110) : error C2375: 'gethostbyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(855) : see declaration of 'gethostbyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2128) : error C2375: 'gethostname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(857) : see declaration of 'gethostname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2147) : error C2375: 'getservbyport' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(861) : see declaration of 'getservbyport'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2166) : error C2375: 'getservbyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(865) : see declaration of 'getservbyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2184) : error C2375: 'getprotobynumber' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(869) : see declaration of 'getprotobynumber'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2201) : error C2375: 'getprotobyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(871) : see declaration of 'getprotobyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2221) : error C2375: 'WSAStartup' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(875) : see declaration of 'WSAStartup'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2239) : error C2375: 'WSACleanup' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(879) : see declaration of 'WSACleanup'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2256) : error C2375: 'WSASetLastError' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(881) : see declaration of 'WSASetLastError'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2273) : error C2375: 'WSAGetLastError' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(883) : see declaration of 'WSAGetLastError'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2290) : error C2375: 'WSAIsBlocking' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(885) : see declaration of 'WSAIsBlocking'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2307) : error C2375: 'WSAUnhookBlockingHook' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(887) : see declaration of 'WSAUnhookBlockingHook'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2324) : error C2375: 'WSASetBlockingHook' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(889) : see declaration of 'WSASetBlockingHook'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2341) : error C2375: 'WSACancelBlockingCall' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(891) : see declaration of 'WSACancelBlockingCall'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2363) : error C2375: 'WSAAsyncGetServByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(893) : see declaration of 'WSAAsyncGetServByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2390) : error C2375: 'WSAAsyncGetServByPort' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(901) : see declaration of 'WSAAsyncGetServByPort'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2416) : error C2375: 'WSAAsyncGetProtoByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(909) : see declaration of 'WSAAsyncGetProtoByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2441) : error C2375: 'WSAAsyncGetProtoByNumber' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(916) : see declaration of 'WSAAsyncGetProtoByNumber'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2466) : error C2375: 'WSAAsyncGetHostByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(923) : see declaration of 'WSAAsyncGetHostByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2493) : error C2375: 'WSAAsyncGetHostByAddr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(930) : see declaration of 'WSAAsyncGetHostByAddr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2516) : error C2375: 'WSACancelAsyncRequest' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(939) : see declaration of 'WSACancelAsyncRequest'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2536) : error C2375: 'WSAAsyncSelect' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(941) : see declaration of 'WSAAsyncSelect'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2143: syntax error : missing ';' before '*'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2501: 'GameStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2501: 'm_pPlayerGameStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2143: syntax error : missing ';' before '*'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2501: 'ConnectStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2501: 'm_pNetConnectStatus' : missing storage-class or type specifiers
+ClientConnectListWnd.cpp
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(109) : error C2011: 'fd_set' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(144) : warning C4005: 'FD_SET' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(88) : see previous definition of 'FD_SET'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(153) : error C2011: 'timeval' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(209) : error C2011: 'hostent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(222) : error C2011: 'netent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(229) : error C2011: 'servent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(241) : error C2011: 'protoent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(327) : error C2011: 'in_addr' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(385) : error C2011: 'sockaddr_in' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(395) : error C2011: 'WSAData' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(455) : warning C4005: 'SO_DONTLINGER' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(409) : see previous definition of 'SO_DONTLINGER'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(512) : warning C4005: 'AF_IPX' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(467) : see previous definition of 'AF_IPX'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(540) : warning C4005: 'AF_MAX' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(486) : see previous definition of 'AF_MAX'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(546) : error C2011: 'sockaddr' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(586) : error C2011: 'sockproto' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(625) : error C2011: 'linger' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(638) : warning C4005: 'SOMAXCONN' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(551) : see previous definition of 'SOMAXCONN'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(663) : warning C4005: 'FD_READ' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(569) : see previous definition of 'FD_READ'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(666) : warning C4005: 'FD_WRITE' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(570) : see previous definition of 'FD_WRITE'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(669) : warning C4005: 'FD_OOB' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(571) : see previous definition of 'FD_OOB'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(672) : warning C4005: 'FD_ACCEPT' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(572) : see previous definition of 'FD_ACCEPT'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(675) : warning C4005: 'FD_CONNECT' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(573) : see previous definition of 'FD_CONNECT'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(678) : warning C4005: 'FD_CLOSE' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(574) : see previous definition of 'FD_CLOSE'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1610) : error C2375: 'accept' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(742) : see declaration of 'accept'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1631) : error C2375: 'bind' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(747) : see declaration of 'bind'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1650) : error C2375: 'closesocket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(752) : see declaration of 'closesocket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1669) : error C2375: 'connect' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(754) : see declaration of 'connect'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1690) : error C2375: 'ioctlsocket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(759) : see declaration of 'ioctlsocket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1711) : error C2375: 'getpeername' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(764) : see declaration of 'getpeername'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1732) : error C2375: 'getsockname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(769) : see declaration of 'getsockname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1755) : error C2375: 'getsockopt' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(774) : see declaration of 'getsockopt'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1776) : error C2375: 'htonl' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(781) : see declaration of 'htonl'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1793) : error C2375: 'htons' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(783) : see declaration of 'htons'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1810) : error C2375: 'inet_addr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(785) : see declaration of 'inet_addr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1827) : error C2375: 'inet_ntoa' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(787) : see declaration of 'inet_ntoa'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1845) : error C2375: 'listen' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(789) : see declaration of 'listen'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1863) : error C2375: 'ntohl' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(793) : see declaration of 'ntohl'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1880) : error C2375: 'ntohs' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(795) : see declaration of 'ntohs'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1900) : error C2375: 'recv' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(797) : see declaration of 'recv'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1925) : error C2375: 'recvfrom' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(803) : see declaration of 'recvfrom'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1951) : error C2375: 'select' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(811) : see declaration of 'select'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1975) : error C2375: 'send' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(818) : see declaration of 'send'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2000) : error C2375: 'sendto' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(824) : see declaration of 'sendto'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2026) : error C2375: 'setsockopt' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(832) : see declaration of 'setsockopt'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2048) : error C2375: 'shutdown' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(839) : see declaration of 'shutdown'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2068) : error C2375: 'socket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(843) : see declaration of 'socket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2091) : error C2375: 'gethostbyaddr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(850) : see declaration of 'gethostbyaddr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2110) : error C2375: 'gethostbyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(855) : see declaration of 'gethostbyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2128) : error C2375: 'gethostname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(857) : see declaration of 'gethostname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2147) : error C2375: 'getservbyport' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(861) : see declaration of 'getservbyport'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2166) : error C2375: 'getservbyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(865) : see declaration of 'getservbyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2184) : error C2375: 'getprotobynumber' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(869) : see declaration of 'getprotobynumber'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2201) : error C2375: 'getprotobyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(871) : see declaration of 'getprotobyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2221) : error C2375: 'WSAStartup' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(875) : see declaration of 'WSAStartup'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2239) : error C2375: 'WSACleanup' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(879) : see declaration of 'WSACleanup'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2256) : error C2375: 'WSASetLastError' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(881) : see declaration of 'WSASetLastError'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2273) : error C2375: 'WSAGetLastError' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(883) : see declaration of 'WSAGetLastError'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2290) : error C2375: 'WSAIsBlocking' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(885) : see declaration of 'WSAIsBlocking'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2307) : error C2375: 'WSAUnhookBlockingHook' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(887) : see declaration of 'WSAUnhookBlockingHook'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2324) : error C2375: 'WSASetBlockingHook' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(889) : see declaration of 'WSASetBlockingHook'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2341) : error C2375: 'WSACancelBlockingCall' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(891) : see declaration of 'WSACancelBlockingCall'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2363) : error C2375: 'WSAAsyncGetServByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(893) : see declaration of 'WSAAsyncGetServByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2390) : error C2375: 'WSAAsyncGetServByPort' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(901) : see declaration of 'WSAAsyncGetServByPort'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2416) : error C2375: 'WSAAsyncGetProtoByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(909) : see declaration of 'WSAAsyncGetProtoByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2441) : error C2375: 'WSAAsyncGetProtoByNumber' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(916) : see declaration of 'WSAAsyncGetProtoByNumber'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2466) : error C2375: 'WSAAsyncGetHostByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(923) : see declaration of 'WSAAsyncGetHostByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2493) : error C2375: 'WSAAsyncGetHostByAddr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(930) : see declaration of 'WSAAsyncGetHostByAddr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2516) : error C2375: 'WSACancelAsyncRequest' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(939) : see declaration of 'WSACancelAsyncRequest'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2536) : error C2375: 'WSAAsyncSelect' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(941) : see declaration of 'WSAAsyncSelect'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2143: syntax error : missing ';' before '*'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2501: 'GameStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2501: 'm_pPlayerGameStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2143: syntax error : missing ';' before '*'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2501: 'ConnectStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2501: 'm_pNetConnectStatus' : missing storage-class or type specifiers
+ServerLocalControlWnd.cpp
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(109) : error C2011: 'fd_set' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(144) : warning C4005: 'FD_SET' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(88) : see previous definition of 'FD_SET'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(153) : error C2011: 'timeval' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(209) : error C2011: 'hostent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(222) : error C2011: 'netent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(229) : error C2011: 'servent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(241) : error C2011: 'protoent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(327) : error C2011: 'in_addr' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(385) : error C2011: 'sockaddr_in' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(395) : error C2011: 'WSAData' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(455) : warning C4005: 'SO_DONTLINGER' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(409) : see previous definition of 'SO_DONTLINGER'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(512) : warning C4005: 'AF_IPX' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(467) : see previous definition of 'AF_IPX'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(540) : warning C4005: 'AF_MAX' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(486) : see previous definition of 'AF_MAX'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(546) : error C2011: 'sockaddr' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(586) : error C2011: 'sockproto' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(625) : error C2011: 'linger' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(638) : warning C4005: 'SOMAXCONN' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(551) : see previous definition of 'SOMAXCONN'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(663) : warning C4005: 'FD_READ' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(569) : see previous definition of 'FD_READ'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(666) : warning C4005: 'FD_WRITE' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(570) : see previous definition of 'FD_WRITE'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(669) : warning C4005: 'FD_OOB' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(571) : see previous definition of 'FD_OOB'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(672) : warning C4005: 'FD_ACCEPT' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(572) : see previous definition of 'FD_ACCEPT'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(675) : warning C4005: 'FD_CONNECT' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(573) : see previous definition of 'FD_CONNECT'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(678) : warning C4005: 'FD_CLOSE' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(574) : see previous definition of 'FD_CLOSE'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1610) : error C2375: 'accept' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(742) : see declaration of 'accept'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1631) : error C2375: 'bind' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(747) : see declaration of 'bind'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1650) : error C2375: 'closesocket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(752) : see declaration of 'closesocket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1669) : error C2375: 'connect' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(754) : see declaration of 'connect'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1690) : error C2375: 'ioctlsocket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(759) : see declaration of 'ioctlsocket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1711) : error C2375: 'getpeername' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(764) : see declaration of 'getpeername'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1732) : error C2375: 'getsockname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(769) : see declaration of 'getsockname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1755) : error C2375: 'getsockopt' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(774) : see declaration of 'getsockopt'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1776) : error C2375: 'htonl' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(781) : see declaration of 'htonl'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1793) : error C2375: 'htons' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(783) : see declaration of 'htons'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1810) : error C2375: 'inet_addr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(785) : see declaration of 'inet_addr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1827) : error C2375: 'inet_ntoa' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(787) : see declaration of 'inet_ntoa'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1845) : error C2375: 'listen' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(789) : see declaration of 'listen'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1863) : error C2375: 'ntohl' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(793) : see declaration of 'ntohl'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1880) : error C2375: 'ntohs' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(795) : see declaration of 'ntohs'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1900) : error C2375: 'recv' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(797) : see declaration of 'recv'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1925) : error C2375: 'recvfrom' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(803) : see declaration of 'recvfrom'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1951) : error C2375: 'select' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(811) : see declaration of 'select'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1975) : error C2375: 'send' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(818) : see declaration of 'send'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2000) : error C2375: 'sendto' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(824) : see declaration of 'sendto'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2026) : error C2375: 'setsockopt' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(832) : see declaration of 'setsockopt'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2048) : error C2375: 'shutdown' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(839) : see declaration of 'shutdown'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2068) : error C2375: 'socket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(843) : see declaration of 'socket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2091) : error C2375: 'gethostbyaddr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(850) : see declaration of 'gethostbyaddr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2110) : error C2375: 'gethostbyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(855) : see declaration of 'gethostbyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2128) : error C2375: 'gethostname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(857) : see declaration of 'gethostname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2147) : error C2375: 'getservbyport' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(861) : see declaration of 'getservbyport'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2166) : error C2375: 'getservbyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(865) : see declaration of 'getservbyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2184) : error C2375: 'getprotobynumber' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(869) : see declaration of 'getprotobynumber'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2201) : error C2375: 'getprotobyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(871) : see declaration of 'getprotobyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2221) : error C2375: 'WSAStartup' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(875) : see declaration of 'WSAStartup'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2239) : error C2375: 'WSACleanup' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(879) : see declaration of 'WSACleanup'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2256) : error C2375: 'WSASetLastError' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(881) : see declaration of 'WSASetLastError'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2273) : error C2375: 'WSAGetLastError' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(883) : see declaration of 'WSAGetLastError'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2290) : error C2375: 'WSAIsBlocking' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(885) : see declaration of 'WSAIsBlocking'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2307) : error C2375: 'WSAUnhookBlockingHook' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(887) : see declaration of 'WSAUnhookBlockingHook'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2324) : error C2375: 'WSASetBlockingHook' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(889) : see declaration of 'WSASetBlockingHook'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2341) : error C2375: 'WSACancelBlockingCall' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(891) : see declaration of 'WSACancelBlockingCall'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2363) : error C2375: 'WSAAsyncGetServByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(893) : see declaration of 'WSAAsyncGetServByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2390) : error C2375: 'WSAAsyncGetServByPort' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(901) : see declaration of 'WSAAsyncGetServByPort'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2416) : error C2375: 'WSAAsyncGetProtoByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(909) : see declaration of 'WSAAsyncGetProtoByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2441) : error C2375: 'WSAAsyncGetProtoByNumber' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(916) : see declaration of 'WSAAsyncGetProtoByNumber'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2466) : error C2375: 'WSAAsyncGetHostByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(923) : see declaration of 'WSAAsyncGetHostByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2493) : error C2375: 'WSAAsyncGetHostByAddr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(930) : see declaration of 'WSAAsyncGetHostByAddr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2516) : error C2375: 'WSACancelAsyncRequest' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(939) : see declaration of 'WSACancelAsyncRequest'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2536) : error C2375: 'WSAAsyncSelect' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(941) : see declaration of 'WSAAsyncSelect'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2143: syntax error : missing ';' before '*'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2501: 'GameStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2501: 'm_pPlayerGameStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2143: syntax error : missing ';' before '*'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2501: 'ConnectStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2501: 'm_pNetConnectStatus' : missing storage-class or type specifiers
+SwordOnLineServer.cpp
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(109) : error C2011: 'fd_set' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(144) : warning C4005: 'FD_SET' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(88) : see previous definition of 'FD_SET'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(153) : error C2011: 'timeval' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(209) : error C2011: 'hostent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(222) : error C2011: 'netent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(229) : error C2011: 'servent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(241) : error C2011: 'protoent' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(327) : error C2011: 'in_addr' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(385) : error C2011: 'sockaddr_in' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(395) : error C2011: 'WSAData' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(455) : warning C4005: 'SO_DONTLINGER' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(409) : see previous definition of 'SO_DONTLINGER'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(512) : warning C4005: 'AF_IPX' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(467) : see previous definition of 'AF_IPX'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(540) : warning C4005: 'AF_MAX' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(486) : see previous definition of 'AF_MAX'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(546) : error C2011: 'sockaddr' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(586) : error C2011: 'sockproto' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(625) : error C2011: 'linger' : 'struct' type redefinition
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(638) : warning C4005: 'SOMAXCONN' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(551) : see previous definition of 'SOMAXCONN'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(663) : warning C4005: 'FD_READ' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(569) : see previous definition of 'FD_READ'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(666) : warning C4005: 'FD_WRITE' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(570) : see previous definition of 'FD_WRITE'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(669) : warning C4005: 'FD_OOB' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(571) : see previous definition of 'FD_OOB'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(672) : warning C4005: 'FD_ACCEPT' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(572) : see previous definition of 'FD_ACCEPT'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(675) : warning C4005: 'FD_CONNECT' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(573) : see previous definition of 'FD_CONNECT'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(678) : warning C4005: 'FD_CLOSE' : macro redefinition
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(574) : see previous definition of 'FD_CLOSE'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1610) : error C2375: 'accept' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(742) : see declaration of 'accept'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1631) : error C2375: 'bind' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(747) : see declaration of 'bind'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1650) : error C2375: 'closesocket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(752) : see declaration of 'closesocket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1669) : error C2375: 'connect' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(754) : see declaration of 'connect'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1690) : error C2375: 'ioctlsocket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(759) : see declaration of 'ioctlsocket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1711) : error C2375: 'getpeername' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(764) : see declaration of 'getpeername'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1732) : error C2375: 'getsockname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(769) : see declaration of 'getsockname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1755) : error C2375: 'getsockopt' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(774) : see declaration of 'getsockopt'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1776) : error C2375: 'htonl' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(781) : see declaration of 'htonl'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1793) : error C2375: 'htons' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(783) : see declaration of 'htons'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1810) : error C2375: 'inet_addr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(785) : see declaration of 'inet_addr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1827) : error C2375: 'inet_ntoa' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(787) : see declaration of 'inet_ntoa'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1845) : error C2375: 'listen' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(789) : see declaration of 'listen'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1863) : error C2375: 'ntohl' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(793) : see declaration of 'ntohl'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1880) : error C2375: 'ntohs' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(795) : see declaration of 'ntohs'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1900) : error C2375: 'recv' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(797) : see declaration of 'recv'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1925) : error C2375: 'recvfrom' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(803) : see declaration of 'recvfrom'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1951) : error C2375: 'select' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(811) : see declaration of 'select'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(1975) : error C2375: 'send' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(818) : see declaration of 'send'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2000) : error C2375: 'sendto' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(824) : see declaration of 'sendto'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2026) : error C2375: 'setsockopt' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(832) : see declaration of 'setsockopt'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2048) : error C2375: 'shutdown' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(839) : see declaration of 'shutdown'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2068) : error C2375: 'socket' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(843) : see declaration of 'socket'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2091) : error C2375: 'gethostbyaddr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(850) : see declaration of 'gethostbyaddr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2110) : error C2375: 'gethostbyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(855) : see declaration of 'gethostbyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2128) : error C2375: 'gethostname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(857) : see declaration of 'gethostname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2147) : error C2375: 'getservbyport' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(861) : see declaration of 'getservbyport'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2166) : error C2375: 'getservbyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(865) : see declaration of 'getservbyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2184) : error C2375: 'getprotobynumber' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(869) : see declaration of 'getprotobynumber'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2201) : error C2375: 'getprotobyname' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(871) : see declaration of 'getprotobyname'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2221) : error C2375: 'WSAStartup' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(875) : see declaration of 'WSAStartup'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2239) : error C2375: 'WSACleanup' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(879) : see declaration of 'WSACleanup'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2256) : error C2375: 'WSASetLastError' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(881) : see declaration of 'WSASetLastError'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2273) : error C2375: 'WSAGetLastError' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(883) : see declaration of 'WSAGetLastError'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2290) : error C2375: 'WSAIsBlocking' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(885) : see declaration of 'WSAIsBlocking'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2307) : error C2375: 'WSAUnhookBlockingHook' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(887) : see declaration of 'WSAUnhookBlockingHook'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2324) : error C2375: 'WSASetBlockingHook' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(889) : see declaration of 'WSASetBlockingHook'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2341) : error C2375: 'WSACancelBlockingCall' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(891) : see declaration of 'WSACancelBlockingCall'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2363) : error C2375: 'WSAAsyncGetServByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(893) : see declaration of 'WSAAsyncGetServByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2390) : error C2375: 'WSAAsyncGetServByPort' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(901) : see declaration of 'WSAAsyncGetServByPort'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2416) : error C2375: 'WSAAsyncGetProtoByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(909) : see declaration of 'WSAAsyncGetProtoByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2441) : error C2375: 'WSAAsyncGetProtoByNumber' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(916) : see declaration of 'WSAAsyncGetProtoByNumber'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2466) : error C2375: 'WSAAsyncGetHostByName' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(923) : see declaration of 'WSAAsyncGetHostByName'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2493) : error C2375: 'WSAAsyncGetHostByAddr' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(930) : see declaration of 'WSAAsyncGetHostByAddr'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2516) : error C2375: 'WSACancelAsyncRequest' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(939) : see declaration of 'WSACancelAsyncRequest'
+f:\downloads\swordonline\sdk\platformsdk\include\winsock2.h(2536) : error C2375: 'WSAAsyncSelect' : redefinition; different linkage
+        f:\downloads\swordonline\sdk\platformsdk\include\winsock.h(941) : see declaration of 'WSAAsyncSelect'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2143: syntax error : missing ';' before '*'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2501: 'GameStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(60) : error C2501: 'm_pPlayerGameStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2143: syntax error : missing ';' before '*'
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2501: 'ConnectStatus' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\s3server\swordonlineserver.h(61) : error C2501: 'm_pNetConnectStatus' : missing storage-class or type specifiers
+F:\DownLoads\SwordOnline\Sources\S3Server\SwordOnLineServer.cpp(24) : error C2146: syntax error : missing ';' before identifier 'g_PakList'
+F:\DownLoads\SwordOnline\Sources\S3Server\SwordOnLineServer.cpp(24) : error C2501: 'KPakList' : missing storage-class or type specifiers
+F:\DownLoads\SwordOnline\Sources\S3Server\SwordOnLineServer.cpp(24) : fatal error C1004: unexpected end of file found
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+S3Server.exe - 323 error(s), 55 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: S3AccClientSample - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/S3AccClientSample.res" /d "_DEBUG" /d "_AFXDLL" "F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3AccClientSample\S3AccClientSample.rc"" 
+Creating temporary file "D:\temp\RSPCC.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\s3accserver" /I "..\\" /I "d:\dx81sdk\include" /I "..\s3dbclient" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3DBClient\GameClient.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3AccServer\GlobalFun.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3AccClientSample\S3AccClientSample.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3AccClientSample\S3AccClientSampleDlg.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3AccServer\S3PDBSocketParser.cpp"
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3AccClientSample\Sample.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSPCC.tmp" 
+Creating temporary file "D:\temp\RSPCD.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\s3accserver" /I "..\\" /I "d:\dx81sdk\include" /I "..\s3dbclient" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/S3AccClientSample.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3AccClientSample\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSPCD.tmp" 
+Creating temporary file "D:\temp\RSPCE.tmp" with contents
+[
+Ws2_32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/S3AccClientSample.pdb" /debug /machine:I386 /out:"Debug/S3AccClientSample.exe" /pdbtype:sept 
+.\Debug\GameClient.obj
+.\Debug\GlobalFun.obj
+.\Debug\S3AccClientSample.obj
+.\Debug\S3AccClientSampleDlg.obj
+.\Debug\S3PDBSocketParser.obj
+.\Debug\Sample.obj
+.\Debug\StdAfx.obj
+.\Debug\S3AccClientSample.res
+]
+Creating command line "link.exe @D:\temp\RSPCE.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GameClient.cpp
+f:\downloads\swordonline\sources\sword3paysys\s3dbclient\gameclient.cpp(11) : fatal error C1083: Cannot open include file: 'Protocol\Protocol.h': No such file or directory
+GlobalFun.cpp
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\globalfun.cpp(475) : warning C4018: '<=' : signed/unsigned mismatch
+S3AccClientSample.cpp
+f:\downloads\swordonline\sources\sword3paysys\s3accclientsample\sample.h(14) : fatal error C1083: Cannot open include file: 'Protocol\Protocol.h': No such file or directory
+S3AccClientSampleDlg.cpp
+f:\downloads\swordonline\sources\sword3paysys\s3accclientsample\sample.h(14) : fatal error C1083: Cannot open include file: 'Protocol\Protocol.h': No such file or directory
+S3PDBSocketParser.cpp
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.h(17) : error C2143: syntax error : missing ';' before '*'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.h(17) : error C2501: 'IBYTE' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.h(17) : error C2501: 'm_lpData' : missing storage-class or type specifiers
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.h(37) : error C2143: syntax error : missing ',' before '*'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.h(37) : error C2059: syntax error : '*'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.h(39) : error C2061: syntax error : identifier 'IBYTE'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.h(41) : error C2061: syntax error : identifier 'IBYTE'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(24) : error C2143: syntax error : missing ',' before '*'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(24) : error C2059: syntax error : '*'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(30) : error C2065: 'pRawData' : undeclared identifier
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(32) : error C2065: 'ulEncodedSize' : undeclared identifier
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(32) : error C2065: 'ulRawSize' : undeclared identifier
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(33) : error C2065: 'pEncodedData' : undeclared identifier
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(42) : error C2065: 'IBYTE' : undeclared identifier
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(42) : error C2065: 'lpData' : undeclared identifier
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(42) : error C2065: 'dwSize' : undeclared identifier
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(42) : error C2275: 'DWORD' : illegal use of this type as an expression
+        f:\downloads\swordonline\sdk\platformsdk\include\windef.h(141) : see declaration of 'DWORD'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(42) : error C2065: 'lpRetData' : undeclared identifier
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(43) : error C2448: '<Unknown>' : function-style initializer appears to be a function definition
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(50) : error C2275: 'DWORD' : illegal use of this type as an expression
+        f:\downloads\swordonline\sdk\platformsdk\include\windef.h(141) : see declaration of 'DWORD'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(50) : error C2146: syntax error : missing ')' before identifier 'dwSize'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(50) : error C2350: 'S3PDBSocketParser::Parse' is not a static member
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(50) : error C2078: too many initializers
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(50) : error C2275: 'DWORD' : illegal use of this type as an expression
+        f:\downloads\swordonline\sdk\platformsdk\include\windef.h(141) : see declaration of 'DWORD'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(50) : error C2059: syntax error : ')'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(51) : error C2143: syntax error : missing ';' before '{'
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(51) : error C2447: missing function header (old-style formal list?)
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(147) : error C2065: 'm_lpData' : undeclared identifier
+f:\downloads\swordonline\sources\sword3paysys\s3accserver\s3pdbsocketparser.cpp(155) : error C2541: delete : cannot delete objects that are not pointers
+Sample.cpp
+f:\downloads\swordonline\sources\sword3paysys\s3accclientsample\sample.h(14) : fatal error C1083: Cannot open include file: 'Protocol\Protocol.h': No such file or directory
+Generating Code...
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+S3AccClientSample.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

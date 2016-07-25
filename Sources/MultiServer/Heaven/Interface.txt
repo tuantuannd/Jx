@@ -1,0 +1,27 @@
+IServer : 
+
+Startup
+Cleanup
+OpenService
+CloseService
+RegisterMsgFilter
+* Start
+* Stop
+PreparePackSink
+PackDataToClient
+SendPackToClient
+GetPackFromClient
+ShutdownClient
+GetClientCount
+GetClientInfo
+
+IClient :
+
+Startup
+Cleanup
+ConnectTo
+* Start
+* Stop
+SendPackToServer
+GetPackFromServer
+Shutdown

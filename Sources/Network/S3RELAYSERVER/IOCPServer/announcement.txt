@@ -1,0 +1,10 @@
+/*
+ * liupeng 2003.1
+ */
+Developing a truly scalable Winsock Server using IO Completion Ports(IOCP),
+but this module depend on the microsoft platform.
+requirements : 
+	* Windows NT/2000/XP: Included in Windows NT 4.0 and later.
+	* Windows 95/98/Me: Unsupported.
+
+Also, You can use SELECT model for the module be independent of platform.

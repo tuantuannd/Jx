@@ -22,8 +22,15 @@
 *.la
 *.a
 *.lib
+*.sdf
 
 # Executables
 *.exe
 *.out
 *.app
+serverrelease/
+clientrelease/
+serverdebug/
+clientdebug/
+debug/
+release/

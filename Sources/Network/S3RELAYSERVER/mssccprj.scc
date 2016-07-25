@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[Sword3RelaySys.dsp]
+SCC_Aux_Path = "\\Swordonline\Sword3Home\sword3vss"
+SCC_Project_Name = "$/SwordOnline/Sources/Sword3PaySys/S3RELAYSERVER", DCTAAAAA
+
+[S3RelayServer.dsp]
+SCC_Aux_Path = "\\Swordonline\Sword3Home\sword3vss"
+SCC_Project_Name = "$/SwordOnline/Sources/Sword3PaySys/S3RELAYSERVER", DCTAAAAA

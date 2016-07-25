@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{454d88ef-8e77-416e-9371-20a752e33efc}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{231c04e8-f753-4324-8c98-78872d49b0f6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{20e56c1f-12f7-4e2f-8fb5-5d6b9c93bcf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\debug">
+      <UniqueIdentifier>{0351a882-9f23-4909-be63-b6e5abef98c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\release">
+      <UniqueIdentifier>{86931b06-a172-4c3d-be0e-191dd5f2e46e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b0dbbb9a-86af-4f9c-bb64-ef7f3b92e5d0}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KSOServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KTransferUnit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Headers\KRelayProtocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KSOServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KTransferUnit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\Lib\debug\common.lib">
+      <Filter>Lib\debug</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Lib\debug\CoreServer.lib">
+      <Filter>Lib\debug</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Lib\debug\engine.lib">
+      <Filter>Lib\debug</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Lib\release\common.lib">
+      <Filter>Lib\release</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Lib\release\CoreServer.lib">
+      <Filter>Lib\release</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Lib\release\engine.lib">
+      <Filter>Lib\release</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

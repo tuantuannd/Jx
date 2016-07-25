@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Represent3 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP108.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\engine\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "REPRESENT3_EXPORTS" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\Represent3\D3D_Device.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\Represent3\D3D_Shell.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\Represent3\D3D_Utils.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\iRepresent\Font\KCharSet.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\iRepresent\Font\KFont3.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\iRepresent\Font\KFontData.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\iRepresent\Font\KFontRes.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\iRepresent\Font\KMRU.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\Represent3\KRepresentShell3.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\iRepresent\RepresentUtility.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\iRepresent\Text\TextProcess.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\Represent3\TextureRes.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\Represent3\TextureResMgr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP108.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP109.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\engine\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "REPRESENT3_EXPORTS" /Fp"Release/Represent3.pch" /Yc"precompile.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\jxall\swrod3\SwordOnline\Sources\Represent\Represent3\precompile.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP109.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib d3dx9dt.lib d3d9.lib winmm.lib dxguid.lib ddraw.lib GdiPlus.lib /nologo /dll /incremental:no /pdb:"Release/Represent3.pdb" /map:"Release/Represent3.map" /debug /machine:I386 /out:"Release/Represent3.dll" /implib:"Release/Represent3.lib" /libpath:"..\..\..\Lib" 
+.\Release\D3D_Device.obj
+.\Release\D3D_Shell.obj
+.\Release\D3D_Utils.obj
+.\Release\KCharSet.obj
+.\Release\KFont3.obj
+.\Release\KFontData.obj
+.\Release\KFontRes.obj
+.\Release\KMRU.obj
+.\Release\KRepresentShell3.obj
+.\Release\precompile.obj
+.\Release\RepresentUtility.obj
+.\Release\TextProcess.obj
+.\Release\TextureRes.obj
+.\Release\TextureResMgr.obj
+..\..\..\Lib\release\engine.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10A.tmp"
+<h3>Output Window</h3>
+Compiling...
+precompile.cpp
+Compiling...
+D3D_Device.cpp
+D3D_Shell.cpp
+D3D_Utils.cpp
+KCharSet.cpp
+KFont3.cpp
+KFontData.cpp
+KFontRes.cpp
+KMRU.cpp
+KRepresentShell3.cpp
+RepresentUtility.cpp
+TextProcess.cpp
+TextureRes.cpp
+TextureResMgr.cpp
+Generating Code...
+Linking...
+   Creating library Release/Represent3.lib and object Release/Represent3.exp
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10E.bat" with contents
+[
+@echo off
+md ..\..\..\bin\client\release\
+copy Release\Represent3.dll ..\..\..\..\bin\client\Represent3.dll
+copy Release\Represent3.pdb ..\..\..\..\bin\client\Represent3.pdb
+copy Release\Represent3.map ..\..\..\..\bin\client\Represent3.map
+copy Release\Represent3.dll ..\..\..\..\bin\client\release\Represent3.dll
+copy Release\Represent3.pdb ..\..\..\..\bin\client\release\Represent3.pdb
+copy Release\Represent3.map ..\..\..\..\bin\client\release\Represent3.map
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10E.bat"
+
+子目录或文件 ..\..\..\bin\client\release\ 已经存在。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+已复制         1 个文件。
+
+
+
+<h3>Results</h3>
+Represent3.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

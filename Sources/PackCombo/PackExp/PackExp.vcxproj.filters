@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{998934b5-86a0-43b5-8b84-38a01fe55dba}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{22d8985e-e161-44c5-9bd0-4d1ca74e49f2}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="ucl">
+      <UniqueIdentifier>{163ab57e-e8a2-4290-9c0e-c3db524a1367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{e0c08ea9-98e2-4573-a85f-983d7b8377b8}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PackExp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SavePack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZPackFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\alloc.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\io.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2b_99.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2b_d.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2b_ds.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2b_to.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2d_99.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2d_d.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2d_ds.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2d_to.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2e_99.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2e_d.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2e_ds.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\n2e_to.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\ucl_crc.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\ucl_dll.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\ucl_init.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\ucl_ptr.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\ucl_str.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+    <ClCompile Include="ucl-1.01\src\ucl_util.c">
+      <Filter>ucl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SavePack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZPackFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl-1.01\src\fake16.h">
+      <Filter>ucl</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl-1.01\src\getbit.h">
+      <Filter>ucl</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl-1.01\src\internal.h">
+      <Filter>ucl</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl-1.01\src\ucl_conf.h">
+      <Filter>ucl</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl-1.01\src\ucl_ptr.h">
+      <Filter>ucl</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl-1.01\src\ucl_util.h">
+      <Filter>ucl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

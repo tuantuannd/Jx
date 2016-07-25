@@ -1,0 +1,40 @@
+typedef sequence<any>  DataSeq;
+
+interface SynDataSets
+{
+
+//名称为ObjName的服务器，尝试锁定索引为id的数据，返回获得的锁定号（挂号）
+	long Lock(in long MapId ,in long StyleId,in long Id, in string ObjName);
+
+//尝试解开数据索引为id，锁定号为index的数据锁
+	long UnLock(in long MapId ,in long StyleId,in long Id,in long index);
+
+//直接获得索引为id的数据的值
+	any GetData(in long MapId ,in long StyleId,in long Id);
+	any GetDataMember(in long MapId ,in long StyleId,in long Id,in long MemberId);
+
+//修改索引为id，的值为data，并返回成功与不成功
+	long SetData(in long MapId ,in long StyleId,in long Id, in any data);
+	long SetDataMember(in long MapId ,in long StyleId,in long Id,in long MemberId, in any data);
+
+
+//尝试锁定id，并获得其数据，如果成功Result大于零,返回值为数据，否则Result小于零
+	any GetDataWithLock(in long MapId ,in long StyleId,in long Id,out long Result, in string ObjName);
+	any GetDataMemberWithLock(in long MapId ,in long StyleId,in long Id,in long MemberId, in any data,out long Result ,in string ObjName);
+//尝试锁定id，并修改其数据，如果成功Result大于零,返回值为数据，否则Result小于零
+	long SetDataWithLock(in long MapId ,in long StyleId,in long Id,in any data, out long Result, in string ObjName);
+	long SetDataMemberWithLock(in long MapId, in long StyleId, in long Id, in long MemberId,  in any data, out long Result, in string ObjName);
+	
+//尝试锁定id，并获得其数据，如果成功Result大于零,返回值为数据，否则Result小于零，结束后自动解锁
+	any GetDataWithOnce(in long MapId ,in long StyleId,in long Id , out long Result, in string ObjName);
+	any GetDataMemberWithOnce(in long MapId, in long StyleId, in long Id, in long MemberId, out long Result, in string ObjName);
+
+	long SetDataWithOnce(in long MapId ,in long StyleId,in long Id ,in any data, out long Result, in string ObjName);
+	long SetDataMemberWithOnce(in long MapId, in long StyleId, in long Id, in long MemberId, in any data, out long Result, in string ObjName);
+
+	DataSeq	SaveDataSets(in long MapId, in long StyleId);
+	
+	 
+	 
+	
+};

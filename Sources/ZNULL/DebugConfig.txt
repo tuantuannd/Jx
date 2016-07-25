@@ -1,0 +1,24 @@
+KLVideo - Win32 Debug
+Common - Win32 Debug
+Engine - Win32 Debug
+Represent2 - Win32 Debug
+Represent3 - Win32 Debug
+FilterText - Win32 Debug
+Core - Win32 Server Debug
+Core - Win32 Client Debug
+Heaven - Win32 Debug
+Rainbow - Win32 Debug
+FilterText_StaticLib - Win32 Debug
+S3Client - Win32 Debug
+GameServer - Win32 Debug
+Bishop - Win32 Debug
+Goddess - Win32 Debug
+Sword3PaySys - Win32 Debug
+S3Relay - Win32 Debug
+S3RelayServer - Win32 Debug
+ExpandPackageStaticLib - Win32 Debug
+UpdateDLL - Win32 Debug
+AutoUpdateRes - Win32 Debug
+Autoupdate - Win32 Debug
+
+

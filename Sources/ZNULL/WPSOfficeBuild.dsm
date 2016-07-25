@@ -1,0 +1,403 @@
+'------------------------------------------------------------------------------
+'DESCRIPTION: BuildProject - 全局变量和常数!
+'NOTE: 
+'------------------------------------------------------------------------------
+Dim		gBuildProject
+Dim		gLogFile
+Dim		gInMacroRunning
+Const	cLogDBF = "logdbf.txt"
+Const	cAllConfig = "AllConfig.txt"
+Const	cDebugConfig = "DebugConfig.txt"
+Const	cReleaseConfig = "ReleaseConfig.txt"
+Const	cUniDebugConfig = "UniDebugConfig.txt"
+Const	cUniReleaseConfig = "UniReleaseConfig.txt"
+Const	cBuildConfigProject = "ZNull"
+Const	ForReading = 1, ForWriting = 2
+
+Function GetConfigPath
+	Dim Config_Prj
+	Dim Config_path
+	Config_path = ""
+	For Each Config_Prj in Projects
+		if Config_Prj.name = cBuildConfigProject then
+			Config_path = GetProjectDir(Config_Prj.FullName)
+			exit for
+		end if
+	Next
+	GetConfigPath = Config_path 
+End Function
+
+Function GetAllConfigFile
+	GetAllConfigFile = GetConfigPath() + cAllConfig
+End Function
+
+Function GetDebugConfigFile
+	GetDebugConfigFile = GetConfigPath() + cDebugConfig
+End Function
+
+Function GetReleaseConfigFile
+	GetReleaseConfigFile = GetConfigPath() + cReleaseConfig
+End Function
+
+Function GetUniDebugConfigFile
+	GetUniDebugConfigFile = GetConfigPath() + cUniDebugConfig
+End Function
+
+Function GetUniReleaseConfigFile
+	GetUniReleaseConfigFile = GetConfigPath() + cUniReleaseConfig
+End Function
+
+'------------------------------------------------------------------------------
+'DESCRIPTION:  关闭检查日志文件
+'NOTE: 
+'------------------------------------------------------------------------------
+Sub CloseLogFile(strLogFile)
+	Dim theDocument
+	For Each theDocument in Application.Documents
+		if theDocument.name = strLogFile then
+			theDocument.Close()
+			exit for
+		end if
+	Next
+
+
+End Sub
+
+'------------------------------------------------------------------------------
+'DESCRIPTION:  写日志文件函数
+'NOTE: 
+'------------------------------------------------------------------------------
+Sub StartLog(strLogFile)
+	Dim fso
+	Set fso = CreateObject("Scripting.FileSystemObject")
+	Set gLogFile = fso.OpenTextFile(strLogFile, ForWriting, True)
+End Sub
+
+Sub WriteLog(strwrite)
+	gLogFile.WriteLine strwrite
+End Sub
+
+Sub EndLog(bReserved)
+	gLogFile.Close
+	' 如果编译成功，Execute Batch
+	ExecuteCommand "UserTool8"
+End Sub
+
+'------------------------------------------------------------------------------
+'DESCRIPTION:  文件系统函数
+'NOTE: 
+'------------------------------------------------------------------------------
+Function IsFileExist(filespec)
+	Dim fso
+	Set fso = CreateObject("Scripting.FileSystemObject")
+	IsFileExist = fso.FileExists(filespec)
+End Function
+
+Function IsReadOnly(filespec)
+	Dim fso, f
+	Set fso = CreateObject("Scripting.FileSystemObject")
+	Set f = fso.GetFile(filespec)
+	IsReadOnly = f.Attributes and 1
+End Function
+
+'------------------------------------------------------------------------------
+'DESCRIPTION:  其他Utility函数
+'NOTE: 
+'------------------------------------------------------------------------------
+Function GetProjectDir(FullName)
+	Dim count
+	Dim proj_path
+	Dim full_path
+	proj_path = Split(StrReverse(FullName),"\",-1,1)
+	count = UBound(proj_path)
+	full_path = ""
+	for i = 1 to count 
+		full_path = full_path & "\" & proj_path(i)
+	next
+	GetProjectDir = StrReverse(full_path)
+End Function
+
+Function ReplaceText(selection, count, incrementby)
+	Dim str
+	Dim oldstr
+	selection.WordRight dsMove, count
+	selection.WordRight dsExtend, 1
+	str = selection.Text
+	oldstr = str
+	str = str + incrementby
+	selection.Text = str
+	ReplaceText = oldstr
+End Function
+
+'------------------------------------------------------------------------------
+'DESCRIPTION: 自动增加版本号，写日志文件!!
+'NOTE: Building-Version Auto Increasement
+'------------------------------------------------------------------------------
+Sub Application_BuildFinish(numError, numWarning)
+'(1) 如果在宏中，并且编译失败，写日志文件：
+	If gInMacroRunning = 1 Then
+		if numError <> 0 Or numWarning <> 0 Then
+			WriteLog("    编译错误: " + gBuildProject.Name + " - " + CStr(numError) + " error(s), " + CStr(numWarning) + " warning(s)")
+		End if
+	End if
+
+'(2) 如果编译成功，并且VersionNo.h文件存在，并且可写，则增加版本号：
+	Dim full_path
+	Dim version
+	Dim selection
+	If numError = 0 Then
+		If gInMacroRunning = 1 Then
+			full_path = GetProjectDir(gBuildProject.FullName)
+		Else
+			full_path = GetProjectDir(ActiveProject.FullName)
+		End If
+		full_path = full_path & "VersionNo.h"
+		If IsFileExist(full_path) <> False Then
+			If IsReadOnly(full_path) = False Then
+				'Open the VersionNo.h file
+				Documents.Open full_path
+				'Increment the version information
+				set selection = ActiveDocument.Selection
+				selection.StartOfDocument 
+				ReplaceText selection, 9, 1
+				selection.LineDown
+				selection.StartOfLine
+				ReplaceText selection, 9, 1
+				selection.LineDown
+				selection.StartOfLine
+				ReplaceText selection, 10, 1
+				selection.LineDown
+				selection.StartOfLine
+				version = ReplaceText(selection, 10, 1)
+				If gInMacroRunning = 1 Then
+					WriteLog "    Version - 1.0.0." & version
+				End If
+				ActiveDocument.Save
+				ActiveDocument.Close
+			End If
+		End If
+	End If
+End Sub
+
+'------------------------------------------------------------------------------
+'DESCRIPTION: BuildProject - Build某个Configuration
+'NOTE: 
+'------------------------------------------------------------------------------
+Sub BuildSpecialConfiguration(strConfiguration)
+	Dim projCol
+	Dim configCol
+	Dim numProjects
+	Dim numConfigs
+	WriteLog(CStr(Now) + "--------------------Configuration: " + strConfiguration + "--------------------")
+	set projCol = Projects
+	numProjects = projCol.Count
+	For i = 1 To numProjects
+	   Dim proj
+	   set proj = projCol(i)
+	   If proj.Type = "Build" Then
+		  set configCol = proj.Configurations
+		  For j = 1 to configCol.Count
+			 Dim config
+			 set config = configCol(j)
+			 If config.Name = strConfiguration Then
+				set gBuildProject = proj
+				gInMacroRunning = 1
+				Build config
+				gInMacroRunning = 0
+				exit Sub
+			 End If
+		  Next
+	   End If
+	Next
+	WriteLog("    致命错误: 该配置不存在！")
+End Sub
+
+'------------------------------------------------------------------------------
+'DESCRIPTION: BuildProject - Rebuild某个Configuration
+'NOTE: 
+'------------------------------------------------------------------------------
+Sub ReBuildAllSpecialConfiguration(strConfiguration)
+	Dim projCol
+	Dim configCol
+	Dim numProjects
+	Dim numConfigs
+	WriteLog(CStr(Now) + "--------------------Configuration: " + strConfiguration + "--------------------")
+	set projCol = Projects
+	numProjects = projCol.Count
+	For i = 1 To numProjects
+	   Dim proj
+	   set proj = projCol(i)
+	   If proj.Type = "Build" Then
+		  set configCol = proj.Configurations
+		  For j = 1 to configCol.Count
+			 Dim config
+			 set config = configCol(j)
+			 If config.Name = strConfiguration Then
+				set gBuildProject = proj
+				gInMacroRunning = 1
+				ReBuildAll config
+				gInMacroRunning = 0
+				exit Sub
+			 End If
+		  Next
+	   End If
+	Next
+	WriteLog("    致命错误: 该配置不存在！")
+End Sub
+
+'------------------------------------------------------------------------------
+'DESCRIPTION: BuildProject - Build配置文件（cConfigDBF）中的所有Configuration
+'NOTE: 
+'------------------------------------------------------------------------------
+Sub BuildAllProduct(cConfigDBF)
+	If IsFileExist(cConfigDBF) = False Then
+		exit sub
+	End If
+
+	CloseLogFile(cLogDBF)
+
+	Dim fso, ConfigurationFile
+	Set fso = CreateObject("Scripting.FileSystemObject")
+	StartLog(cLogDBF)
+	WriteLog(CStr(Now) + "====================Build All====================")
+	Set ConfigurationFile = fso.OpenTextFile(cConfigDBF, ForReading)
+	Dim strConfiguration
+	Do While ConfigurationFile.AtEndOfLine = False		
+		strConfiguration = ConfigurationFile.ReadLine
+		If strConfiguration <> "" Then
+			BuildSpecialConfiguration(strConfiguration)
+		End If
+	loop
+	ConfigurationFile.Close
+	WriteLog(CStr(Now) + "====================Build All====================")
+	EndLog(True)
+	
+	Application.Documents.Open cLogDBF, Auto, TRUE
+End Sub
+
+'------------------------------------------------------------------------------
+'DESCRIPTION: BuildProject - Rebuild配置文件（cConfigDBF）中的所有Configuration
+'NOTE: 
+'------------------------------------------------------------------------------
+Sub ReBuildAllProduct(cConfigDBF)
+	If IsFileExist(cConfigDBF) = False Then
+		exit sub
+	End If
+
+	CloseLogFile(cLogDBF)
+
+	Dim fso, ConfigurationFile
+	Set fso = CreateObject("Scripting.FileSystemObject")
+	StartLog(cLogDBF)
+	WriteLog(CStr(Now) + "====================Rebuild All====================")
+	Set ConfigurationFile = fso.OpenTextFile(cConfigDBF, ForReading)
+	Dim strConfiguration
+	Do While ConfigurationFile.AtEndOfLine = False
+		strConfiguration = ConfigurationFile.ReadLine
+		If strConfiguration <> "" Then
+			ReBuildAllSpecialConfiguration(strConfiguration)
+		End If
+	loop
+	ConfigurationFile.Close
+	WriteLog(CStr(Now) + "====================Rebuild All====================")
+	EndLog(True)
+
+	Application.Documents.Open cLogDBF, Auto, TRUE
+End Sub
+
+'------------------------------------------------------------------------------
+'以下为本文件中各个输出宏：
+
+Sub GenerateConfigFiles
+'DESCRIPTION: 初步建立各种配置文件，当然还需要人为修正，例如由于工程之间依赖关系，编译次序需要适当调整
+	Dim projCol
+	Dim configCol
+	Dim numProjects
+	Dim numConfigs
+	Dim fso, fAllConfig, fDebugConfig, fReleaseConfig, fUniDebugConfig, fUniReleaseConfig
+	Set fso = CreateObject("Scripting.FileSystemObject")
+	Set fAllConfig = fso.OpenTextFile(GetAllConfigFile(), ForWriting, True)
+	Set fDebugConfig = fso.OpenTextFile(GetDebugConfigFile(), ForWriting, True)
+	Set fReleaseConfig = fso.OpenTextFile(GetReleaseConfigFile(), ForWriting, True)
+	Set fUniDebugConfig = fso.OpenTextFile(GetUniDebugConfigFile(), ForWriting, True)
+	Set fUniReleaseConfig = fso.OpenTextFile(GetUniReleaseConfigFile(), ForWriting, True)
+	Set projCol = Projects
+	numProjects = projCol.Count
+	For i = 1 To numProjects
+	   Dim proj
+	   Set proj = projCol(i)
+	   If proj.Type = "Build" Then
+		  set configCol = proj.Configurations
+		  For j = 1 To configCol.Count
+			 Dim config
+			 Set config = configCol(j)
+			 'AllVersion
+			 fAllConfig.WriteLine config.Name
+			 'Debug、非Unicode
+			 If Instr(config.Name, "Debug") > 0 And InStr(config.Name, "Unicode") <= 0 Then
+				fDebugConfig.WriteLine config.Name
+			 'Release、非Unicode
+			 ElseIf Instr(config.Name, "Release") > 0 And InStr(config.Name, "Unicode") <= 0 Then
+				fReleaseConfig.WriteLine config.Name
+			 'Debug、Unicode
+			 ElseIf Instr(config.Name, "Debug") > 0 And InStr(config.Name, "Unicode") > 0 Then
+				fUniDebugConfig.WriteLine config.Name
+			 'Release、Unicode
+			 ElseIf Instr(config.Name, "Release") > 0 And InStr(config.Name, "Unicode") > 0 Then
+				fUniReleaseConfig.WriteLine config.Name
+			 End If
+		  Next
+	   End If
+	Next
+End Sub
+
+Sub BuildAllVersion
+'DESCRIPTION: BuildProject - Build 所有版本
+	BuildAllProduct(GetAllConfigFile())
+End Sub
+
+Sub RebuildAllVersion
+'DESCRIPTION: BuildProject - Rebuild 所有版本
+	ReBuildAllProduct(GetAllConfigFile())
+End Sub
+
+Sub BuildDebugVersion
+'DESCRIPTION: BuildProject - Build Debug、非Unicode版本
+	BuildAllProduct(GetDebugConfigFile())
+End Sub
+
+Sub RebuildDebugVersion
+'DESCRIPTION: BuildProject - Rebuild Debug、非Unicode版本
+	ReBuildAllProduct(GetDebugConfigFile())
+End Sub
+
+Sub BuildReleaseVersion
+'DESCRIPTION: BuildProject - Build Release、非Unicode版本
+	BuildAllProduct(GetReleaseConfigFile())
+End Sub
+
+Sub RebuildReleaseVersion
+'DESCRIPTION: BuildProject - Rebuild Release、非Unicode版本
+	ReBuildAllProduct(GetReleaseConfigFile())
+End Sub
+
+Sub BuildUniDebugVersion
+'DESCRIPTION: BuildProject - Build Debug、Unicode版本
+	BuildAllProduct(GetUniDebugConfigFile())
+End Sub
+
+Sub RebuildUniDebugVersion
+'DESCRIPTION: BuildProject - Rebuild Debug、Unicode版本
+	ReBuildAllProduct(GetUniDebugConfigFile())
+End Sub
+
+Sub BuildUniReleaseVersion
+'DESCRIPTION: BuildProject - Build Release、Unicode版本
+	BuildAllProduct(GetUniReleaseConfigFile())
+End Sub
+
+Sub RebuildUniReleaseVersion
+'DESCRIPTION: BuildProject - Rebuild Release、Unicode版本
+	ReBuildAllProduct(GetUniReleaseConfigFile())
+End Sub
+

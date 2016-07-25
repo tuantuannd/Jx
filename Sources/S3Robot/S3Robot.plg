@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: S3Robot - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\temp\RSPB8.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Engine\Src" /I "..\Network" /I "..\Core\Src" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/S3Robot.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\S3Robot\S3Robot.cpp"
+"F:\DownLoads\SwordOnline\Sources\S3Robot\S3RobotDlg.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSPB8.tmp" 
+Creating temporary file "D:\temp\RSPB9.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Engine\Src" /I "..\Network" /I "..\Core\Src" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\S3Robot\GameClient.cpp"
+"F:\DownLoads\SwordOnline\Sources\S3Robot\JXClient.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSPB9.tmp" 
+Creating temporary file "D:\temp\RSPBA.tmp" with contents
+[
+Engine.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/S3Robot.pdb" /debug /machine:I386 /out:"Debug/S3Robot.exe" /pdbtype:sept 
+.\Debug\S3Robot.obj
+.\Debug\S3RobotDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\GameClient.obj
+.\Debug\JXClient.obj
+.\Debug\HyperLink.obj
+.\Debug\S3Robot.res
+]
+Creating command line "link.exe @D:\temp\RSPBA.tmp"
+<h3>Output Window</h3>
+Compiling...
+S3Robot.cpp
+f:\downloads\swordonline\sources\s3robot\s3robotdlg.h(14) : fatal error C1083: Cannot open include file: 'kprotocol.h': No such file or directory
+S3RobotDlg.cpp
+f:\downloads\swordonline\sources\s3robot\s3robotdlg.h(14) : fatal error C1083: Cannot open include file: 'kprotocol.h': No such file or directory
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+S3Robot.exe - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

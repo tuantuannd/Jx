@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GatewayRobot - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\temp\RSP116.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Common" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\..\lib" /I "..\..\..\Headers" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "_USE_RAINBOW" /FR"Debug/" /Fp"Debug/GatewayRobot.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\MultiServer\GatewayRobot\GatewayRobot.cpp"
+"F:\DownLoads\SwordOnline\Sources\MultiServer\GatewayRobot\md5.cpp"
+"F:\DownLoads\SwordOnline\Sources\MultiServer\GatewayRobot\Player.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSP116.tmp" 
+Creating temporary file "D:\temp\RSP117.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Common" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\..\lib" /I "..\..\..\Headers" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "_USE_RAINBOW" /FR"Debug/" /Fp"Debug/GatewayRobot.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\MultiServer\GatewayRobot\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSP117.tmp" 
+Creating temporary file "D:\temp\RSP118.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib common.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/GatewayRobot.pdb" /debug /machine:I386 /out:"../../../../bin/client/GatewayRobot.exe" /pdbtype:sept 
+.\Debug\GatewayRobot.obj
+.\Debug\md5.obj
+.\Debug\Player.obj
+.\Debug\StdAfx.obj
+]
+Creating command line "link.exe @D:\temp\RSP118.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+GatewayRobot.cpp
+md5.cpp
+Player.cpp
+Generating Code...
+Linking...
+LINK : fatal error LNK1104: cannot open file "common.lib"
+Ö´ÐÐ link.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+GatewayRobot.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

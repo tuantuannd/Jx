@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ClientClone - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\temp\RSP106.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Common\\" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\roledbserver" /I "..\..\..\lib\\" /I "..\..\engine\src" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/ClientClone.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\MultiServer\ClientClone\ClientClone.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSP106.tmp" 
+Creating temporary file "D:\temp\RSP107.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Common\\" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\roledbserver" /I "..\..\..\lib\\" /I "..\..\engine\src" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/ClientClone.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\MultiServer\ClientClone\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSP107.tmp" 
+Creating temporary file "D:\temp\RSP108.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/ClientClone.pdb" /debug /machine:I386 /out:"..\..\..\..\bin\client\ClientClone.exe" /pdbtype:sept 
+.\Debug\ClientClone.obj
+.\Debug\StdAfx.obj
+]
+Creating command line "link.exe @D:\temp\RSP108.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ClientClone.cpp
+f:\downloads\swordonline\sources\s3client\login\logindef.h(48) : fatal error C1083: Cannot open include file: 'KProtocol.h': No such file or directory
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+ClientClone.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

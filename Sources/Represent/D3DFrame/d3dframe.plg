@@ -1,0 +1,488 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: d3dframe - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.JX-\LOCALS~1\Temp\RSP9A.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp".\Release/d3dframe.pch" /YX /Fo".\Release/" /Fd".\Release/" /FD /c 
+"E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dapp.cpp"
+"E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp"
+"E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dfile.cpp"
+"E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp"
+"E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dmath.cpp"
+"E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dtextr.cpp"
+"E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp"
+]
+Creating command line "cl.exe @"C:\DOCUME~1\ADMINI~1.JX-\LOCALS~1\Temp\RSP9A.tmp"" 
+Creating command line "link.exe -lib /nologo /out:".\Release\d3dframe.lib"  ".\Release\d3dapp.obj" ".\Release\d3denum.obj" ".\Release\d3dfile.obj" ".\Release\d3dframe.obj" ".\Release\d3dmath.obj" ".\Release\d3dtextr.obj" ".\Release\d3dutil.obj" "
+<h3>Output Window</h3>
+Compiling...
+d3dapp.cpp
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(43) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(43) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(43) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(44) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(44) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(44) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(45) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(45) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(45) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pddsFrontBuffer'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(46) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(46) : error C2501: 'm_pddsFrontBuffer' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBuffer'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(47) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(47) : error C2501: 'm_pddsBackBuffer' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBufferLeft'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(48) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(48) : error C2501: 'm_pddsBackBufferLeft' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsZBuffer'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(49) : error C2501: 'm_pddsZBuffer' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(54) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(58) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(62) : error C2146: syntax error : missing ';' before identifier 'GetDirectDraw'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(62) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(62) : warning C4183: 'GetDirectDraw': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(63) : error C2146: syntax error : missing ';' before identifier 'GetDirect3D'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(63) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(63) : warning C4183: 'GetDirect3D': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(64) : error C2146: syntax error : missing ';' before identifier 'GetD3DDevice'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(64) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(64) : warning C4183: 'GetD3DDevice': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(65) : error C2146: syntax error : missing ';' before identifier 'GetFrontBuffer'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(65) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(65) : warning C4183: 'GetFrontBuffer': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(66) : error C2146: syntax error : missing ';' before identifier 'GetBackBuffer'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(66) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(66) : warning C4183: 'GetBackBuffer': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(67) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurface'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(67) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(67) : warning C4183: 'GetRenderSurface': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(68) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurfaceLeft'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(68) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(68) : warning C4183: 'GetRenderSurfaceLeft': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(82) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(35) : error C2146: syntax error : missing ';' before identifier 'ddDeviceDesc'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(35) : error C2501: 'D3DDEVICEDESC7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(35) : error C2501: 'ddDeviceDesc' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(44) : error C2146: syntax error : missing ';' before identifier 'ddsdFullscreenMode'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(44) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(44) : error C2501: 'ddsdFullscreenMode' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(51) : error C2143: syntax error : missing ';' before '*'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(51) : error C2501: 'pddsdModes' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(71) : error C2065: 'fn' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(71) : error C2100: illegal indirection
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(71) : error C2059: syntax error : ','
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2065: 'ddsd' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(32) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2065: 'mtrl' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(34) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2065: 'light' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(36) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(46) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(46) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(47) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(47) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(48) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(48) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsRenderTarget'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(49) : error C2501: 'm_pddsRenderTarget' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(50) : error C2146: syntax error : missing ';' before identifier 'm_pddsRenderTargetLeft'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(50) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(50) : error C2501: 'm_pddsRenderTargetLeft' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(51) : error C2146: syntax error : missing ';' before identifier 'm_ddsdRenderTarget'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(51) : error C2501: 'm_ddsdRenderTarget' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(58) : error C2629: unexpected 'long ('
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DApp.h(58) : error C2238: unexpected token(s) preceding ';'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dapp.cpp(38) : error C2065: 'm_pDD' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dapp.cpp(39) : error C2065: 'm_pD3D' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dapp.cpp(40) : error C2065: 'm_pd3dDevice' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dapp.cpp(42) : error C2065: 'm_pddsRenderTarget' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dapp.cpp(42) : fatal error C1003: error count exceeds 100; stopping compilation
+d3denum.cpp
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(35) : error C2146: syntax error : missing ';' before identifier 'ddDeviceDesc'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(35) : error C2501: 'D3DDEVICEDESC7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(35) : error C2501: 'ddDeviceDesc' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(44) : error C2146: syntax error : missing ';' before identifier 'ddsdFullscreenMode'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(44) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(44) : error C2501: 'ddsdFullscreenMode' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(51) : error C2143: syntax error : missing ';' before '*'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(51) : error C2501: 'DDSURFACEDESC2' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(51) : error C2501: 'pddsdModes' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(71) : error C2065: 'fn' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(71) : error C2100: illegal indirection
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(71) : error C2059: syntax error : ','
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2065: 'ddsd' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(32) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2065: 'mtrl' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(34) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2065: 'light' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(36) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(22) : error C2199: syntax error : found 'HRESULT (' at global scope (was a declaration intended?)
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(37) : error C2065: 'p1' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(37) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(38) : error C2065: 'p2' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(38) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(40) : error C2227: left of '->dwWidth' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(40) : error C2227: left of '->dwWidth' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(42) : error C2227: left of '->dwWidth' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(42) : error C2227: left of '->dwWidth' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(45) : error C2227: left of '->dwHeight' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(45) : error C2227: left of '->dwHeight' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(47) : error C2227: left of '->dwHeight' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(47) : error C2227: left of '->dwHeight' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(50) : error C2227: left of '->ddpfPixelFormat' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(50) : error C2228: left of '.dwRGBBitCount' must have class/struct/union type
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(50) : error C2227: left of '->ddpfPixelFormat' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(50) : error C2228: left of '.dwRGBBitCount' must have class/struct/union type
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(52) : error C2227: left of '->ddpfPixelFormat' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(52) : error C2228: left of '.dwRGBBitCount' must have class/struct/union type
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(52) : error C2227: left of '->ddpfPixelFormat' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(52) : error C2228: left of '.dwRGBBitCount' must have class/struct/union type
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(65) : error C2065: 'pddsd' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(66) : error C2062: type 'void' unexpected
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(67) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(67) : error C2447: missing function header (old-style formal list?)
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(91) : error C2061: syntax error : identifier 'D3DDEVICEDESC7'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(97) : error C2065: 'pParentInfo' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(102) : error C2065: 'pDesc' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(102) : error C2227: left of '->dwDevCaps' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(102) : error C2065: 'D3DDEVCAPS_HWRASTERIZATION' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(103) : error C2039: 'ddDeviceDesc' : is not a member of 'D3DEnum_DeviceInfo'
+        E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(31) : see declaration of 'D3DEnum_DeviceInfo'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(109) : error C2227: left of '->deviceGUID' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(111) : error C2039: 'pddsdModes' : is not a member of 'D3DEnum_DeviceInfo'
+        E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DEnum.h(31) : see declaration of 'D3DEnum_DeviceInfo'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(111) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : warning C4390: ';' : empty controlled statement found; is this the intent?
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3denum.cpp(115) : fatal error C1003: error count exceeds 100; stopping compilation
+d3dfile.cpp
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2065: 'ddsd' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(32) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2065: 'mtrl' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(34) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2065: 'light' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(36) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DTextr.h(26) : error C2146: syntax error : missing ';' before identifier 'D3DTextr_GetSurface'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DTextr.h(26) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DTextr.h(26) : fatal error C1004: unexpected end of file found
+d3dframe.cpp
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(43) : error C2146: syntax error : missing ';' before identifier 'm_pDD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(43) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(43) : error C2501: 'm_pDD' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(44) : error C2146: syntax error : missing ';' before identifier 'm_pD3D'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(44) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(44) : error C2501: 'm_pD3D' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(45) : error C2146: syntax error : missing ';' before identifier 'm_pd3dDevice'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(45) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(45) : error C2501: 'm_pd3dDevice' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(46) : error C2146: syntax error : missing ';' before identifier 'm_pddsFrontBuffer'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(46) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(46) : error C2501: 'm_pddsFrontBuffer' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(47) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBuffer'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(47) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(47) : error C2501: 'm_pddsBackBuffer' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(48) : error C2146: syntax error : missing ';' before identifier 'm_pddsBackBufferLeft'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(48) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(48) : error C2501: 'm_pddsBackBufferLeft' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(49) : error C2146: syntax error : missing ';' before identifier 'm_pddsZBuffer'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(49) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(49) : error C2501: 'm_pddsZBuffer' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(54) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(58) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(62) : error C2146: syntax error : missing ';' before identifier 'GetDirectDraw'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(62) : error C2501: 'LPDIRECTDRAW7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(62) : warning C4183: 'GetDirectDraw': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(63) : error C2146: syntax error : missing ';' before identifier 'GetDirect3D'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(63) : error C2501: 'LPDIRECT3D7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(63) : warning C4183: 'GetDirect3D': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(64) : error C2146: syntax error : missing ';' before identifier 'GetD3DDevice'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(64) : error C2501: 'LPDIRECT3DDEVICE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(64) : warning C4183: 'GetD3DDevice': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(65) : error C2146: syntax error : missing ';' before identifier 'GetFrontBuffer'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(65) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(65) : warning C4183: 'GetFrontBuffer': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(66) : error C2146: syntax error : missing ';' before identifier 'GetBackBuffer'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(66) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(66) : warning C4183: 'GetBackBuffer': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(67) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurface'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(67) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(67) : warning C4183: 'GetRenderSurface': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(68) : error C2146: syntax error : missing ';' before identifier 'GetRenderSurfaceLeft'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(68) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(68) : warning C4183: 'GetRenderSurfaceLeft': member function definition looks like a ctor, but name does not match enclosing class
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DFrame.h(82) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2065: 'ddsd' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(32) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2065: 'mtrl' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(34) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2065: 'light' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(36) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(27) : error C2065: 'm_pddsFrontBuffer' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(28) : error C2065: 'm_pddsBackBuffer' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(29) : error C2065: 'm_pddsBackBufferLeft' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(31) : error C2065: 'm_pddsZBuffer' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(32) : error C2065: 'm_pd3dDevice' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(33) : error C2065: 'm_pDD' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(34) : error C2065: 'm_pD3D' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(65) : error C2227: left of '->SetCooperativeLevel' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(70) : error C2227: left of '->Release' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(74) : error C2227: left of '->Release' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(75) : error C2227: left of '->Release' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(76) : error C2227: left of '->Release' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(77) : error C2227: left of '->Release' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(78) : error C2227: left of '->Release' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(83) : error C2227: left of '->Release' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(100) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(107) : error C2065: 'pMode' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(107) : error C2065: 'dwFlags' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(117) : error C2227: left of '->ddsCaps' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(117) : error C2228: left of '.dwCaps2' must have class/struct/union type
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(117) : error C2065: 'DDSCAPS2_STEREOSURFACELEFT' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(139) : error C2061: syntax error : identifier 'DDSURFACEDESC2'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(146) : error C2065: 'IID_IDirect3DTnLHalDevice' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(210) : error C2065: 'DirectDrawCreateEx' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(210) : error C2065: 'IID_IDirectDraw7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(223) : error C2065: 'DDSCL_FPUSETUP' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(225) : error C2227: left of '->SetCooperativeLevel' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(233) : error C2146: syntax error : missing ';' before identifier 'ddsd'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(234) : error C2228: left of '.dwSize' must have class/struct/union type
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(235) : error C2227: left of '->GetDisplayMode' must point to class/struct/union
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(236) : error C2228: left of '.ddpfPixelFormat' must have class/struct/union type
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(236) : error C2228: left of '.dwRGBBitCount' must have class/struct/union type
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(250) : error C2065: 'pddsd' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(251) : error C2448: '<Unknown>' : function-style initializer appears to be a function definition
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(364) : error C2146: syntax error : missing ';' before identifier 'ddsd'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(366) : error C2228: left of '.dwSize' must have class/struct/union type
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dframe.cpp(366) : fatal error C1003: error count exceeds 100; stopping compilation
+d3dmath.cpp
+d3dtextr.cpp
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DTextr.h(26) : error C2146: syntax error : missing ';' before identifier 'D3DTextr_GetSurface'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DTextr.h(26) : error C2501: 'LPDIRECTDRAWSURFACE7' : missing storage-class or type specifiers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DTextr.h(26) : fatal error C1004: unexpected end of file found
+d3dutil.cpp
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2065: 'D3DDEVICEDESC7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2065: 'ddDevDesc' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(30) : error C2182: 'D3DUtil_InitDeviceDesc' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2065: 'DDSURFACEDESC2' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2065: 'ddsd' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(32) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2065: 'D3DMATERIAL7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2065: 'mtrl' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2146: syntax error : missing ')' before identifier 'r'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(34) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2065: 'D3DLIGHT7' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2065: 'light' : undeclared identifier
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2146: syntax error : missing ')' before identifier 'ltType'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(36) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(58) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(58) : error C2146: syntax error : missing ')' before identifier 'dwFlags'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(58) : error C2182: 'D3DUtil_InitSurfaceDesc' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(58) : error C2374: 'D3DUtil_InitSurfaceDesc' : redefinition; multiple initialization
+        E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(31) : see declaration of 'D3DUtil_InitSurfaceDesc'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(58) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(58) : error C2275: 'DWORD' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(141) : see declaration of 'DWORD'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(59) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(60) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(60) : error C2447: missing function header (old-style formal list?)
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(75) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(75) : error C2146: syntax error : missing ')' before identifier 'r'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(75) : error C2182: 'D3DUtil_InitMaterial' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(75) : error C2374: 'D3DUtil_InitMaterial' : redefinition; multiple initialization
+        E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(33) : see declaration of 'D3DUtil_InitMaterial'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(75) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(75) : error C2275: 'FLOAT' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\windef.h(145) : see declaration of 'FLOAT'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(76) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(77) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(77) : error C2447: missing function header (old-style formal list?)
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(92) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(92) : error C2146: syntax error : missing ')' before identifier 'ltType'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(92) : error C2182: 'D3DUtil_InitLight' : illegal use of type 'void'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(92) : error C2374: 'D3DUtil_InitLight' : redefinition; multiple initialization
+        E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\D3DUtil.h(35) : see declaration of 'D3DUtil_InitLight'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(92) : error C2078: too many initializers
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(92) : error C2275: 'D3DLIGHTTYPE' : illegal use of this type as an expression
+        D:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\d3dtypes.h(621) : see declaration of 'D3DLIGHTTYPE'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(93) : error C2059: syntax error : ')'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(94) : error C2143: syntax error : missing ';' before '{'
+E:\源代码\劍俠情緣2\劍俠情緣2\Swordman2005\Sword2005\Sources\Represent\D3DFrame\d3dutil.cpp(94) : error C2447: missing function header (old-style formal list?)
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+d3dframe.lib - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

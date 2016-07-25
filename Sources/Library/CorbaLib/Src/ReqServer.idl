@@ -1,0 +1,5 @@
+interface ReqServer
+{
+ void SendResult(in long id, in long index, in long reserve);
+ string GetServerInfo();    
+};

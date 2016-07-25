@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="界面">
+      <UniqueIdentifier>{55f3fe38-4a0e-489d-ade4-007501041afd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面基础">
+      <UniqueIdentifier>{a881fa3e-c063-4051-ba14-7bbb727e3e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用">
+      <UniqueIdentifier>{abff4b3c-a8ac-4d8f-bd53-81137aa7d12e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\登陆界面">
+      <UniqueIdentifier>{b59d1352-7ffb-4866-a68c-bb1d8504dd65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\主角信息,状态界面">
+      <UniqueIdentifier>{093c2933-cbff-4065-8680-effbb16bdc22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\管理界面">
+      <UniqueIdentifier>{f53c8010-3d16-4271-8a83-6fa2afd62a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\选项界面">
+      <UniqueIdentifier>{dd316a44-51ec-48d4-9228-c433cf732f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\初始界面">
+      <UniqueIdentifier>{efa3d797-8e65-4fcb-9c99-b955b1e63de2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\道具,装备,技能界面、储物箱">
+      <UniqueIdentifier>{49db60af-1d6e-4b58-baed-a41a48c9e4db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\其他界面">
+      <UniqueIdentifier>{9690f682-cb5c-4423-a474-c5a3a38de7ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\角色选择">
+      <UniqueIdentifier>{95c0caed-f54a-4c84-bb39-1f967bb0cda3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\聊天">
+      <UniqueIdentifier>{fe80916f-97a0-49bf-a60a-71c64c6e6d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\提示窗口">
+      <UniqueIdentifier>{8c6beca3-cbd1-4904-9340-2122673bc476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\组队">
+      <UniqueIdentifier>{7a787177-77c1-4e3b-a94f-3b3f0ac0a1c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\屏幕顶行控制条与消息界面">
+      <UniqueIdentifier>{bf3726dc-fb08-456d-b889-70d6f7c64639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\交易">
+      <UniqueIdentifier>{7a2e3e37-dc15-4ec2-8b27-462c3cb3a975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\游戏世界窗口">
+      <UniqueIdentifier>{a5efc318-9ee5-4fb0-aa0c-5a444b6923da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\系统消息">
+      <UniqueIdentifier>{34fedfbf-b292-40ad-852c-cb1c73b6b6b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\小地图">
+      <UniqueIdentifier>{687eec1a-bf8f-4720-8ed4-f44d3a5927db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\选颜色">
+      <UniqueIdentifier>{9a0dbcb2-33f7-4875-9a4b-53dd6b9dd6ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\新手进入界面">
+      <UniqueIdentifier>{ccdffebb-312e-4e3d-9b99-193f09d25b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\播放video">
+      <UniqueIdentifier>{e347394d-5f73-4fa9-b60e-3f57ec902b0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\帮助界面">
+      <UniqueIdentifier>{14c41339-2d33-411b-b1b1-d1829368f0b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\自动重连">
+      <UniqueIdentifier>{8b9b19d7-82a5-41a5-8f50-1b1be5cef4dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\任务记录">
+      <UniqueIdentifier>{5d79b61e-2b31-462d-9ac6-0a3e2a582041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\世界地图">
+      <UniqueIdentifier>{2936ac57-ad77-4af6-b33c-45154e14c4a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\新闻窗口">
+      <UniqueIdentifier>{4f3a0694-132a-4203-9c92-2c92057fcb40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\排名界面">
+      <UniqueIdentifier>{a745dcf1-68c0-4224-b41a-42b26b747ab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\帮会界面">
+      <UniqueIdentifier>{f388d803-2d8b-46fa-ad85-0d9f33d7993f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面应用\打造物品界面">
+      <UniqueIdentifier>{b5c28008-6d32-4fe6-87b0-785ef4f83dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\界面声音">
+      <UniqueIdentifier>{d6973af2-0849-4422-84a3-90c5ab8df1f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="其它">
+      <UniqueIdentifier>{10c44f04-42d4-479e-9614-03fb92ae5012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="网络连接">
+      <UniqueIdentifier>{a1593901-9207-458a-a97b-a3e5b983a85c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="登陆">
+      <UniqueIdentifier>{1373a9ec-5a28-466f-905d-880471165e77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="文字命令控制">
+      <UniqueIdentifier>{9437efbd-140c-4cfd-aa3f-0a11ae932fb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{ea7562db-7895-482a-aa88-f52433c92776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\debug">
+      <UniqueIdentifier>{6b19b308-49ea-4183-8789-4d7b21e80845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\release">
+      <UniqueIdentifier>{9054ab84-3dd2-4829-8b0a-3333e2d9c136}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ui\GameSpaceChangedNotify.cpp">
+      <Filter>界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\ShortcutKey.cpp">
+      <Filter>界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiBase.cpp">
+      <Filter>界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiShell.cpp">
+      <Filter>界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\AutoLocateWnd.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\ComWindow.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\MouseHover.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\PopupMenu.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\SpecialFuncs.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\TextPic.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\UiCursor.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\UiImage.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndButton.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndChessPanel.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndEdit.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndImage.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndImagePart.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndLabeledButton.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndList.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndList2.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndMessageListBox.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndMovingImage.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndObjContainer.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndPage.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndPureTextBtn.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\Wnds.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndScrollBar.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\elem\WndShadow.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndShowAnimate.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndText.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndToolBar.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndValueImage.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\Elem\WndWindow.cpp">
+      <Filter>界面\界面基础</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiConnectInfo.cpp">
+      <Filter>界面\界面应用\登陆界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiLogin.cpp">
+      <Filter>界面\界面应用\登陆界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiLoginBg.cpp">
+      <Filter>界面\界面应用\登陆界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiSelServer.cpp">
+      <Filter>界面\界面应用\登陆界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiContainer.cpp">
+      <Filter>界面\界面应用\主角信息,状态界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiFaceSelector.cpp">
+      <Filter>界面\界面应用\主角信息,状态界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiPlayerBar.cpp">
+      <Filter>界面\界面应用\主角信息,状态界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiStatus.cpp">
+      <Filter>界面\界面应用\主角信息,状态界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiManage.cpp">
+      <Filter>界面\界面应用\管理界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiOptions.cpp">
+      <Filter>界面\界面应用\选项界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiInit.cpp">
+      <Filter>界面\界面应用\初始界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiGetMoney.cpp">
+      <Filter>界面\界面应用\道具,装备,技能界面、储物箱</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiItem.cpp">
+      <Filter>界面\界面应用\道具,装备,技能界面、储物箱</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiSkills.cpp">
+      <Filter>界面\界面应用\道具,装备,技能界面、储物箱</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiSkillTree.cpp">
+      <Filter>界面\界面应用\道具,装备,技能界面、储物箱</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\uicase\UiStoreBox.cpp">
+      <Filter>界面\界面应用\道具,装备,技能界面、储物箱</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiESCDlg.cpp">
+      <Filter>界面\界面应用\其他界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiGetString.cpp">
+      <Filter>界面\界面应用\其他界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiMsgSel.cpp">
+      <Filter>界面\界面应用\其他界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiParadeItem.cpp">
+      <Filter>界面\界面应用\其他界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiSelPlayerNearby.cpp">
+      <Filter>界面\界面应用\其他界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiNewPlayer.cpp">
+      <Filter>界面\界面应用\角色选择</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiSelNativePlace.cpp">
+      <Filter>界面\界面应用\角色选择</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiSelPlayer.cpp">
+      <Filter>界面\界面应用\角色选择</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiChannelSubscibe.cpp">
+      <Filter>界面\界面应用\聊天</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiChatCentre.cpp">
+      <Filter>界面\界面应用\聊天</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiChatPhrase.cpp">
+      <Filter>界面\界面应用\聊天</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiChatStatus.cpp">
+      <Filter>界面\界面应用\聊天</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiInformation.cpp">
+      <Filter>界面\界面应用\提示窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiInformation2.cpp">
+      <Filter>界面\界面应用\提示窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiTeamManage.cpp">
+      <Filter>界面\界面应用\组队</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiHeaderControlBar.cpp">
+      <Filter>界面\界面应用\屏幕顶行控制条与消息界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\uicase\UiMsgCentrePad.cpp">
+      <Filter>界面\界面应用\屏幕顶行控制条与消息界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiToolsControlBar.cpp">
+      <Filter>界面\界面应用\屏幕顶行控制条与消息界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UIcase\UiShop.cpp">
+      <Filter>界面\界面应用\交易</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiTrade.cpp">
+      <Filter>界面\界面应用\交易</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiTradeConfirmWnd.cpp">
+      <Filter>界面\界面应用\交易</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiGame.cpp">
+      <Filter>界面\界面应用\游戏世界窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiSysMsgCentre.cpp">
+      <Filter>界面\界面应用\系统消息</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\uicase\UiMiniMap.cpp">
+      <Filter>界面\界面应用\小地图</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiSelColor.cpp">
+      <Filter>界面\界面应用\选颜色</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiNewPlayerStartMsg.cpp">
+      <Filter>界面\界面应用\新手进入界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiPlayVideo.cpp">
+      <Filter>界面\界面应用\播放video</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiHelper.cpp">
+      <Filter>界面\界面应用\帮助界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiHelper2.cpp">
+      <Filter>界面\界面应用\帮助界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiReconnect.cpp">
+      <Filter>界面\界面应用\自动重连</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiTaskDataFile.cpp">
+      <Filter>界面\界面应用\任务记录</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiTaskNote.cpp">
+      <Filter>界面\界面应用\任务记录</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiWorldMap.cpp">
+      <Filter>界面\界面应用\世界地图</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiNewsMessage.cpp">
+      <Filter>界面\界面应用\新闻窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiStrengthRank.cpp">
+      <Filter>界面\界面应用\排名界面</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\uicase\UiPopupPasswordQuery.cpp">
+      <Filter>界面\界面应用\帮会界面</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\uicase\UiTongAssignBox.cpp">
+      <Filter>界面\界面应用\帮会界面</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\uicase\UiTongCreateSheet.cpp">
+      <Filter>界面\界面应用\帮会界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiCase\UiTongGetString.cpp">
+      <Filter>界面\界面应用\帮会界面</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\uicase\UiTongManager.cpp">
+      <Filter>界面\界面应用\帮会界面</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\uicase\UiTrembleItem.cpp">
+      <Filter>界面\界面应用\打造物品界面</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\UiSoundSetting.cpp">
+      <Filter>界面\界面声音</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\ChatFilter.cpp">
+      <Filter>其它</Filter>
+    </ClCompile>
+    <ClCompile Include="Ui\FilterTextLib.cpp">
+      <Filter>其它</Filter>
+    </ClCompile>
+    <ClCompile Include="S3Client.cpp">
+      <Filter>其它</Filter>
+    </ClCompile>
+    <ClCompile Include="NetConnect\NetConnectAgent.cpp">
+      <Filter>网络连接</Filter>
+    </ClCompile>
+    <ClCompile Include="Login\Login.cpp">
+      <Filter>登陆</Filter>
+    </ClCompile>
+    <ClCompile Include="TextCtrlCmd\TextCtrlCmd.cpp">
+      <Filter>文字命令控制</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorCode.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ui\ShortcutKey.h">
+      <Filter>界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiBase.h">
+      <Filter>界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiShell.h">
+      <Filter>界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\AutoLocateWnd.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\ComWindow.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\MouseHover.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\PopupMenu.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\SpecialFuncs.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\TextPic.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\UiCursor.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\UiImage.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndButton.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndChessPanel.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndEdit.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndGameSpace.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndImage.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndImagePart.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndLabeledButton.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndList.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndList2.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndMessage.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndMessageListBox.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndMovingImage.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndObjContainer.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndPage.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndPureTextBtn.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\Wnds.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndScrollBar.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\elem\WndShadow.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndShowAnimate.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndText.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndToolBar.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndValueImage.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\Elem\WndWindow.h">
+      <Filter>界面\界面基础</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiConnectInfo.h">
+      <Filter>界面\界面应用\登陆界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiLogin.h">
+      <Filter>界面\界面应用\登陆界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiLoginBg.h">
+      <Filter>界面\界面应用\登陆界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiSelServer.h">
+      <Filter>界面\界面应用\登陆界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiContainer.h">
+      <Filter>界面\界面应用\主角信息,状态界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiFaceSelector.h">
+      <Filter>界面\界面应用\主角信息,状态界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiPlayerBar.h">
+      <Filter>界面\界面应用\主角信息,状态界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiStatus.h">
+      <Filter>界面\界面应用\主角信息,状态界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiOptions.h">
+      <Filter>界面\界面应用\选项界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiInit.h">
+      <Filter>界面\界面应用\初始界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiGetMoney.h">
+      <Filter>界面\界面应用\道具,装备,技能界面、储物箱</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiItem.h">
+      <Filter>界面\界面应用\道具,装备,技能界面、储物箱</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiSkills.h">
+      <Filter>界面\界面应用\道具,装备,技能界面、储物箱</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiSkillTree.h">
+      <Filter>界面\界面应用\道具,装备,技能界面、储物箱</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\uicase\UiStoreBox.h">
+      <Filter>界面\界面应用\道具,装备,技能界面、储物箱</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiESCDlg.h">
+      <Filter>界面\界面应用\其他界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiGetString.h">
+      <Filter>界面\界面应用\其他界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiMsgSel.h">
+      <Filter>界面\界面应用\其他界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiParadeItem.h">
+      <Filter>界面\界面应用\其他界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiSelPlayerNearby.h">
+      <Filter>界面\界面应用\其他界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiNewPlayer.h">
+      <Filter>界面\界面应用\角色选择</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiSelNativePlace.h">
+      <Filter>界面\界面应用\角色选择</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiSelPlayer.h">
+      <Filter>界面\界面应用\角色选择</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiChannelSubscibe.h">
+      <Filter>界面\界面应用\聊天</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiChatCentre.h">
+      <Filter>界面\界面应用\聊天</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiChatPhrase.h">
+      <Filter>界面\界面应用\聊天</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiChatStatus.h">
+      <Filter>界面\界面应用\聊天</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiInformation.h">
+      <Filter>界面\界面应用\提示窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiInformation2.h">
+      <Filter>界面\界面应用\提示窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiTeamManage.h">
+      <Filter>界面\界面应用\组队</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiHeaderControlBar.h">
+      <Filter>界面\界面应用\屏幕顶行控制条与消息界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiMsgCentrePad.h">
+      <Filter>界面\界面应用\屏幕顶行控制条与消息界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiToolsControlBar.h">
+      <Filter>界面\界面应用\屏幕顶行控制条与消息界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UIcase\UiShop.h">
+      <Filter>界面\界面应用\交易</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiTrade.h">
+      <Filter>界面\界面应用\交易</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiTradeConfirmWnd.h">
+      <Filter>界面\界面应用\交易</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiGame.h">
+      <Filter>界面\界面应用\游戏世界窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiSysMsgCentre.h">
+      <Filter>界面\界面应用\系统消息</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\uicase\UiMiniMap.h">
+      <Filter>界面\界面应用\小地图</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiSelColor.h">
+      <Filter>界面\界面应用\选颜色</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiNewPlayerStartMsg.h">
+      <Filter>界面\界面应用\新手进入界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiPlayVideo.h">
+      <Filter>界面\界面应用\播放video</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiHelper.h">
+      <Filter>界面\界面应用\帮助界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiHelper2.h">
+      <Filter>界面\界面应用\帮助界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiReconnect.h">
+      <Filter>界面\界面应用\自动重连</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiTaskDataFile.h">
+      <Filter>界面\界面应用\任务记录</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiTaskNote.h">
+      <Filter>界面\界面应用\任务记录</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiWorldMap.h">
+      <Filter>界面\界面应用\世界地图</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiNewsMessage.h">
+      <Filter>界面\界面应用\新闻窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiStrengthRank.h">
+      <Filter>界面\界面应用\排名界面</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\uicase\UiPopupPasswordQuery.h">
+      <Filter>界面\界面应用\帮会界面</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\uicase\UiTongAssignBox.h">
+      <Filter>界面\界面应用\帮会界面</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\uicase\UiTongCreateSheet.h">
+      <Filter>界面\界面应用\帮会界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiCase\UiTongGetString.h">
+      <Filter>界面\界面应用\帮会界面</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\uicase\UiTongManager.h">
+      <Filter>界面\界面应用\帮会界面</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\uicase\UiTrembleItem.h">
+      <Filter>界面\界面应用\打造物品界面</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\UiSoundSetting.h">
+      <Filter>界面\界面声音</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\ChatFilter.h">
+      <Filter>其它</Filter>
+    </ClInclude>
+    <ClInclude Include="Ui\FilterTextLib.h">
+      <Filter>其它</Filter>
+    </ClInclude>
+    <ClInclude Include="S3Client.h">
+      <Filter>其它</Filter>
+    </ClInclude>
+    <ClInclude Include="NetConnect\NetConnectAgent.h">
+      <Filter>网络连接</Filter>
+    </ClInclude>
+    <ClInclude Include="NetConnect\NetMsgTargetObject.h">
+      <Filter>网络连接</Filter>
+    </ClInclude>
+    <ClInclude Include="Login\Login.h">
+      <Filter>登陆</Filter>
+    </ClInclude>
+    <ClInclude Include="Login\LoginDef.h">
+      <Filter>登陆</Filter>
+    </ClInclude>
+    <ClInclude Include="TextCtrlCmd\TextCtrlCmd.h">
+      <Filter>文字命令控制</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorCode.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Script1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="test.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Ui\UiCase\UiManage.h">
+      <Filter>界面\界面应用\管理界面</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Lib\debug\CoreClient.lib">
+      <Filter>lib\debug</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Lib\debug\engine.lib">
+      <Filter>lib\debug</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Lib\release\CoreClient.lib">
+      <Filter>lib\release</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Lib\release\engine.lib">
+      <Filter>lib\release</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

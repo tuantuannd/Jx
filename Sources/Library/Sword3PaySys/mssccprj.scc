@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[S3DBInterface.dsp]
+SCC_Aux_Path = "\\Swordonline\Sword3Home\sword3vss"
+SCC_Project_Name = "$/SwordOnline/Sources/Sword3PaySys/XSHANJU/Sword3PaySys", MCGAAAAA
+
+[S3DBInterfaceLib.dsp]
+SCC_Aux_Path = "\\Swordonline\Sword3Home\sword3vss"
+SCC_Project_Name = "$/SwordOnline/Sources/Sword3PaySys/XSHANJU/Sword3PaySys", MCGAAAAA
+
+[Sword3PaySys.dsp]
+SCC_Aux_Path = "\\Swordonline\Sword3Home\sword3vss"
+SCC_Project_Name = "$/SwordOnline/Sources/Sword3PaySys/XSHANJU/Sword3PaySys", MCGAAAAA

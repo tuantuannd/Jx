@@ -1,0 +1,327 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MGATEWAY            ICON    DISCARDABLE     "MGateWay.ICO"
+IDI_SMALL               ICON    DISCARDABLE     "SMALL.ICO"
+IDI_INIFILE             ICON    DISCARDABLE     "ini.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_MGATEWAY MENU DISCARDABLE 
+BEGIN
+    POPUP "&System"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_MGATEWAY ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 222, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_MGATEWAY,IDC_MYICON,14,9,21,20
+    LTEXT           "MGateWay Version 1.0",IDC_STATIC,49,11,94,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,49,24,119,8
+    DEFPUSHBUTTON   "OK",IDOK,161,9,50,14,WS_GROUP
+END
+
+IDD_INITBOX DIALOGEX 0, 0, 325, 234
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | 
+    WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "MainGateWay - Initialization"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Start Service",IDOK,190,213,72,14
+    PUSHBUTTON      "Exit",IDCANCEL,268,213,50,14
+    LTEXT           "Config File",IDC_STATIC,20,7,35,12,SS_CENTERIMAGE
+    PUSHBUTTON      "...",IDC_BTN_SETUPFILEPATH,304,7,14,12,BS_FLAT
+    GROUPBOX        " Environment Variable ",IDC_STATIC,7,25,130,87
+    LTEXT           "Player maxed at",IDC_STATIC,15,37,52,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_MAXAT,70,37,58,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Precision",IDC_STATIC,15,54,52,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_PRECISION,70,54,58,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_SETUPFILEPATH,55,7,246,12,ES_LOWERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    GROUPBOX        " Server Infomation ",IDC_STATIC,7,115,311,90
+    LTEXT           "Account Server",IDC_STATIC,16,126,52,12,SS_CENTERIMAGE
+    LTEXT           "Role DB Server",IDC_STATIC,16,145,52,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_IP_ACCOUNTSVR,168,126,65,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_IP_ROLEDBSVR,168,145,65,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "IP Addr",IDC_STATIC,141,126,24,12,SS_CENTERIMAGE
+    RTEXT           "IP Addr",IDC_STATIC,141,145,24,12,SS_CENTERIMAGE
+    RTEXT           "- PORT",IDC_STATIC,235,126,25,12,SS_CENTERIMAGE
+    RTEXT           "- PORT",IDC_STATIC,235,145,25,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PORT_ACCOUNTSVR,262,126,22,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_PORT_ROLEDBSVR,262,145,22,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    RADIOBUTTON     "[ Established",IDC_ACCOUNTSVR_LINK_STATUS,78,126,52,12,
+                    BS_LEFTTEXT | BS_FLAT
+    RADIOBUTTON     "[ Established",IDC_ROLEDBSVR_LINK_STATUS,78,145,52,12,
+                    BS_LEFTTEXT | BS_FLAT
+    LTEXT           "]",IDC_STATIC,133,126,8,12,SS_CENTERIMAGE
+    LTEXT           "]",IDC_STATIC,133,145,8,12,SS_CENTERIMAGE
+    LTEXT           "Game Server Service",IDC_STATIC,16,169,73,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Client Service",IDC_STATIC,16,187,73,12,SS_CENTERIMAGE
+    RADIOBUTTON     "[ Listening",IDC_RADIO2,87,169,43,12,BS_LEFTTEXT | 
+                    BS_FLAT
+    RADIOBUTTON     "[ Listening",IDC_RADIO3,87,187,43,12,BS_LEFTTEXT | 
+                    BS_FLAT
+    LTEXT           "]",IDC_STATIC,133,169,8,11,SS_CENTERIMAGE
+    LTEXT           "]",IDC_STATIC,133,187,8,11,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,12,163,303,1
+    RTEXT           "PORT",IDC_STATIC,143,169,22,12,SS_CENTERIMAGE
+    RTEXT           "PORT",IDC_STATIC,143,187,22,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PORT_GAMESVR,168,169,22,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_PORT_CLIENTSVR,168,187,22,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    GROUPBOX        " System Infomation ",IDC_STATIC,145,25,173,87
+    LTEXT           "Local name :",IDC_STATIC,154,37,55,14,SS_CENTERIMAGE
+    LTEXT           "MGW version :",IDC_STATIC,154,55,55,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_USERNAME,211,37,99,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_PRODUCTVERSION,211,55,99,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "IP Address (0) :",IDC_STATIC,154,73,55,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_IPADDRESS0,211,73,99,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "IP Address (1) :",IDC_STATIC,154,91,55,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_IPADDRESS1,211,91,99,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    ICON            IDI_INIFILE,IDC_ICON_INIFILE,2,3,20,20,SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE
+END
+
+IDD_ANNOUNCEBOX DIALOG DISCARDABLE  0, 0, 99, 38
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+CAPTION "Announce"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CTEXT           "Wait for a moment . . . ",IDC_INFO_CTRL,7,7,85,24,
+                    SS_CENTERIMAGE | NOT WS_GROUP | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_INITBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_ANNOUNCEBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 92
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 31
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "kingsoft\0"
+            VALUE "FileDescription", "MGateWay\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MGateWay\0"
+            VALUE "LegalCopyright", "Copyright ? kingsoft 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MGateWay.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Kingsoft Main Gateway\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "MGateWay"
+    IDC_MGATEWAY            "MGATEWAY"
+    IDS_STARTUP_ERROR       "Launch abort! It have one instance only!"
+    IDS_LOADENVIRONMENT_ERROR 
+                            "Lanunch abort! It was found error when it should create an instance."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

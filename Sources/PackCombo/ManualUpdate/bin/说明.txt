@@ -1,0 +1,15 @@
+升级包制作：
+1.把所有需要升级的文件放入该目录
+2.打开编辑Update.dat文件(XML文件)，
+3.添加项目如下：
+	<File>
+		<FilePath>\data\</FilePath>
+		<FileName>script.pak</FileName>
+	</File>
+4.FilePath中为文件所要拷贝的目录,FileName为文件名。
+5.启动WinZip Self Extractor，制作自解压文件。
+
+
+自解压描述：
+剑侠情缘Online 手动更新程序
+游戏版本：Ver6.24

@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server", "server\server.vcproj", "{F41B531B-E606-456B-A41E-A722BD482AB6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client", "client\client.vcproj", "{55CA1841-3911-46D4-89B0-0DFA0A871987}"
+EndProject
+Global
+	GlobalSection(DevPartner Solution Properties) = postSolution
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F41B531B-E606-456B-A41E-A722BD482AB6}.Debug.ActiveCfg = Debug|Win32
+		{F41B531B-E606-456B-A41E-A722BD482AB6}.Debug.Build.0 = Debug|Win32
+		{F41B531B-E606-456B-A41E-A722BD482AB6}.Release.ActiveCfg = Release|Win32
+		{F41B531B-E606-456B-A41E-A722BD482AB6}.Release.Build.0 = Release|Win32
+		{55CA1841-3911-46D4-89B0-0DFA0A871987}.Debug.ActiveCfg = Debug|Win32
+		{55CA1841-3911-46D4-89B0-0DFA0A871987}.Debug.Build.0 = Debug|Win32
+		{55CA1841-3911-46D4-89B0-0DFA0A871987}.Release.ActiveCfg = Release|Win32
+		{55CA1841-3911-46D4-89B0-0DFA0A871987}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+	GlobalSection(DevPartner) = postSolution
+	EndGlobalSection
+	GlobalSection(DevPartner) = postSolution
+	EndGlobalSection
+	GlobalSection(DevPartner) = postSolution
+	EndGlobalSection
+EndGlobal

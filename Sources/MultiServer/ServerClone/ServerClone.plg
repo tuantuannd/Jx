@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ServerClone - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\temp\RSP150.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Common\\" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\roledbserver" /I "..\..\..\lib\\" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/ServerClone.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\MultiServer\ServerClone\ServerClone.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSP150.tmp" 
+Creating temporary file "D:\temp\RSP151.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Common\\" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\roledbserver" /I "..\..\..\lib\\" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/ServerClone.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\MultiServer\ServerClone\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSP151.tmp" 
+Creating temporary file "D:\temp\RSP152.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/ServerClone.pdb" /debug /machine:I386 /out:"..\..\..\..\bin\client\ServerClone.exe" /pdbtype:sept 
+.\Debug\ServerClone.obj
+.\Debug\StdAfx.obj
+]
+Creating command line "link.exe @D:\temp\RSP152.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ServerClone.cpp
+f:\downloads\swordonline\sources\roledbmanager\kroledbheader.h(4) : fatal error C1083: Cannot open include file: 'KProtocol.h': No such file or directory
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+ServerClone.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,85 @@
+任务系统设计文档
+
+设计时要求实现同时有几个一样的任务，怎么处理了？
+而且还可能是在同一个服务器上面
+任务的制定由GM指令来启动
+
+所以每块地图自身会有一个任务列表
+
+任务列表
+玩家有、整台服务器可能会有，每块地图也可能会有
+
+如何激活任务?
+
+1/GM指令
+?gm ds StartTask(id, mapid)
+
+SetGlobalValue(1,1)开启Task
+?gm ds StartTask(id, mapid)
+StartMapTask(mapid/mapname, taskid);
+taskname taskid \scriptpath
+ShowMapTaskList 显示某个地图当前激活的任务有哪些
+GetMapTask(taskid)取得当前玩家当前所在地图的某个任务id的值 
+SetMapTask(taskid, value);
+SetMapTask(mapid/mapname, taskid, value)
+
+记录当前任务中玩家的列表
+群发各个对员
+Msg2TaskTeam()
+每块地图有一个
+StopGlobalTimer()
+StartGblTimer()
+StartMapTimer()
+
+Mission
+//每个Mission有自已的独立的全局变量
+为每一个Mission记录玩家列表的统一的机制
+包括最大人数，等等都要有
+加个Chanel，有利于消息发送
+有功能可以编列所有的参加者id
+
+
+StartMission(mapid/mapname, missionid);
+AddMissionTimer(mapid, missionid, )
+一个Mission分布在多个地图上的情况有没有
+Mission到底是属于哪个成员，或者自身是独立的
+Mission可指对某个地图，也可以指对某个服务器内部
+而某个类型的Mission可能出现几个，怎么解决了
+
+StartMission(mapname, missionid);
+OnDeath(Mission);
+StartGMission(missionId);
+StopMission(mapname , missionid);
+
+那么脚本如何知道当前的是哪一个具体的Mission了?
+比如Npc死亡时
+//*******************************
+1有全局Mission和只指对某个地图的Mission!!!
+2可以同时存在多个相同的Mission在不同的地图上.
+3/一个玩家同时只能进行一个Mission
+*******************************//
+
+
+2、是否
+
+任务初始化脚本 InitMission(mapid)
+任务过程脚本   RunMission(mapid)
+任务中止脚本   ReleaseMission(mapid)
+
+
+KTask
+KTimerTask
+KTaskSet FindNext 记录每个Task的Index
+
+KMission
+
+有一个空间记录当前Mission所有人的列表
+
+死亡消息
+退出消息
+玩家死亡脚本
+时间脚本
+Npc死亡脚本
+对话脚本
+Trap脚本
+指定脚本

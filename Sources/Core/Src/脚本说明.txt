@@ -1,0 +1,83 @@
+单机版剧情脚本程序具有如下特点。
+g_StoryScriptList;
+1. 脚本由一个脚本列表控制类管理，每一个游戏循环调用处于激活状态下的脚本对象
+2. 每次调用脚本将动态创建脚本对象，当脚本调用全部完成后自动清除，或可由另一个脚本要求清除.
+3. 有一个类负责维护所有脚本的全局使用的变量,包括存取档
+4. 脚本内部可自由发消息
+
+单机版AI脚本
+g_ScriptList;
+
+
+如何接受? 关于选择对话框选择的问题？？？？？？？
+
+
+/dg runsf /script/abc.lua
+/dg runsc Say("大家好呀")
+/dg reloadsf /script/abc.lua
+/dg reloadallsf
+/GM runsf
+
+
+/GM runsf /script/abc.lua ondeath 12,34,56
+/GM runsc Say("大家好呀");
+
+/GM Kill abc
+
+脚本函数规定
+1,对话脚本函数名为main
+2、时间触发脚本名为OnTimer()
+3/Npc死亡脚本为OnDeath(死亡npcindex)
+4、界面回调函数   回调函数名(选择项nSel)
+
+?gm List AllPlayer
+
+Sale()
+
+OtherSale(maininfo,IniFileName.ini);
+
+MainInfo去哪里
+
+北京|100|OnGotoBeiJing
+南京|200
+上海|300
+123jh1jk
+23lkj42
+2lk3jl42
+23lkj4l2
+k2l3jl4
+23jl4l
+2l3kj4l
+k2jl3l4j
+
+
+OtherSale("MainInfo",10, "Weapon1|Desc|2000|OnSaleWeapon1", "Weapon2|DescB|1000|OnSaleWeapon2", "Weapon3|DescC|2000|OnSaleWeapon3");
+
+GetPrice(IniFileName, nIndex);
+
+function OnGotoBeijing(nResult, nindex)
+
+if (nResult == 1)then 
+	SetPos(北京,20,30);
+	else 
+	Say("");
+end;
+
+end;
+
+function OnSale(nResult, nIndex)
+
+70 100 - GetPrice(txt, nindex) = 30;
+30
+
+
+OtherSale(n, "Weapon1|Desc|2000|OnSaleWeapon1", "Weapon2|DescB|1000|OnSaleWeapon2", "Weapon3|DescC|2000|OnSaleWeapon3");
+
+function OnSaleWeapon1(nResult, nItemIndex)
+end;
+
+
+
+正在想了。
+西山居的策划真幸福，看看传奇的脚本指令是非常的单一的，如果写买东西的操作都是一步一步脚本实现的。你们倒好，想把这些堆给我们程序用代码实现，唉，苦呀
+

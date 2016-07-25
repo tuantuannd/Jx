@@ -1,0 +1,365 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\S3DBClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\S3DBClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 S3DBClient"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "S3DBClient 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_S3DBCLIENT_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "S3DBClient"
+MENU IDR_MAINMENU
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_MAINTAB,"SysTabControl32",0x0,0,0,166,69
+END
+
+IDD_PREFERENCES DIALOG DISCARDABLE  0, 0, 286, 211
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preferences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "IPAddress1",IDC_DBSERVER_ADDR,"SysIPAddress32",
+                    WS_TABSTOP,133,22,91,12
+    EDITTEXT        IDC_DBSERVER_PORT,133,43,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOCAL_PORT,133,107,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WAITTIME,133,129,46,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,61,182,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,174,182,50,14
+    GROUPBOX        "Database server setup",IDC_STATIC,8,6,269,81
+    LTEXT           "Address:",IDC_STATIC,15,22,111,8
+    LTEXT           "Port:",IDC_STATIC,15,43,97,8
+    LTEXT           "Connection time out:",IDC_STATIC,15,129,97,8
+    LTEXT           "milliseconds",IDC_STATIC,186,129,52,8
+    GROUPBOX        "Local setup",IDC_STATIC,8,91,269,81
+    LTEXT           "Port:",IDC_STATIC,15,107,97,8
+END
+
+IDD_ADDUSER DIALOG DISCARDABLE  0, 0, 187, 147
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add user"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,100,18,71,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,100,42,71,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORDCHECK,100,66,71,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,122,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,103,122,50,14
+    LTEXT           "Name :",IDC_STATIC,16,18,41,8
+    LTEXT           "Password :",IDC_STATIC,16,42,54,8
+    LTEXT           "Reinput password :",IDC_STATIC,16,66,78,8
+    COMBOBOX        IDC_PRIORITY,100,90,71,53,CBS_DROPDOWN | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Priority",IDC_STATIC,16,90,41,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "S3DBClient Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "S3DBClient\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "S3DBClient.EXE\0"
+            VALUE "ProductName", "S3DBClient 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Log &in",                     ID_LOGIN
+        MENUITEM "Log &out",                    ID_LOGOUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Main Face",                  ID_MAINFACE
+        MENUITEM "&Database User List",         ID_DATABASEUSER
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh",                    ID_REFRESH
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Add user",                   ID_ADDUSER
+        MENUITEM "&Delete user",                ID_DELETEUSER
+        MENUITEM SEPARATOR
+        MENUITEM "&Preferences",                ID_PREFERENCES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      ID_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ADDUSER DLGINIT
+BEGIN
+    IDC_PRIORITY, 0x403, 5, 0
+0x6552, 0x6461, "\000" 
+    IDC_PRIORITY, 0x403, 6, 0
+0x7257, 0x7469, 0x0065, 
+    IDC_PRIORITY, 0x403, 11, 0
+0x6552, 0x6461, 0x572d, 0x6972, 0x6574, "\000" 
+    IDC_PRIORITY, 0x403, 14, 0
+0x6441, 0x696d, 0x696e, 0x7473, 0x6172, 0x6f74, 0x0072, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 S3DBClient(&A)..."
+    IDS_LOCKBTTEXT          "Lock database"
+    IDS_ACTIVATEBTTEXT      "Activate database"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAGE1 DIALOG DISCARDABLE  0, 0, 356, 227
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Main face"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Lock database",IDC_LOCKDATABASE,8,10,76,14
+    EDITTEXT        IDC_ACCOUNTLOGPATH,87,49,165,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Change path...",IDC_CHANGELOGPATH,265,49,71,14
+    PUSHBUTTON      "Create account",IDC_CREATEACCOUNT,38,101,76,14
+    EDITTEXT        IDC_DEFAULTPASSWORD,180,124,54,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Delete account",IDC_DELETEACCOUNT,38,183,76,14
+    EDITTEXT        IDC_DELETEFROMID,162,183,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELETETOID,263,183,54,14,ES_AUTOHSCROLL
+    GROUPBOX        "Delete operation",IDC_STATIC,8,166,340,44
+    GROUPBOX        "Create operation",IDC_STATIC,7,84,340,77
+    LTEXT           "Log file path:",IDC_STATIC,20,49,61,8
+    LTEXT           "from ID#",IDC_STATIC,119,183,41,8
+    LTEXT           "to ID#",IDC_STATIC,221,183,41,8
+    GROUPBOX        "Log Preferences",IDC_STATIC,7,31,340,44
+    LTEXT           "Password:",IDC_STATIC,140,124,37,8
+    EDITTEXT        IDC_NUMOFCREATING,222,102,54,14,ES_AUTOHSCROLL
+    LTEXT           "Number of new account:",IDC_STATIC,127,102,92,8
+    LTEXT           "Real name:",IDC_STATIC,239,124,42,8
+    EDITTEXT        IDC_DEFAULTREALNAME,282,124,54,14,ES_AUTOHSCROLL
+    LTEXT           "Basic account:",IDC_STATIC,19,124,57,8
+    EDITTEXT        IDC_BASEACCOUNT,79,124,54,14,ES_AUTOHSCROLL
+    CONTROL         "Progress1",IDC_CREATEPRO,"msctls_progress32",WS_BORDER,
+                    18,143,319,14
+END
+
+IDD_PAGE2 DIALOG DISCARDABLE  0, 0, 356, 227
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Database user"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_DBUSERLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,4,5,347,216
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Log in"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_USERNAME,87,22,74,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,87,46,74,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,38,78,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,78,50,14
+    LTEXT           "Password:",IDC_STATIC,11,46,61,8
+    LTEXT           "User Name:",IDC_STATIC,11,22,61,8
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\S3DBClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

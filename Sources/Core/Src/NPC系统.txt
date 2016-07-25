@@ -1,0 +1,30 @@
+服务器端对客户端传输的东西：
+每个NPC在ACTIVATE的时候，把自己的资料向所在区域在内的相邻9个区域内的玩家发送。
+每当一个NPC处理一个COMMAND时，需要实时地把这个命令发出去。
+为同步状态发送的内容（可以每隔N个游戏循环发一次）：
+	DWORD				m_dwID;					// Npc的ID
+	DWORD				m_Kind;					// Npc的类型
+	DWORD				m_PassivityState;		// Npc的被动状态
+	DWORD				m_InitiativeState;		// Npc的主动状态
+	NPCCAMP				m_Camp;					// Npc的阵营
+	NPCSERIES			m_Series;				// Npc的系
+	int					m_SubWorldIndex;		// Npc所在的SubWorld ID
+	int					m_RegionIndex;			// Npc所在的Region ID
+	int					m_ActiveSkillID;		// Npc激活的技能ID
+	int					m_CurrentLife;			// Npc的当前生命
+	int					m_CurrentMaxLife;		// Npc的当前生命最大值
+	int					m_CurrentWalkSpeed;		// Npc的当前速度
+	int					m_CurrentAttackSpeed;	// Npc的当前攻击速度（放大了1024倍）
+	int					m_CurrentCastSpeed;		// Npc的当前施法速度（放大了1024倍）
+	int					m_CurrentHitRecover;	// Npc的当前受击回复速度
+	int					m_Dir;					// Npc的方向,
+	int					m_Lum;					// Npc的亮度
+	int					m_MapX, m_MapY, m_MapZ;	// Npc的地图坐标
+	int					m_OffX, m_OffY;			// Npc在格子中的偏移坐标（放大了1024倍）
+	int					m_DesX, m_DesY;			// Npc的目标坐标
+	int					m_NpcSettingIdx;		// Npc的设定文件索引
+	int					m_HelmType;				// Npc的头盔类型
+	int					m_ArmorType;			// Npc的盔甲类型
+	int					m_WeaponType;			// Npc的武器类型
+	int					m_HorseType;			// Npc的骑马类型
+	BOOL				m_bRideHorse;			// Npc是否骑马

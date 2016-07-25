@@ -1,0 +1,102 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PackNew - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3F4.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\PackNew.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ZPackFile.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\alloc.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\io.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2b_99.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2b_d.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2b_ds.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2b_to.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2d_99.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2d_d.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2d_ds.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2d_to.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2e_99.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2e_d.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2e_ds.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\n2e_to.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\ucl_crc.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\ucl_dll.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\ucl_init.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\ucl_ptr.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\ucl_str.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ucl-1.01\src\ucl_util.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3F4.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3F5.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/PackNew.pdb" /machine:I386 /out:"Release/PackNew.exe" 
+.\Release\PackNew.obj
+.\Release\ZPackFile.obj
+.\Release\alloc.obj
+.\Release\io.obj
+.\Release\n2b_99.obj
+.\Release\n2b_d.obj
+.\Release\n2b_ds.obj
+.\Release\n2b_to.obj
+.\Release\n2d_99.obj
+.\Release\n2d_d.obj
+.\Release\n2d_ds.obj
+.\Release\n2d_to.obj
+.\Release\n2e_99.obj
+.\Release\n2e_d.obj
+.\Release\n2e_ds.obj
+.\Release\n2e_to.obj
+.\Release\ucl_crc.obj
+.\Release\ucl_dll.obj
+.\Release\ucl_init.obj
+.\Release\ucl_ptr.obj
+.\Release\ucl_str.obj
+.\Release\ucl_util.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3F5.tmp"
+<h3>Output Window</h3>
+Compiling...
+PackNew.cpp
+E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ZPackFile.h(68) : error C2955: 'hash' : use of class template requires template argument list
+        E:\jxall\SWROD3\STLPORT\STLPORT\stl/_hash_fun.h(40) : see declaration of 'hash'
+E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\PackNew.cpp(85) : error C2872: 'hash' : ambiguous symbol
+ZPackFile.cpp
+E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackNew\ZPackFile.cpp(150) : warning C4018: '<' : signed/unsigned mismatch
+Generating Code...
+Compiling...
+alloc.c
+io.c
+n2b_99.c
+n2b_d.c
+n2b_ds.c
+n2b_to.c
+n2d_99.c
+n2d_d.c
+n2d_ds.c
+n2d_to.c
+n2e_99.c
+n2e_d.c
+n2e_ds.c
+n2e_to.c
+ucl_crc.c
+ucl_dll.c
+ucl_init.c
+ucl_ptr.c
+ucl_str.c
+ucl_util.c
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+PackNew.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

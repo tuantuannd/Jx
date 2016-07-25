@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: KLVideo - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\CHENPE~1.RDE\LOCALS~1\Temp\RSPE9.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "__RADINDLL__" /D "KLVIDEO_EXPORTS" /Fp"Release/KLVideo.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\tianwang\JGame\KLVideo\KLMp3Music.cpp"
+"D:\tianwang\JGame\KLVideo\KLMp4Video.cpp"
+"D:\tianwang\JGame\KLVideo\KLVideo.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\CHENPE~1.RDE\LOCALS~1\Temp\RSPE9.tmp" 
+Creating temporary file "C:\DOCUME~1\CHENPE~1.RDE\LOCALS~1\Temp\RSPEA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Winmm.lib dsound.lib dxguid.lib /nologo /dll /incremental:no /pdb:"Release/KLVideo.pdb" /machine:I386 /out:"Release/KLVideo.dll" /implib:"Release/KLVideo.lib" 
+.\Release\KLAviFile.obj
+.\Release\KLCFile.obj
+.\Release\KLMp3Music.obj
+.\Release\KLMp4Audio.obj
+.\Release\KLMp4Video.obj
+.\Release\KLMusic.obj
+.\Release\KLThread.obj
+.\Release\KLVideo.obj
+.\Release\StdAfx.obj
+..\Libs\Mpeg4\mp3lib.lib
+..\Libs\Mpeg4\decore.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\CHENPE~1.RDE\LOCALS~1\Temp\RSPEA.tmp"
+<h3>Output Window</h3>
+Compiling...
+KLMp3Music.cpp
+KLMp4Video.cpp
+KLVideo.cpp
+Generating Code...
+Linking...
+   Creating library Release/KLVideo.lib and object Release/KLVideo.exp
+LINK : warning LNK4098: defaultlib "LIBC" conflicts with use of other libs; use /NODEFAULTLIB:library
+Creating temporary file "C:\DOCUME~1\CHENPE~1.RDE\LOCALS~1\Temp\RSPEE.bat" with contents
+[
+@echo off
+copy .\Release\KLVideo.dll  ..\..\JBin
+copy .\Release\KLVideo.dll   ..\..\JRelease\game
+]
+Creating command line "C:\DOCUME~1\CHENPE~1.RDE\LOCALS~1\Temp\RSPEE.bat"
+
+已复制         1 个文件。
+已复制         1 个文件。
+
+
+
+<h3>Results</h3>
+KLVideo.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

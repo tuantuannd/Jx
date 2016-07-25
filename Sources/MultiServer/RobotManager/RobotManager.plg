@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RobotManager - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/RobotManager.res" /d "_DEBUG" "F:\DownLoads\SwordOnline\Sources\MultiServer\RobotManager\RobotManager.rc"" 
+Creating temporary file "D:\temp\RSP140.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Common" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\..\lib" /I "..\..\..\Headers" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/RobotManager.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\MultiServer\RobotManager\RobotManager.cpp"
+"F:\DownLoads\SwordOnline\Sources\MultiServer\RobotManager\RobotManagerDlg.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSP140.tmp" 
+Creating temporary file "D:\temp\RSP141.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Common" /I "..\Rainbow\Interface" /I "..\Heaven\Interface" /I "..\..\..\lib" /I "..\..\..\Headers" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/RobotManager.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\MultiServer\RobotManager\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSP141.tmp" 
+Creating temporary file "D:\temp\RSP142.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/RobotManager.pdb" /debug /machine:I386 /out:"..\..\..\..\bin\client\RobotManager.exe" /pdbtype:sept 
+.\Debug\RobotManager.obj
+.\Debug\RobotManagerDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\RobotManager.res
+]
+Creating command line "link.exe @D:\temp\RSP142.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+RobotManager.cpp
+RobotManagerDlg.cpp
+F:\DownLoads\SwordOnline\Sources\MultiServer\RobotManager\RobotManagerDlg.cpp(227) : error C2065: 'enumRobotQuit' : undeclared identifier
+F:\DownLoads\SwordOnline\Sources\MultiServer\RobotManager\RobotManagerDlg.cpp(227) : error C2051: case expression not constant
+F:\DownLoads\SwordOnline\Sources\MultiServer\RobotManager\RobotManagerDlg.cpp(229) : error C2065: 'tagRobotQuit' : undeclared identifier
+F:\DownLoads\SwordOnline\Sources\MultiServer\RobotManager\RobotManagerDlg.cpp(229) : error C2065: 'RobotQuit' : undeclared identifier
+F:\DownLoads\SwordOnline\Sources\MultiServer\RobotManager\RobotManagerDlg.cpp(229) : error C2059: syntax error : ')'
+Generating Code...
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+RobotManager.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

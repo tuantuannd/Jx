@@ -1,0 +1,5 @@
+LIBRARY   Heaven.dll
+DESCRIPTION "Heaven Library"
+
+EXPORTS
+	QueryServerInterface	@1

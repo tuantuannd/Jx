@@ -1,0 +1,12 @@
+﻿  FilterText.cpp
+  Regexp.cpp
+Regexp.cpp(1696): warning C4018: '<' : signed/unsigned mismatch
+Regexp.cpp(1724): warning C4996: '_tcsncpy': This function or variable may be unsafe. Consider using _tcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\tchar.h(1523) : see declaration of '_tcsncpy'
+  Generating Code...
+c:\users\tuann\desktop\jxxxxxxxxxxxxxxx\sources\filtertext\regexp.cpp(266): warning C4715: 'CRegErrorHandler::FindErr' : not all control paths return a value
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1299,5): warning MSB8012: TargetPath(C:\Users\tuann\Desktop\JXXXXXXXXXXXXXXX\Sources\FilterText\.\FilterText_StaticLib___Win32_Release\FilterTextStatic.lib) does not match the Library's OutputFile property value (C:\Users\tuann\Desktop\JXXXXXXXXXXXXXXX\Sources\FilterText\FilterText_StaticLib___Win32_Release\FilterText_StaticLib.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1301,5): warning MSB8012: TargetName(FilterTextStatic) does not match the Library's OutputFile property value (FilterText_StaticLib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  FilterText_StaticLib.vcxproj -> C:\Users\tuann\Desktop\JXXXXXXXXXXXXXXX\Sources\FilterText\.\FilterText_StaticLib___Win32_Release\FilterTextStatic.lib
+  A subdirectory or file ..\..\lib\release already exists.
+          1 file(s) copied.

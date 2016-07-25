@@ -1,0 +1,275 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\S3Robot.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\S3Robot.ico"
+IDI_COR                 ICON    DISCARDABLE     "res\\cor.ico"
+IDI_INFO                ICON    DISCARDABLE     "res\\info.ico"
+IDI_WARN                ICON    DISCARDABLE     "res\\warn.ico"
+IDI_WORLD               ICON    DISCARDABLE     "res\\world.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SYSTRAY_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "_SYSTRAY_"
+    BEGIN
+        MENUITEM "Restore",                     IDR_ST_RESTORE
+        MENUITEM "Minimize",                    IDR_ST_MINIMIZE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        IDR_ST_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRAYICON_TOOLTIP    "The robot for sword 3 online game"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_S3ROBOT_DIALOG DIALOGEX 0, 0, 419, 303
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "S3Robot - Copyright (c) XSJ.Kingsoft 2003 [ All Rights Reserved ]"
+
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Login",IDOK,121,91,50,14
+    COMBOBOX        IDC_CTRL_LOGINSERVER,66,20,105,105,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ACCOUNTNAME,66,38,105,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,66,57,105,13,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    CONTROL         "First",IDC_RADIO_PLAYER_FIRST,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,66,74,48,13
+    CONTROL         "Second",IDC_RADIO_PLAYER_SECOND,"Button",
+                    BS_AUTORADIOBUTTON,123,74,48,13
+    CONTROL         "Move",IDC_RADIO_ACTION_MOVE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,192,20,36,13
+    CONTROL         "Skill",IDC_RADIO_ACTION_SKILL,"Button",
+                    BS_AUTORADIOBUTTON,192,38,36,13
+    CONTROL         "Speak",IDC_RADIO_ACTION_SPEAK,"Button",
+                    BS_AUTORADIOBUTTON,192,57,36,13
+    EDITTEXT        IDC_EDIT_POSITION_X,246,20,41,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,278,15,8,13
+    EDITTEXT        IDC_EDIT_POSITION_Y,306,20,41,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,339,15,8,13
+    EDITTEXT        IDC_EDIT_SPEAK_MESSAGE,232,57,172,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_BTN_SEND_COMMAND,354,91,50,14
+    CONTROL         "List1",IDC_LIST_PLAYER_INFO,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_TABSTOP,7,127,172,149,WS_EX_CLIENTEDGE
+    CONTROL         "List2",IDC_LIST_CURRENT_MSG,"SysListView32",LVS_REPORT | 
+                    LVS_NOSORTHEADER | WS_TABSTOP,185,127,227,149,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Logout && Exit",IDCANCEL,339,282,73,14
+    LTEXT           "Select player",IDC_STATIC,14,74,48,13,SS_CENTERIMAGE
+    LTEXT           "Account Name",IDC_STATIC,14,38,48,13,SS_CENTERIMAGE
+    LTEXT           "Password",IDC_STATIC,14,57,48,13,SS_CENTERIMAGE
+    GROUPBOX        "Login Info",IDC_STATIC,7,7,172,104
+    GROUPBOX        "Action Info",IDC_STATIC,185,7,227,104
+    LTEXT           "( x :",IDC_STATIC,232,20,12,13,SS_CENTERIMAGE
+    LTEXT           ")",IDC_STATIC,349,20,8,13,SS_CENTERIMAGE
+    LTEXT           "Player Information",IDC_STATIC,7,112,83,13,
+                    SS_CENTERIMAGE
+    LTEXT           "Current message",IDC_STATIC,185,112,57,13,
+                    SS_CENTERIMAGE
+    LTEXT           "Login server",IDC_STATIC,14,20,48,12,SS_CENTERIMAGE
+    LTEXT           "Please mail to me if you found an important matter ( liupeng@bj.kingsoft.net )",
+                    IDC_COPYRIGHT,7,283,322,13,SS_CENTERIMAGE
+    CONTROL         "Record current time when event has happened",
+                    IDC_RECORD_CURRENTTIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,247,114,165,11
+    COMBOBOX        IDC_CTRL_SKILLLIST,232,38,116,126,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           ", y :",IDC_STATIC,291,20,12,13,SS_CENTERIMAGE
+    CONTROL         "Auto Ctrl",IDC_AUTO_CONTROL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,357,20,50,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "S3Robot MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "S3Robot\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "S3Robot.EXE\0"
+            VALUE "ProductName", "S3Robot Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_S3ROBOT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 296
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\S3Robot.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

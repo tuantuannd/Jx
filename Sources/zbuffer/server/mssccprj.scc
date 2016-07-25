@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[server.dsp]
+SCC_Aux_Path = "\\Swordonline\Sword3Home\sword3vss"
+SCC_Project_Name = "$/SwordOnline/Sources/zbuffer/server", HLUAAAAA
+
+[server.mak]
+SCC_Aux_Path = "\\Swordonline\Sword3Home\sword3vss"
+SCC_Project_Name = "$/SwordOnline/Sources/zbuffer/server", HLUAAAAA

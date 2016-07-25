@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[FilterText.dsp]
+SCC_Aux_Path = "\\Swordonline\Sword3Home\sword3vss"
+SCC_Project_Name = "$/SwordOnline/Sources/FilterText", ERUAAAAA
+
+[FilterText_StaticLib.dsp]
+SCC_Aux_Path = "\\Swordonline\Sword3Home\sword3vss"
+SCC_Project_Name = "$/SwordOnline/Sources/FilterText", ERUAAAAA

@@ -1,0 +1,120 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PackSingle - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3EC.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\PackSingle.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ZPackFile.cpp"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\alloc.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\io.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2b_99.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2b_d.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2b_ds.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2b_to.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2d_99.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2d_d.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2d_ds.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2d_to.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2e_99.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2e_d.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2e_ds.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\n2e_to.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\ucl_crc.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\ucl_dll.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\ucl_init.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\ucl_ptr.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\ucl_str.c"
+"E:\jxall\swrod3\SwordOnline\Sources\PackCombo\PackSingle\ucl-1.01\src\ucl_util.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3EC.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3ED.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/PackSingle.pdb" /debug /machine:I386 /out:"Debug/PackSingle.exe" /pdbtype:sept 
+.\Debug\PackSingle.obj
+.\Debug\ZPackFile.obj
+.\Debug\alloc.obj
+.\Debug\io.obj
+.\Debug\n2b_99.obj
+.\Debug\n2b_d.obj
+.\Debug\n2b_ds.obj
+.\Debug\n2b_to.obj
+.\Debug\n2d_99.obj
+.\Debug\n2d_d.obj
+.\Debug\n2d_ds.obj
+.\Debug\n2d_to.obj
+.\Debug\n2e_99.obj
+.\Debug\n2e_d.obj
+.\Debug\n2e_ds.obj
+.\Debug\n2e_to.obj
+.\Debug\ucl_crc.obj
+.\Debug\ucl_dll.obj
+.\Debug\ucl_init.obj
+.\Debug\ucl_ptr.obj
+.\Debug\ucl_str.obj
+.\Debug\ucl_util.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3ED.tmp"
+<h3>Output Window</h3>
+Compiling...
+PackSingle.cpp
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl\ucl.h(39) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+ZPackFile.cpp
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl\ucl.h(39) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+Generating Code...
+Compiling...
+alloc.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\ucl_conf.h(39) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+io.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\ucl_conf.h(39) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+n2b_99.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2_99.ch(30) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+n2b_d.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2b_d.c(133) : fatal error C1083: Cannot open include file: 'ucl/ucl.h': No such file or directory
+n2b_ds.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2b_d.c(133) : fatal error C1083: Cannot open include file: 'ucl/ucl.h': No such file or directory
+n2b_to.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2b_to.c(34) : fatal error C1083: Cannot open include file: 'ucl/ucl.h': No such file or directory
+n2d_99.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2_99.ch(30) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+n2d_d.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2d_d.c(138) : fatal error C1083: Cannot open include file: 'ucl/ucl.h': No such file or directory
+n2d_ds.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2d_d.c(138) : fatal error C1083: Cannot open include file: 'ucl/ucl.h': No such file or directory
+n2d_to.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2d_to.c(34) : fatal error C1083: Cannot open include file: 'ucl/ucl.h': No such file or directory
+n2e_99.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2_99.ch(30) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+n2e_d.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2e_d.c(141) : fatal error C1083: Cannot open include file: 'ucl/ucl.h': No such file or directory
+n2e_ds.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2e_d.c(141) : fatal error C1083: Cannot open include file: 'ucl/ucl.h': No such file or directory
+n2e_to.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\n2e_to.c(34) : fatal error C1083: Cannot open include file: 'ucl/ucl.h': No such file or directory
+ucl_crc.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\ucl_conf.h(39) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+ucl_dll.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\ucl_conf.h(39) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+ucl_init.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\ucl_conf.h(39) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+ucl_ptr.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\ucl_conf.h(39) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+ucl_str.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\ucl_conf.h(39) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+ucl_util.c
+e:\jxall\swrod3\swordonline\sources\packcombo\packsingle\ucl-1.01\src\ucl_conf.h(39) : fatal error C1083: Cannot open include file: 'ucl/uclconf.h': No such file or directory
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+PackSingle.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

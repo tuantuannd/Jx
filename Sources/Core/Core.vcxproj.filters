@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="技能">
+      <UniqueIdentifier>{b4d9b6e6-a0bb-43bb-aaee-0380d9146a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="技能\玩家宠物">
+      <UniqueIdentifier>{7656cbf2-76d8-424c-88e4-1358edd518d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="技能\偷窃技能">
+      <UniqueIdentifier>{5e1b76e5-758c-497e-85e9-4f9d658c67f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="人物">
+      <UniqueIdentifier>{6f95c0c0-bc9e-42aa-bb81-93c4412b737c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="物品装备">
+      <UniqueIdentifier>{bb8d986e-b0f6-4d14-a229-8aee199d127d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="世界">
+      <UniqueIdentifier>{252226a2-43c2-439f-887f-73f4c171f3e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="地图">
+      <UniqueIdentifier>{3f7fb68d-98cf-4220-a2b7-0e55395a997d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="消息">
+      <UniqueIdentifier>{64de38d4-bed3-49b6-b403-296a71699c77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数学运算">
+      <UniqueIdentifier>{9bc02630-5e0d-4f2d-a0be-7b64505273a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="协议">
+      <UniqueIdentifier>{fa9a2dc6-9f8a-4c7b-be98-864e9b6b1bc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="脚本">
+      <UniqueIdentifier>{73ba28ef-ad6a-438e-94e5-edef65f315af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="脚本\立即性脚本">
+      <UniqueIdentifier>{311a50d8-9150-4ad3-bca7-c7819b9d4e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="脚本\单步性脚本">
+      <UniqueIdentifier>{92047ce6-efd1-4325-aced-bd421281c9fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="被外界访问接口">
+      <UniqueIdentifier>{b870f643-f282-457a-9541-bfe7b2d88742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数据库相关">
+      <UniqueIdentifier>{442f3b14-59f9-45d2-8c04-e26254d7c5ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="场景">
+      <UniqueIdentifier>{9321a473-72f1-45be-94a6-3a2e0659def7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="场景\场景中对象与对象树">
+      <UniqueIdentifier>{a2dec61b-30f4-4be3-b535-6c04f368650a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="图形引用">
+      <UniqueIdentifier>{edd2db37-8f9d-4811-9021-8e12ba4f8272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="魔法属性">
+      <UniqueIdentifier>{c360fbe8-e4a5-4592-b03a-ab69a78202ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GM管理">
+      <UniqueIdentifier>{1b6acddb-59df-4a21-9ee9-ab5a4c6f100d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="任务相关">
+      <UniqueIdentifier>{ae9a80f5-6127-4987-8449-d64bebc3410d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="选项">
+      <UniqueIdentifier>{29ff2869-e63d-4898-bdcf-97cb1c448928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="音乐">
+      <UniqueIdentifier>{748ac333-321e-4971-aa89-cfcb2996f337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{ff74b8a6-e3af-43f3-a50b-dc9541e9ec8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\Release">
+      <UniqueIdentifier>{95925824-e305-4b9e-a9f3-94c74ae6f142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\Debug">
+      <UniqueIdentifier>{a896f1c7-75ea-455e-ae6b-c26babefc038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="排名">
+      <UniqueIdentifier>{24ef0a7d-82f1-4d6d-8710-d66daa3f8cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="USBKey">
+      <UniqueIdentifier>{f6862549-7e52-47f6-b815-30e41d4476c2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\KMissle.cpp">
+      <Filter>技能</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KMissleRes.cpp">
+      <Filter>技能</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KMissleSet.cpp">
+      <Filter>技能</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSkillList.cpp">
+      <Filter>技能</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSkillManager.cpp">
+      <Filter>技能</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSkills.cpp">
+      <Filter>技能</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSkillSpecial.cpp">
+      <Filter>技能</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Skill.cpp">
+      <Filter>技能</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPartnerSkill.cpp">
+      <Filter>技能\玩家宠物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayerPartner.cpp">
+      <Filter>技能\玩家宠物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KThiefSkill.cpp">
+      <Filter>技能\偷窃技能</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KFaction.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNpc.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNpcAI.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNpcAttribModify.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNpcDeathCalcExp.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNpcFindPath.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNpcGold.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNpcRes.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNpcResList.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNpcResNode.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNpcSet.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNpcTemplate.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayer.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayerChat.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayerDBFuns.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayerFaction.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayerMenuState.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayerPK.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayerSet.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayerTask.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayerTeam.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayerTong.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KPlayerTrade.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSprControl.cpp">
+      <Filter>人物</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KBasPropTbl.CPP">
+      <Filter>物品装备</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KBuySell.cpp">
+      <Filter>物品装备</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KInventory.cpp">
+      <Filter>物品装备</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KItem.cpp">
+      <Filter>物品装备</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KItemChangeRes.cpp">
+      <Filter>物品装备</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KItemGenerator.CPP">
+      <Filter>物品装备</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KItemList.cpp">
+      <Filter>物品装备</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KItemSet.cpp">
+      <Filter>物品装备</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KObj.cpp">
+      <Filter>物品装备</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KObjSet.cpp">
+      <Filter>物品装备</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KViewItem.cpp">
+      <Filter>物品装备</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KCore.cpp">
+      <Filter>世界</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSubWorld.cpp">
+      <Filter>世界</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSubWorldSet.cpp">
+      <Filter>世界</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KWeatherMgr.cpp">
+      <Filter>世界</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KRegion.cpp">
+      <Filter>地图</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KWorldMsg.cpp">
+      <Filter>消息</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KMath.cpp">
+      <Filter>数学运算</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KGMProcess.cpp">
+      <Filter>协议</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KNewProtocolProcess.cpp">
+      <Filter>协议</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KProtocol.cpp">
+      <Filter>协议</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KProtocolProcess.cpp">
+      <Filter>协议</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KScriptValueSet.cpp">
+      <Filter>脚本</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KSortScript.cpp">
+      <Filter>脚本</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ScriptFuns.cpp">
+      <Filter>脚本\立即性脚本</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\LuaFuns.cpp">
+      <Filter>脚本\单步性脚本</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CoreServerShell.cpp">
+      <Filter>被外界访问接口</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CoreShell.cpp">
+      <Filter>被外界访问接口</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\KScenePlaceC.cpp">
+      <Filter>场景</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\KScenePlaceRegionC.cpp">
+      <Filter>场景</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\KWeather.cpp">
+      <Filter>场景</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\SceneMath.cpp">
+      <Filter>场景</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\ScenePlaceMapC.cpp">
+      <Filter>场景</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\KIpotBranch.cpp">
+      <Filter>场景\场景中对象与对象树</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\KIpotLeaf.cpp">
+      <Filter>场景\场景中对象与对象树</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\KIpoTree.cpp">
+      <Filter>场景\场景中对象与对象树</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\CoreDrawGameObj.cpp">
+      <Filter>图形引用</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ImgRef.cpp">
+      <Filter>图形引用</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KMagicDesc.cpp">
+      <Filter>魔法属性</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KGMCommand.cpp">
+      <Filter>GM管理</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KMission.cpp">
+      <Filter>任务相关</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KTaskFuns.cpp">
+      <Filter>任务相关</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KOption.cpp">
+      <Filter>选项</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KMapMusic.cpp">
+      <Filter>音乐</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\KLadder.cpp">
+      <Filter>排名</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\KMissle.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KMissleMagicAttribsData.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KMissleRes.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KMissleSet.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KSkillList.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KSkillManager.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KSkills.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KSkillSpecial.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Skill.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\SkillDef.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPartnerSkill.h">
+      <Filter>技能\玩家宠物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayerPartner.h">
+      <Filter>技能\玩家宠物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KThiefSkill.h">
+      <Filter>技能\偷窃技能</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KFaction.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KNpc.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KNpcAI.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KNpcAttribModify.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KNpcDeathCalcExp.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KNpcFindPath.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KNpcGold.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KNpcRes.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KNpcResList.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KNpcResNode.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KNpcSet.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KNpcTemplate.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayer.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayerChat.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayerDef.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayerFaction.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayerMenuState.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayerPK.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayerSet.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayerTask.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayerTeam.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayerTong.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KPlayerTrade.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KSprControl.h">
+      <Filter>人物</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KBasPropTbl.h">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KBuySell.h">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KInventory.h">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KItem.h">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KItemChangeRes.h">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KItemGenerator.h">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KItemList.h">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KItemSet.h">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KObj.h">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KObjSet.h">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KViewItem.h">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\MyAssert.H">
+      <Filter>物品装备</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KCore.h">
+      <Filter>世界</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KSubWorld.h">
+      <Filter>世界</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KSubWorldSet.h">
+      <Filter>世界</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KWeatherMgr.h">
+      <Filter>世界</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KRegion.h">
+      <Filter>地图</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KWorldMsg.h">
+      <Filter>消息</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KMath.h">
+      <Filter>数学运算</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Headers\KProtocol.h">
+      <Filter>协议</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Headers\KProtocolDef.h">
+      <Filter>协议</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KProtocolProcess.h">
+      <Filter>协议</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KScriptValueSet.h">
+      <Filter>脚本</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KSortScript.h">
+      <Filter>脚本</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\LuaFuns.h">
+      <Filter>脚本</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\CoreUseNameDef.h">
+      <Filter>被外界访问接口</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KIndexNode.h">
+      <Filter>被外界访问接口</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\MsgGenreDef.h">
+      <Filter>被外界访问接口</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lib\S3DBInterface.h">
+      <Filter>数据库相关</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\KWeather.h">
+      <Filter>场景</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\ObstacleDef.h">
+      <Filter>场景</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KMagicAttrib.h">
+      <Filter>魔法属性</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KMagicDesc.h">
+      <Filter>魔法属性</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KGMCommand.h">
+      <Filter>GM管理</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KLinkArrayTemplate.h">
+      <Filter>任务相关</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KTaskFuns.h">
+      <Filter>任务相关</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\TaskDef.h">
+      <Filter>任务相关</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KOption.h">
+      <Filter>选项</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KMapMusic.h">
+      <Filter>音乐</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\KLadder.h">
+      <Filter>排名</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\USBKey\des.h">
+      <Filter>USBKey</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\USBKey\EPASSAPI.H">
+      <Filter>USBKey</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\USBKey\epsJO.h">
+      <Filter>USBKey</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\USBKey\MD5.H">
+      <Filter>USBKey</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Src\技能系统.txt">
+      <Filter>技能</Filter>
+    </Text>
+    <Text Include="Src\PlayerPartner文档.txt">
+      <Filter>技能\玩家宠物</Filter>
+    </Text>
+    <Text Include="Src\AI设计.txt">
+      <Filter>人物</Filter>
+    </Text>
+    <Text Include="Src\NPC系统.txt">
+      <Filter>人物</Filter>
+    </Text>
+    <Text Include="Src\脚本说明.txt">
+      <Filter>脚本</Filter>
+    </Text>
+    <Text Include="Src\任务系统设计文档.txt">
+      <Filter>任务相关</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Protocol.xls">
+      <Filter>协议</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Src\USBKey\EP1KDL20.LIB">
+      <Filter>USBKey</Filter>
+    </Library>
+    <Library Include="Src\USBKey\EpsForJoLib.lib">
+      <Filter>USBKey</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Src\KNewProtocolProcess.h">
+      <Filter>协议</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\CoreObjGenreDef.h">
+      <Filter>被外界访问接口</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\CoreServerDataDef.h">
+      <Filter>被外界访问接口</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\CoreServerShell.h">
+      <Filter>被外界访问接口</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\CoreShell.h">
+      <Filter>被外界访问接口</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\GameDataDef.h">
+      <Filter>被外界访问接口</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Scene\KScenePlaceC.h">
+      <Filter>场景</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Scene\KScenePlaceRegionC.h">
+      <Filter>场景</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Scene\SceneDataDef.h">
+      <Filter>场景</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Scene\SceneMath.h">
+      <Filter>场景</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Scene\ScenePlaceMapC.h">
+      <Filter>场景</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Scene\KIpotBranch.h">
+      <Filter>场景\场景中对象与对象树</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Scene\KIpotLeaf.h">
+      <Filter>场景\场景中对象与对象树</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\Scene\KIpoTree.h">
+      <Filter>场景\场景中对象与对象树</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\CoreDrawGameObj.h">
+      <Filter>图形引用</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\ImgRef.h">
+      <Filter>图形引用</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\KMission.h">
+      <Filter>任务相关</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Src\KMissionArray.h">
+      <Filter>任务相关</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Lib\release\common.lib">
+      <Filter>Lib\Release</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Lib\release\engine.lib">
+      <Filter>Lib\Release</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Lib\debug\common.lib">
+      <Filter>Lib\Debug</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Lib\debug\engine.lib">
+      <Filter>Lib\Debug</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

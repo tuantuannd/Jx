@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Sword3PaySys - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\temp\RSP9C.tmp" with contents
+[
+..\RegExp\lib\RegExp.lib ..\culib\lib\culib.lib ..\mysql++-1.7.1-1-win32-vc++\lib\mysql++.lib Ws2_32.lib Winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib LIBCMTD.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Sword3PaySys.pdb" /debug /machine:I386 /nodefaultlib:"LIBCD.lib" /out:"Exe Output/Sword3PaySys.dll" /pdbtype:sept 
+.\Debug\main.obj
+]
+Creating command line "link.exe @D:\temp\RSP9C.tmp"
+<h3>Output Window</h3>
+Linking...
+main.obj : error LNK2001: unresolved external symbol "public: static void __cdecl S3PTableInfoCatch::Release(void)" (?Release@S3PTableInfoCatch@@SAXXZ)
+main.obj : error LNK2001: unresolved external symbol "public: static void __cdecl S3PDBConnector::ReleaseInstance(void)" (?ReleaseInstance@S3PDBConnector@@SAXXZ)
+main.obj : error LNK2001: unresolved external symbol "public: static void __cdecl S3PDBConnectionPool::ReleaseInstance(void)" (?ReleaseInstance@S3PDBConnectionPool@@SAXXZ)
+main.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall S3PDBSocketServer::Stop(void)" (?Stop@S3PDBSocketServer@@UAEHXZ)
+main.obj : error LNK2001: unresolved external symbol "public: virtual void * __thiscall S3PDBSocketServer::Start(void)" (?Start@S3PDBSocketServer@@UAEPAXXZ)
+main.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall S3PDBSocketPool::~S3PDBSocketPool(void)" (??1S3PDBSocketPool@@UAE@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall S3PDBSocketServer::~S3PDBSocketServer(void)" (??1S3PDBSocketServer@@UAE@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: static class S3PRelockAccount * __cdecl S3PRelockAccount::Instance(void)" (?Instance@S3PRelockAccount@@SAPAV1@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: __thiscall S3PDBSocketServer::S3PDBSocketServer(int,class S3PDBSocketPool *)" (??0S3PDBSocketServer@@QAE@HPAVS3PDBSocketPool@@@Z)
+main.obj : error LNK2001: unresolved external symbol "unsigned long __cdecl KPIGetPrivateProfileString(char const *,char const *,char const *,char *,unsigned long,char const *)" (?KPIGetPrivateProfileString@@YAKPBD00PADK0@Z)
+main.obj : error LNK2001: unresolved external symbol "public: __thiscall S3PDBSocketPool::S3PDBSocketPool(void)" (??0S3PDBSocketPool@@QAE@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: static class S3PDBConnector * __cdecl S3PDBConnector::Instance(void)" (?Instance@S3PDBConnector@@SAPAV1@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: static class S3PDBConnectionPool * __cdecl S3PDBConnectionPool::Instance(void)" (?Instance@S3PDBConnectionPool@@SAPAV1@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: static void __cdecl S3PDBConnectionPool::Init(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?Init@S3PDBConnectionPool@@SAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+main.obj : error LNK2001: unresolved external symbol "public: static class S3PTableInfoCatch * __cdecl S3PTableInfoCatch::Instance(void)" (?Instance@S3PTableInfoCatch@@SAPAV1@XZ)
+main.obj : error LNK2001: unresolved external symbol "void __cdecl KPIGetExePath(char *,unsigned long)" (?KPIGetExePath@@YAXPADK@Z)
+Exe Output/Sword3PaySys.dll : fatal error LNK1120: 16 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+Sword3PaySys.dll - 17 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

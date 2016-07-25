@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: examples - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\SYSTEM~2\temp\RSP1A6.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/examples.pdb" /machine:I386 /out:"Release/examples.exe" 
+".\Release\simple1.obj"
+"..\lib\mysql++.lib"
+]
+Creating command line "link.exe @E:\SYSTEM~2\temp\RSP1A6.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::~basic_string<char,struct std::char_traits<char>,class std::allocator<char> >(void)" (??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ) already defined in mysql++.lib(connection.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "private: void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Tidy(bool)" (?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z) already defined in mysql++.lib(connection.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??6std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z) already defined in mysql++.lib(manip.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::assign(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,unsigned int,unsigned int)" (?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z) already defined in mysql++.lib(connection.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "private: void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Eos(unsigned int)" (?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z) already defined in mysql++.lib(connection.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "private: bool __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Grow(unsigned int,bool)" (?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z) already defined in mysql++.lib(connection.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::erase(unsigned int,unsigned int)" (?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z) already defined in mysql++.lib(connection.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "private: void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Split(void)" (?_Split@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ) already defined in mysql++.lib(connection.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >(class basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@ABV01@@Z) already defined in mysql++.lib(connection.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::assign(char const *,unsigned int)" (?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z) already defined in mysql++.lib(connection.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: virtual __thiscall std::basic_ios<char,struct std::char_traits<char> >::~basic_ios<char,struct std::char_traits<char> >(void)" (??1?$basic_ios@DU?$char_traits@D@std@@@std@@UAE@XZ) already defined in mysql++.lib(sql_query.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: __thiscall std::_Lockit::~_Lockit(void)" (??1_Lockit@std@@QAE@XZ) already defined in mysql++.lib(sql_query.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: __thiscall std::_Lockit::_Lockit(void)" (??0_Lockit@std@@QAE@XZ) already defined in mysql++.lib(sql_query.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: virtual __thiscall std::basic_iostream<char,struct std::char_traits<char> >::~basic_iostream<char,struct std::char_traits<char> >(void)" (??1?$basic_iostream@DU?$char_traits@D@std@@@std@@UAE@XZ) already defined in mysql++.lib(sql_query.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: __thiscall std::basic_iostream<char,struct std::char_traits<char> >::basic_iostream<char,struct std::char_traits<char> >(class basic_iostream<char,struct std::char_traits<char> >::basic_streambuf<char,struct std::char_traits<char> > *)" (??0?$basic_iostream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@@Z) already defined in mysql++.lib(sql_query.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: virtual __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::~basic_streambuf<char,struct std::char_traits<char> >(void)" (??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAE@XZ) already defined in mysql++.lib(sql_query.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: char const * __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::c_str(void)const " (?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ) already defined in mysql++.lib(connection.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "public: char & __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::operator[](unsigned int)" (??A?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAADI@Z) already defined in mysql++.lib(field_names.obj)
+msvcprt.lib(MSVCP60.dll) : error LNK2005: "private: void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Freeze(void)" (?_Freeze@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ) already defined in mysql++.lib(field_names.obj)
+libcpd.lib(iostream.obj) : error LNK2005: "public: __thiscall std::ios_base::Init::Init(void)" (??0Init@ios_base@std@@QAE@XZ) already defined in msvcprt.lib(MSVCP60.dll)
+libcpd.lib(iostream.obj) : error LNK2005: "public: __thiscall std::ios_base::Init::~Init(void)" (??1Init@ios_base@std@@QAE@XZ) already defined in msvcprt.lib(MSVCP60.dll)
+libcpd.lib(locale0.obj) : error LNK2005: "public: class std::locale::facet const * __thiscall std::locale::_Getfacet(unsigned int,bool)const " (?_Getfacet@locale@std@@QBEPBVfacet@12@I_N@Z) already defined in msvcprt.lib(MSVCP60.dll)
+libcpd.lib(locale0.obj) : error LNK2005: "public: bool __thiscall std::locale::_Iscloc(void)const " (?_Iscloc@locale@std@@QBE_NXZ) already defined in msvcprt.lib(MSVCP60.dll)
+libcpd.lib(locale0.obj) : error LNK2005: "private: static class std::locale::_Locimp * __cdecl std::locale::_Init(void)" (?_Init@locale@std@@CAPAV_Locimp@12@XZ) already defined in msvcprt.lib(MSVCP60.dll)
+libcpd.lib(ios.obj) : error LNK2005: "public: void __thiscall std::ios_base::clear(int,bool)" (?clear@ios_base@std@@QAEXH_N@Z) already defined in msvcprt.lib(MSVCP60.dll)
+libcpd.lib(ios.obj) : error LNK2005: "public: virtual __thiscall std::ios_base::~ios_base(void)" (??1ios_base@std@@UAE@XZ) already defined in msvcprt.lib(MSVCP60.dll)
+libcpd.lib(ios.obj) : error LNK2005: "protected: void __thiscall std::ios_base::_Addstd(void)" (?_Addstd@ios_base@std@@IAEXXZ) already defined in msvcprt.lib(MSVCP60.dll)
+libcpd.lib(ios.obj) : error LNK2005: "protected: void __thiscall std::ios_base::_Init(void)" (?_Init@ios_base@std@@IAEXXZ) already defined in msvcprt.lib(MSVCP60.dll)
+libcpd.lib(locale.obj) : error LNK2005: "public: __thiscall std::_Locinfo::_Locinfo(char const *)" (??0_Locinfo@std@@QAE@PBD@Z) already defined in msvcprt.lib(MSVCP60.dll)
+libcpd.lib(locale.obj) : error LNK2005: "public: __thiscall std::_Locinfo::~_Locinfo(void)" (??1_Locinfo@std@@QAE@XZ) already defined in msvcprt.lib(MSVCP60.dll)
+LIBCD.lib(dbgheap.obj) : error LNK2005: _free already defined in MSVCRT.lib(MSVCRT.dll)
+LIBCD.lib(strtol.obj) : error LNK2005: _strtol already defined in MSVCRT.lib(MSVCRT.dll)
+LIBCD.lib(crt0dat.obj) : error LNK2005: _exit already defined in MSVCRT.lib(MSVCRT.dll)
+LIBCD.lib(crt0dat.obj) : error LNK2005: __exit already defined in MSVCRT.lib(MSVCRT.dll)
+LIBCD.lib(crt0.obj) : error LNK2005: _mainCRTStartup already defined in MSVCRT.lib(crtexe.obj)
+LIBCD.lib(crt0init.obj) : error LNK2005: ___xc_z already defined in MSVCRT.lib(cinitexe.obj)
+LIBCD.lib(crt0init.obj) : error LNK2005: ___xc_a already defined in MSVCRT.lib(cinitexe.obj)
+LIBCD.lib(crt0init.obj) : error LNK2005: ___xi_z already defined in MSVCRT.lib(cinitexe.obj)
+LIBCD.lib(crt0init.obj) : error LNK2005: ___xi_a already defined in MSVCRT.lib(cinitexe.obj)
+LIBCD.lib(winxfltr.obj) : error LNK2005: __XcptFilter already defined in MSVCRT.lib(MSVCRT.dll)
+LINK : warning LNK4098: defaultlib "MSVCRT" conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib "LIBCD" conflicts with use of other libs; use /NODEFAULTLIB:library
+Release/examples.exe : fatal error LNK1169: one or more multiply defined symbols found
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+examples.exe - 41 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

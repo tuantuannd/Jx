@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Rainbow - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\temp\RSP231.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "RAINBOW_EXPORTS" /Fp"Debug/Rainbow.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ClientStage.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\IClient.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\Rainbow.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\CriticalSection.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\Event.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\EventSelect.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\Exception.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\IOBuffer.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\ManualResetEvent.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\NodeList.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\Socket.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\SocketClient.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\Thread.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\UsesWinsock.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\Utils.cpp"
+"F:\DownLoads\SwordOnline\Sources\Network\Rainbow\ESClient\Win32Exception.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSP231.tmp" 
+Creating temporary file "D:\temp\RSP232.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/Rainbow.pdb" /debug /machine:I386 /def:".\Rainbow.def" /out:"Debug/Rainbow.dll" /implib:"Debug/Rainbow.lib" /pdbtype:sept 
+.\Debug\ClientStage.obj
+.\Debug\IClient.obj
+.\Debug\Rainbow.obj
+.\Debug\CriticalSection.obj
+.\Debug\Event.obj
+.\Debug\EventSelect.obj
+.\Debug\Exception.obj
+.\Debug\IOBuffer.obj
+.\Debug\ManualResetEvent.obj
+.\Debug\NodeList.obj
+.\Debug\Socket.obj
+.\Debug\SocketClient.obj
+.\Debug\Thread.obj
+.\Debug\UsesWinsock.obj
+.\Debug\Utils.obj
+.\Debug\Win32Exception.obj
+]
+Creating command line "link.exe @D:\temp\RSP232.tmp"
+<h3>Output Window</h3>
+Compiling...
+ClientStage.cpp
+IClient.cpp
+Rainbow.cpp
+* ATTENTION : PLEASE USE IT IN ANSI SETTING *
+CriticalSection.cpp
+Event.cpp
+EventSelect.cpp
+Exception.cpp
+IOBuffer.cpp
+ManualResetEvent.cpp
+NodeList.cpp
+Socket.cpp
+SocketClient.cpp
+NOTE : --------------------OnlineGameLib [Client] : Announcement--------------------
+NOTE : The lib be used for socket communicate that it is base on
+NOTE : Windows 95 and Windows NT 3.51 and later
+NOTE :
+NOTE : liupeng xishanju.zhuhai.china 2003.1
+NOTE : -----------------------------------------------------------------------------
+Thread.cpp
+UsesWinsock.cpp
+Utils.cpp
+Win32Exception.cpp
+Linking...
+   Creating library Debug/Rainbow.lib and object Debug/Rainbow.exp
+
+
+
+<h3>Results</h3>
+Rainbow.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

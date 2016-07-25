@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: S3Relay - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Ws2_32.lib lualibdll.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/S3Relay.pdb" /map:"Release/S3Relay.map" /debug /machine:I386 /out:"Release/S3Relay.exe" 
+.\Release\ChannelMgr.obj
+.\Release\ChatConnect.obj
+.\Release\ChatServer.obj
+.\Release\DBConnect.obj
+.\Release\DBTable.obj
+.\Release\DealRelay.obj
+.\Release\DoScript.obj
+.\Release\FriendMgr.obj
+.\Release\GatewayCenter.obj
+.\Release\GatewayClient.obj
+.\Release\Global.obj
+.\Release\HeavenLib.obj
+.\Release\HostConnect.obj
+.\Release\HostServer.obj
+.\Release\KThread.obj
+.\Release\Lock.obj
+.\Release\LogFile.obj
+.\Release\Memory.obj
+.\Release\NetCenter.obj
+.\Release\NetClient.obj
+.\Release\NetConnect.obj
+.\Release\NetServer.obj
+.\Release\NetSockDupEx.obj
+.\Release\RainbowLib.obj
+.\Release\RelayCenter.obj
+.\Release\RelayClient.obj
+.\Release\RelayConnect.obj
+.\Release\RelayServer.obj
+.\Release\RootCenter.obj
+.\Release\RootClient.obj
+.\Release\S3Relay.obj
+.\Release\SockThread.obj
+.\Release\StdAfx.obj
+.\Release\TongConnect.obj
+.\Release\TongServer.obj
+.\Release\KTongControl.obj
+.\Release\KTongSet.obj
+.\Release\TONGDB.OBJ
+.\Release\S3Relay.res
+..\..\..\Lib\release\engine.lib
+.\libdb41s.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13E.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP140.bat" with contents
+[
+@echo off
+md ..\..\..\..\bin\client\release\
+copy release\S3Relay.exe ..\..\..\..\bin\Client\S3Relay.exe
+copy release\S3Relay.exe ..\..\..\..\bin\Client\release\S3Relay.exe
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP140.bat"
+
+子目录或文件 ..\..\..\..\bin\client\release\ 已经存在。
+已复制         1 个文件。
+已复制         1 个文件。
+
+
+
+<h3>Results</h3>
+S3Relay.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

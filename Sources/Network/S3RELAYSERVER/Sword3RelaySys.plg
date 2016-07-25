@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Sword3RelaySys - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\temp\RSP300.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\Toolkits\mysql++-1.7.1-1-win32-vc++\include" /I "..\Toolkits\mysql\include" /I "..\..\..\Headers" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/Sword3RelaySys.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\DownLoads\SwordOnline\Sources\Sword3PaySys\S3RELAYSERVER\main.cpp"
+]
+Creating command line "cl.exe @D:\temp\RSP300.tmp" 
+Creating temporary file "D:\temp\RSP301.tmp" with contents
+[
+S3DBInterface.lib KLVideo.lib LuaLib.lib FilterText_StaticLib.lib Engine.lib Rainbow.lib IOCPServer.lib ESClient.lib Heaven.lib Ws2_32.lib Winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Sword3RelaySys.pdb" /debug /machine:I386 /nodefaultlib:"LIBCD.lib" /out:"../../../../bin/client/Sword3RelaySys.exe" /pdbtype:sept 
+.\Debug\GlobalFun.obj
+.\Debug\KThread.obj
+.\Debug\main.obj
+.\Debug\S3P_MSSQLServer_Result.obj
+.\Debug\S3PAccount.obj
+.\Debug\S3PDB_MSSQLServer_Connection.obj
+.\Debug\S3PDBConnectionPool.obj
+.\Debug\S3PDBConVBC.obj
+.\Debug\S3PDBSocketPool.obj
+.\Debug\S3PResultVBC.obj
+]
+Creating command line "link.exe @D:\temp\RSP301.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+Linking...
+main.obj : error LNK2001: unresolved external symbol "public: __thiscall CLogFile::CLogFile(void)" (??0CLogFile@@QAE@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall CLogFile::~CLogFile(void)" (??1CLogFile@@UAE@XZ)
+main.obj : error LNK2001: unresolved external symbol "public: int __thiscall CLogFile::Uninitialize(void)" (?Uninitialize@CLogFile@@QAEHXZ)
+main.obj : error LNK2001: unresolved external symbol "public: int __thiscall CLogFile::Initialize(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,unsigned int)" (?Initialize@CLogFile@@QAEHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I@Z)
+main.obj : error LNK2001: unresolved external symbol "public: unsigned int __thiscall CLogFile::TraceLog(void const *,unsigned int)" (?TraceLog@CLogFile@@QAEIPBXI@Z)
+main.obj : error LNK2001: unresolved external symbol "public: unsigned long __thiscall CLogFile::EndBatch(void)" (?EndBatch@CLogFile@@QAEKXZ)
+main.obj : error LNK2001: unresolved external symbol "public: unsigned long __thiscall CLogFile::BeginBatch(void)" (?BeginBatch@CLogFile@@QAEKXZ)
+../../../../bin/client/Sword3RelaySys.exe : fatal error LNK1120: 7 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+Sword3RelaySys.exe - 8 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

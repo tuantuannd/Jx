@@ -1,0 +1,20 @@
+[system]
+channGM = GM
+
+charEsc = \
+charSplt = :
+
+charTEAM = T
+charFAC = F
+charSCRN = S
+
+
+[team]
+minID = -1
+maxID = 0
+
+[faction]
+minID = -1
+maxID = 0
+
+[screen]

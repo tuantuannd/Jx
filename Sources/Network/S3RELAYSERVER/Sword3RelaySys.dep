@@ -1,0 +1,181 @@
+# Microsoft Developer Studio Generated Dependency File, included by Sword3RelaySys.mak
+
+.\GlobalFun.cpp : \
+	"..\..\..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\winefs.h"\
+	".\GlobalDTD.h"\
+	".\GlobalFun.h"\
+	".\KStdAfx.h"\
+	".\process.h"\
+	".\stdafx.h"\
+	
+
+.\KThread.cpp : \
+	"..\..\..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\winefs.h"\
+	".\GlobalDTD.h"\
+	".\GlobalFun.h"\
+	".\KStdAfx.h"\
+	".\KThread.h"\
+	
+
+.\main.cpp : \
+	"..\..\..\..\..\program files\microsoft sdk\include\adodef.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\adogpool.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\adoguids.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\..\..\..\..\program files\microsoft visual studio\vc98\include\process.h"\
+	"..\..\..\headers\serverport.h"\
+	"..\..\multiserver\heaven\interface\heaveninterface.h"\
+	"..\..\multiserver\heaven\interface\iserver.h"\
+	"..\s3accserver\accountlogindef.h"\
+	".\GlobalDTD.h"\
+	".\GlobalFun.h"\
+	".\KStdAfx.h"\
+	".\KThread.h"\
+	".\logfile.h"\
+	".\S3PDBConnectionPool.h"\
+	".\S3PDBConVBC.h"\
+	".\S3PDBSocketPool.h"\
+	
+
+.\S3P_MSSQLServer_Result.cpp : \
+	"..\..\..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\winefs.h"\
+	".\KStdAfx.h"\
+	".\S3P_MSSQLServer_Result.h"\
+	".\S3PResultVBC.h"\
+	
+
+.\S3PAccount.cpp : \
+	"..\..\..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\s3accserver\accountlogindef.h"\
+	".\GlobalDTD.h"\
+	".\KStdAfx.h"\
+	".\KThread.h"\
+	".\S3PAccount.h"\
+	".\S3PDBConVBC.h"\
+	".\S3PResultVBC.h"\
+	
+
+.\S3PDB_MSSQLServer_Connection.cpp : \
+	"..\..\..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\winefs.h"\
+	".\GlobalDTD.h"\
+	".\GlobalFun.h"\
+	".\KStdAfx.h"\
+	".\KThread.h"\
+	".\S3P_MSSQLServer_Result.h"\
+	".\S3PDB_MSSQLServer_Connection.h"\
+	".\S3PDBConVBC.h"\
+	".\S3PResultVBC.h"\
+	
+
+.\S3PDBConnectionPool.cpp : \
+	"..\..\..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\s3accserver\accountlogindef.h"\
+	".\GlobalDTD.h"\
+	".\GlobalFun.h"\
+	".\KStdAfx.h"\
+	".\KThread.h"\
+	".\S3P_MSSQLServer_Result.h"\
+	".\S3PAccount.h"\
+	".\S3PDB_MSSQLServer_Connection.h"\
+	".\S3PDBConnectionPool.h"\
+	".\S3PDBConVBC.h"\
+	".\S3PResultVBC.h"\
+	
+
+.\S3PDBConVBC.cpp : \
+	"..\..\..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\winefs.h"\
+	".\GlobalDTD.h"\
+	".\GlobalFun.h"\
+	".\KStdAfx.h"\
+	".\KThread.h"\
+	".\S3PDBConVBC.h"\
+	
+
+.\S3PDBSocketPool.cpp : \
+	"..\..\..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\winefs.h"\
+	"..\..\..\headers\inoutmac.h"\
+	"..\..\..\headers\kgmprotocol.h"\
+	"..\..\..\headers\kprotocol.h"\
+	"..\..\..\headers\kprotocoldef.h"\
+	"..\..\..\headers\krelayprotocol.h"\
+	"..\..\core\src\coreobjgenredef.h"\
+	"..\..\core\src\coreusenamedef.h"\
+	"..\..\core\src\gamedatadef.h"\
+	"..\..\multiserver\heaven\interface\heaveninterface.h"\
+	"..\..\multiserver\heaven\interface\iserver.h"\
+	"..\s3accserver\accountlogindef.h"\
+	".\GlobalDTD.h"\
+	".\GlobalFun.h"\
+	".\KStdAfx.h"\
+	".\KThread.h"\
+	".\S3PAccount.h"\
+	".\S3PDBConnectionPool.h"\
+	".\S3PDBConVBC.h"\
+	".\S3PDBSocketPool.h"\
+	
+
+.\S3PResultVBC.cpp : \
+	"..\..\..\..\..\program files\microsoft sdk\include\basetsd.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\guiddef.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\propidl.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\reason.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\stralign.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\tvout.h"\
+	"..\..\..\..\..\program files\microsoft sdk\include\winefs.h"\
+	".\KStdAfx.h"\
+	".\S3PResultVBC.h"\
+	
