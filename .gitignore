@@ -28,6 +28,9 @@
 *.exe
 *.out
 *.app
+*.opensdf
+*.pdb
+*.suo
 serverrelease/
 clientrelease/
 serverdebug/
