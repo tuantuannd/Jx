@@ -37,3 +37,8 @@ serverdebug/
 clientdebug/
 debug/
 release/
+*.opendb
+*.tlog
+Sources/FilterText/FilterText_StaticLib___Win32_Release/FilterText_StaticLib.log
+*.log
+*.log

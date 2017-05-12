@@ -179,7 +179,7 @@ CBuffer *CBuffer::Allocator::Allocate()
 	}
 	else
 	{
-		pBuffer = new( m_bufferSize )CBuffer( *this, m_bufferSize );
+		pBuffer = ::new CBuffer( *this, m_bufferSize );
 		
 		if ( !pBuffer )
 		{
