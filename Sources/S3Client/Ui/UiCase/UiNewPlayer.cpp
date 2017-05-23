@@ -255,7 +255,7 @@ void KUiNewPlayer::OnClickButton(KWndWindow* pWnd)
 	else if (pWnd == (KWndWindow*)&m_Cancel)
 		OnCancel();
 	else
-	{ 
+	{
 		int i;
 		for ( i = 0; i < series_num; i++)
 		{
@@ -265,7 +265,6 @@ void KUiNewPlayer::OnClickButton(KWndWindow* pWnd)
 				break;
 			}
 		}
-		
 		if (i < series_num)
 		{
 			UiSoundPlay(UI_SI_PLAYER_ATTRIB);
@@ -353,7 +352,6 @@ int KUiNewPlayer::GetInputInfo()
 		else
 			i ++;
 	}
-	 // Fixed By mrchuCong@gmail.com
 	if (i < nLen)
 	{
 		CloseWindow(false);

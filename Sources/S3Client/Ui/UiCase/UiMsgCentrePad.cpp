@@ -1311,8 +1311,8 @@ void KUiMsgCentrePad::LoadScheme(KIniFile* pIni)
 	m_MSNInfo.uStrangerMenuBkColor.Color_b.a = 0;
 
 	SetAutoDelMsgInterval(SECOND_AUTODELMSG);
-	
-	for (int nCh = 0; nCh < MAX_CHANNELRESOURCE; nCh++)
+	int nCh;
+	for ( nCh = 0; nCh < MAX_CHANNELRESOURCE; nCh++)
 	{
 		sprintf(ChName, "%s%d", "Channel", nCh);
 		if (pIni->GetString("Channels", ChName, "", m_ChannelsResource[nCh].cTitle, 32))
@@ -1396,7 +1396,6 @@ void KUiMsgCentrePad::LoadScheme(KIniFile* pIni)
 		else
 			break;
 	}
- int nCh;
 	if (nCh < MAX_CHANNELRESOURCE)
 	{
 		m_ChannelsResource[nCh].cTitle[0] = 0;

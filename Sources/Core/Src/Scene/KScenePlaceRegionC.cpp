@@ -82,7 +82,7 @@ bool KScenePlaceRegionC::Load(const char* pszBaseFolderName)
 	m_LeftTopCornerScenePos.y = m_RegionIndex.y * RWPP_AREGION_HEIGHT;
 
 	char	File[256];
-	sprintf(File, "%s"REGION_COMBIN_FILE_NAME_CLIENT, RegionPathPrefix);
+	sprintf(File, "%s" REGION_COMBIN_FILE_NAME_CLIENT, RegionPathPrefix);
 	KPakFile	Data;
 	if (Data.Open(File))
 	{
@@ -135,21 +135,21 @@ bool KScenePlaceRegionC::Load(const char* pszBaseFolderName)
 	{
 		unsigned int uSize;
 		//--地表层--
-		sprintf(File, "%s"REGION_GROUND_LAYER_FILE, RegionPathPrefix);
+		sprintf(File, "%s" REGION_GROUND_LAYER_FILE, RegionPathPrefix);
 		if (Data.Open(File))
 		{
 			uSize = Data.Size();
 			LoadGroundLayer(&Data, uSize);
 		}		
 		//--内建对象--
-		sprintf(File, "%s"REGION_BUILDIN_OBJ_FILE, RegionPathPrefix);
+		sprintf(File, "%s" REGION_BUILDIN_OBJ_FILE, RegionPathPrefix);
 		if (Data.Open(File))
 		{
 			uSize = Data.Size();
 			LoadAboveGroundObjects(&Data, uSize);
 		}
 		//--障碍--
-		sprintf(File, "%s"REGION_OBSTACLE_FILE, RegionPathPrefix);
+		sprintf(File, "%s" REGION_OBSTACLE_FILE, RegionPathPrefix);
 		if (Data.Open(File))
 		{
 			uSize = Data.Size();
@@ -158,7 +158,7 @@ bool KScenePlaceRegionC::Load(const char* pszBaseFolderName)
 		else
 			LoadObstacle(NULL, 0);
 		//--陷阱--
-		sprintf(File, "%s"REGION_TRAP_FILE, RegionPathPrefix);
+		sprintf(File, "%s" REGION_TRAP_FILE, RegionPathPrefix);
 		if (Data.Open(File))
 		{
 			uSize = Data.Size();

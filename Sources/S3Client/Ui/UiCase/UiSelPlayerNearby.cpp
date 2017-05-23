@@ -72,7 +72,7 @@ void KUiSelPlayerNearby::Initialize()
 
 	char Buffer[256];
 	g_UiBase.GetCurSchemePath(Buffer, sizeof(Buffer));
-	strcat(Buffer, "\\"SCHEME_INI);
+	strcat(Buffer, "\\" SCHEME_INI);
 	KIniFile	Ini;
 	if (Ini.Load(Buffer))
 	{

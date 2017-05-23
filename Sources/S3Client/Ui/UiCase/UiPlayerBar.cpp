@@ -1122,8 +1122,8 @@ void KUiPlayerBar::OnObjPickedDropped(ITEM_PICKDROP_PLACE* pPickPos, ITEM_PICKDR
 		Drop.Region.v = 0;
 		Drop.eContainer = UOC_IMMEDIA_ITEM;
 	}
-	int i;
-	for (i = 0; i < UPB_IMMEDIA_ITEM_COUNT; i++)
+
+	for (int i = 0; i < UPB_IMMEDIA_ITEM_COUNT; i++)
 	{
 		if (pWnd == (KWndWindow*)&m_ImmediaItem[i])
 		{

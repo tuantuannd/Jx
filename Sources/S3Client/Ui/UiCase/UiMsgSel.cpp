@@ -87,7 +87,7 @@ void KUiMsgSel::LoadScheme(const char* pScheme)
 		return;
 	char		Buff[128];
 	KIniFile	Ini;
-	sprintf(Buff, "%s\\"SCHEME_INI, pScheme);
+	sprintf(Buff, "%s\\" SCHEME_INI, pScheme);
 	if (Ini.Load(Buff))
 	{
 		m_pSelf->Init(&Ini, "Main");

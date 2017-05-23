@@ -75,7 +75,7 @@ void KUiWorldmap::Initialize()
 
 	char szBuffer[128];
 	g_UiBase.GetCurSchemePath(szBuffer, sizeof(szBuffer));
-	strcat(szBuffer, "\\"SCHEME_INI_WORLD);
+	strcat(szBuffer, "\\" SCHEME_INI_WORLD);
 	KIniFile	Ini;
 	if (Ini.Load(szBuffer))
 	{

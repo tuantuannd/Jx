@@ -66,7 +66,7 @@ void KUiToolsControlBar::LoadScheme(const char* pScheme)
 	KIniFile	Ini;
 	if (m_pSelf)
 	{
-		sprintf(Buff, "%s\\"SCHEME_INI, pScheme);
+		sprintf(Buff, "%s\\" SCHEME_INI, pScheme);
 		if (Ini.Load(Buff))
 		{
 			m_pSelf->Init(&Ini, "Main");
@@ -81,7 +81,7 @@ void KUiToolsControlBar::DefaultScheme(const char* pScheme)
 	KIniFile	Ini;
 	if (m_pSelf)
 	{
-		sprintf(Buff, "%s\\"SCHEME_INI, pScheme);
+		sprintf(Buff, "%s\\" SCHEME_INI, pScheme);
 		if (Ini.Load(Buff))
 		{
 			int	nValue1, nValue2;

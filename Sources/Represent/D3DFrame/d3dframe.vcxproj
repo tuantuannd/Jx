@@ -104,7 +104,8 @@
       <OutputFile>.\Release/d3dframe.bsc</OutputFile>
     </Bscmake>
     <PostBuildEvent>
-      <Command>copy Release\d3dframe.lib ..\..\library\d3dlib\d3dframe.lib</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

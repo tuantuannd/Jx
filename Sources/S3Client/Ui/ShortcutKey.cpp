@@ -1152,8 +1152,9 @@ int LuaSayPhrase(Lua_State * L)
 	{
 		DWORD nChannelID = -1;
 		//¸½½üÍæ¼Ò
+		int n;
 		int nChannelDataCount = KUiMsgCentrePad::GetChannelCount();
-		for (int n = 0; n < nChannelDataCount; n++)
+		for ( n = 0; n < nChannelDataCount; n++)
 		{
 			if (KUiMsgCentrePad::IsChannelType(n, KUiMsgCentrePad::ch_Screen))
 			{
@@ -1165,11 +1166,11 @@ int LuaSayPhrase(Lua_State * L)
 		if (nChannelID != -1)
 		{
 			if (KUiPlayerBar::IsCanSendMessage(szPhrase, nLen, KUiMsgCentrePad::GetChannelTitle(KUiMsgCentrePad::GetChannelIndex(nChannelID)), nChannelID))
-			{    int n;
+			{
 				char Buffer[1536];
 				nLen = KUiFaceSelector::ConvertFaceText(Buffer, szPhrase, nLen);
 				nLen = TEncodeText(Buffer, nLen);
-				KUiMsgCentrePad::CheckChannel( n, true);
+				KUiMsgCentrePad::CheckChannel(n, true);
 				KUiPlayerBar::OnSendChannelMessage(nChannelID, Buffer, nLen);
 			}
 		}

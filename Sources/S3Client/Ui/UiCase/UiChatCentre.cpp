@@ -412,7 +412,7 @@ void KUiChatCentre::LoadScheme(const char* pScheme)
 	{
 		char		Buff[128];
 		KIniFile	Ini;
-		sprintf(Buff, "%s\\"SCHEME_INI, pScheme);
+		sprintf(Buff, "%s\\" SCHEME_INI, pScheme);
 		if (Ini.Load(Buff))
 			m_pSelf->LoadScheme(&Ini);
 	}

@@ -196,7 +196,7 @@ CIOBuffer *CIOBuffer::Allocator::Allocate()
 	}
 	else
 	{
-		pBuffer = new( m_bufferSize )CIOBuffer( *this, m_bufferSize );
+		pBuffer = ::new CIOBuffer( *this, m_bufferSize );
 		
 		if ( !pBuffer )
 		{

@@ -270,7 +270,8 @@ void KUiSkillTree::UpdateData()
 		if (ms_ShortcutSkills[i].uGenre == CGOG_NOTHING ||
 			(!m_bLeft) != (!ms_ShortcutSkills[i].IS_LEFT_SKILL))
 			continue;
-		for (int j = 0; j < m_nNumSkills; j++)
+		int j;
+		for ( j = 0; j < m_nNumSkills; j++)
 		{
 			if (ms_ShortcutSkills[i].uId == m_Skills[j].uId &&
 				ms_ShortcutSkills[i].uGenre == m_Skills[j].uGenre)
@@ -278,7 +279,6 @@ void KUiSkillTree::UpdateData()
 				break;
 			}
 		}
- int j;
 		if (j >= m_nNumSkills)
 			ms_ShortcutSkills[i].uGenre = CGOG_NOTHING;
 	}

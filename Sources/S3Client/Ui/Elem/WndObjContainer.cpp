@@ -794,7 +794,6 @@ int KWndObjectMatrix::TryDropObjAtPos(const RECT& dor, KUiDraggedObject*& pOverl
 			break;
 		pOverlaped = pHolded;
 	}
-	 
 	return (i == m_nNumObjects);
 }
 

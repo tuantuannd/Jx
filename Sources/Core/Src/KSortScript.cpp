@@ -71,6 +71,7 @@ const KScript * g_GetScript(DWORD dwScriptId)
 const KScript * g_GetScript(const char * szRelativeScriptFile)
 {
 	DWORD dwScriptId = g_FileName2Id((LPSTR)szRelativeScriptFile);
+	
 	return g_GetScript(dwScriptId);
 }
 

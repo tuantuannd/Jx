@@ -22,9 +22,4 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <Library Include="libdb41s.lib">
-      <Filter>源文件</Filter>
-    </Library>
-  </ItemGroup>
 </Project>

@@ -136,6 +136,7 @@ void *CBuffer::operator new( size_t objectSize, size_t /* bufferSize */ )
 	void *pMem = new char[ objectSize ]; //+ bufferSize + 4 ];
 
 	return pMem;
+	//return ::operator new(objectSize);
 }
 
 void CBuffer::operator delete( void *pObject, size_t /* bufferSize */ )

@@ -743,14 +743,17 @@ int CoreServerShell::OnLunch(LPVOID pServer)
 {
 	g_SetServer(pServer);
 
-//	g_SetFilePath("\\script");
-	KLuaScript * pStartScript =(KLuaScript*) g_GetScript("\\script\\ServerScript.lua");
+	//g_SetFilePath("\\script");
+	KLuaScript * pStartScript =(KLuaScript*) g_GetScript("\\script\\serverscript.lua");
 	int i = 0;
 	
-	if (!pStartScript)
+	if (!pStartScript) {
 		g_DebugLog("Load ServerScript failed!");
+		printf("Load ServerScript failed!");
+	}
 	else
 	{	
+		printf("Load ServerScript ok!");
 		pStartScript->CallFunction("StartGame",0,"");
 	}
 

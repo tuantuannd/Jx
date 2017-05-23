@@ -137,7 +137,7 @@ void KUiTrade::LoadScheme(const char* pScheme)
 	{
 		char		Buff[128];
 		KIniFile	Ini;
-		sprintf(Buff, "%s\\"SCHEME_INI_TRADE, pScheme);
+		sprintf(Buff, "%s\\" SCHEME_INI_TRADE, pScheme);
 		if (Ini.Load(Buff))
 		{
 			m_pSelf->LoadScheme(&Ini);
